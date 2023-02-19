@@ -263,4 +263,7 @@ function characters() {
 }
 add_action( 'init', 'characters', 0 );
 
+update_option( 'siteurl', 'https://lootandwaifus.com' );
+update_option( 'home', 'https://lootandwaifus.com' );
+
 ?>
