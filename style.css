@@ -1,0 +1,500 @@
+/*!
+Theme Name: Loot & Waifus
+Theme URI: https://github.com/mascarell
+Author: Mascarell
+Description: Wordpress theme for lootandwaifus
+Version: 1.0.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&family=Unbounded:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	color: #fff;
+	margin: 0;
+	background: #0D1116;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+html{ margin: 0; padding: 0;}
+
+.web{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.separator{
+	content: '';
+	width: 100%;
+	margin-bottom: 20vh;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.container{
+	background-color: #14181D;
+	box-sizing: border-box;
+	padding: 1rem;
+	border-radius: 12px;
+	position: relative;
+	margin: 1rem .5rem;
+}
+
+.double{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.button{
+	display: inline-flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	padding: .5rem 1.25rem;
+	background: #272A2F;
+	color: white;
+	transition: .25s linear;
+}
+.button:hover{
+	background-color: #0D1116;
+}
+.button svg{
+	display: block;
+	width: 24px;
+	margin-right: 1rem;
+}
+
+.game-menu{ 
+	margin-top: 1rem; 
+	margin-left: .5rem;
+}
+.game-logo{
+	max-width: 154px;
+	margin-left: 1rem;
+}
+
+.games{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 1rem;
+	padding: 0rem;
+	margin: 0px auto;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: .5rem;
+	margin-top: 1rem;
+	margin-bottom: 0;
+	background-color: transparent;
+	position: relative;
+}
+.games .game div{
+	border-radius: 12px;
+	padding: 1rem;
+	border: 2px solid #14181D;
+	display: inline-flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 250px;
+	position: relative;
+	transition: .25s linear;
+	width: 100%;
+	overflow: hidden;
+}
+.games .game.covering div:hover{
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.games .game.covering div p{
+	position: relative;
+	z-index: 2;
+}
+.games .game.covering div::after{
+	content: '';
+	width: 100%;
+	height: 110%;
+	background: linear-gradient(to bottom, transparent 0%, black 100%);
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+/* games that we cover image */
+.games .game.nikke div {
+	background: url("images/anis.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game.limbus div {
+	background: url("images/limbus.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game p{
+	margin: 0;
+	color: white;
+	font-weight: 500;
+}
+
+.article h1{
+	font-weight: 500;
+	margin: 0;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+.article .thumbnail{
+	width: 100%;
+}
+.article .small-thumbnail{
+	max-width: 128px;
+}
+.article .date{
+	color: #23F1C0;
+}
+.article .article-content{
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.article .article-content strong{
+	color: #23F1C0;
+	font-weight: 500;
+}
+.article .article-content a{
+	color: #23F1C0;
+	background-color: #202442;
+	border-radius: 3px;
+	padding: .1rem .25rem;
+	font-weight: 500;
+}
+.article .article-content em{
+	color: #ebed63;
+	font-style: normal;
+	font-weight: 500;
+}
+.article .article-content h1, .article .article-content h2, .article .article-content h3, .article .article-content h4, .article .article-content h5, .article .article-content h6{
+	margin: 0;
+	font-weight: 500;
+}
+
+.error img{
+	width: 100%;
+	max-width: 100%;
+}
+.error h4{
+	margin: 0;
+	padding: 0;
+	font-size: 3rem;
+	color: tomato;
+}
+.error h2{
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+
+#twitch-embed{ margin-bottom: 1rem; }
+
+.character-filters{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem;
+}
+.character-filters #search{
+	width: 100%;
+	max-width: 250px;
+	background-color: transparent;
+	border: 2px solid #14181D;
+	border-radius: 12px;
+	padding: .5rem 1rem;
+	font-size: 1.1rem;
+	color: white;
+	transition: .15s linear;
+}
+.character-filters #search:focus{
+	outline: none;
+	max-width: 300px;
+	background-color: #14181D;
+}
+
+.characters-wrapper{
+	margin-top: 5vh;
+	position: relative;
+}
+.news .characters{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 1rem;
+	margin: .5rem;
+	margin-bottom: 0;
+	padding: .5rem;
+	padding-right: 0;
+	position: relative;
+}
+.news .characters .character{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	transition: .2s linear;
+	position: relative;
+	align-content: flex-end;
+	overflow: hidden;
+}
+.news .characters .character.hidden{ display: none; }
+.news .characters .character .lozad{
+	background-size: cover;
+	background-position: center;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	top: 0;
+	left: 0;
+}
+/* Character custom colors for rarity */
+.news .characters .character .lozad.ssr { background-color: rgba(255, 177, 61, .5); }
+.news .characters .character .lozad.sr { background-color: rgba(210, 143, 214, .5); }
+.news .characters .character .lozad.r { background-color: rgba(0, 144, 255, .5); }
+.news .characters .character .margin { 
+	align-items: end; width: 100%; 
+	border: none;
+}
+.news .characters .character .margin .content { 
+	width: 100%;
+	align-items: end; 
+	text-align: center;
+	border-radius: 0;
+	background-color: #14181D;
+}
+.news .characters .character .margin .content h2{ 
+	font-weight: 400;
+	font-size: .85rem;
+}
+.character.covering:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom css for blocks on articles */
+.wp-block-table.skill table {
+	background-color: #272A2F;
+	border-radius: 12px;
+}
+.wp-block-table.skill table, .wp-block-table.skill td, .wp-block-table.skill td {
+	border: none;
+	vertical-align: top;
+}
+.wp-block-table.skill table tr td:first-of-type {
+	width: 60px;
+	max-width: 60px;
+	opacity: .7;
+}
+.wp-block-table.skill table tr td:last-of-type {
+	padding-left: 2rem;
+}
+.wp-block-table.info table, .wp-block-table.info td, .wp-block-table.info td {
+	border: 2px solid #272A2F;
+	vertical-align: top;
+}
+
+.guides-wrapper{
+	margin-top: 10vh;
+	position: relative;
+}
+.guides-wrapper .news{
+	transform: translateY(-35px);
+}
+.news .guides-title{
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	padding-left: 1rem;
+	height: 35px;
+	max-height: 35px;
+}
+.news .guides-title:not(:first-child){
+	margin-top: 10vh;
+}
+.news .guides{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 1rem;
+	margin: .5rem;
+	margin-bottom: 0;
+	padding: .5rem;
+	padding-right: 0;
+	position: relative;
+}
+
+.news .post .margin{
+	display: flex;
+	flex-flow: column wrap;
+	position: relative;
+	transition: .25s linear;
+	border: 2px solid #14181D;
+	border-radius: 12px;
+}
+.news .post.guide{
+	padding: 0;
+	background-color: transparent;
+	display: block;
+	position: relative;
+	margin: 0;
+}
+.guide.covering .margin:hover{
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.news .post .margin .thumbnail{
+	flex: 0 0 200px;
+	align-items: stretch;
+	margin-right: 1rem;
+}
+.news .post.guide .margin .thumbnail{
+	flex: 0 0 110px;
+	height: 110px;
+}
+.news .post .margin .thumbnail .img{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	border-radius: 12px;
+	transition: .25s linear;
+}
+.news .post.guide .margin .thumbnail .img{
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 128px;
+}
+.news .post .margin .thumbnail .img:hover{
+	opacity: .8;
+}
+.news .post.guide .margin .content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.news .post.guide .margin .content h2{
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.news .post .margin .content h2{
+	font-weight: 500;
+	line-height: 1.2;
+	margin: .5rem 0;
+	color: white;
+}
+.news .post .margin .content p{
+	margin: 0;
+	color: white;
+}
+.news .post .margin .content p.date, .news .post .margin .content h2:hover,
+.news .post.guide:hover .margin .content h2{
+	color: #23F1C0;
+}
+
+.pagination{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	justify-content: center;
+	width: 100%;
+	padding: 1rem;
+}
+.pagination a{
+	width: 50%;
+	color: white;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+.pagination a:hover{
+	color: #23F1C0;
+}
+.pagination a:nth-child(2){
+	text-align: right;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	padding: 1rem;
+	margin: 5vh 0;
+}
+.footer .navbar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer .navbar ul li a{
+	margin-right: 1rem;
+	color: white;
+}
+
+/* Tablets */
+@media only screen and (min-width : 48em){
+	.double {
+		flex-flow: row nowrap;
+	}
+	
+	.news{
+		flex: auto;
+	}
+	.news .post .margin {
+		flex-flow: row nowrap;
+	}
+	.sidebar{
+		flex: 0 0 400px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 62em){
+}
+
+::selection {
+	background-color: rgba(221, 224, 244, .9);
+	color: black;
+}
+
+@keyframes animated {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.animated {
+	position: relative;
+	opacity: 0;
+}
+.animated.active {
+	animation: animated .6s forwards;
+}
