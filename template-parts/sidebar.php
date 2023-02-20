@@ -11,9 +11,9 @@
 		<?php get_template_part('template-parts/buttons/twitch'); ?>
 	</div>
 
-	<!-- <div class="container">
+	<div class="container">
 		<p>Are you a fan of gacha games? If you're interested in meeting new people who share your passion for collecting 2d husbandos and waifus, come and join us!</p>
 
 		<?php get_template_part('template-parts/buttons/discord'); ?>
-	</div> -->
+	</div>
 </div>

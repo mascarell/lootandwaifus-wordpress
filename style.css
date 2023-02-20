@@ -234,8 +234,12 @@ a{
 }
 
 .characters-wrapper{
-	margin-top: 5vh;
+	margin-top: 10vh;
 	position: relative;
+}
+.characters-wrapper .news{
+	position: relative;
+	transform: translateY(-70px);
 }
 .news .characters{
 	display: grid;
