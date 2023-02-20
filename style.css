@@ -80,6 +80,9 @@ a{
 	margin-top: 1rem; 
 	margin-left: .5rem;
 }
+.game-menu .button{ 
+	margin-bottom: .5rem;
+}
 .game-logo{
 	max-width: 154px;
 	margin-left: 1rem;
@@ -232,7 +235,6 @@ a{
 	max-width: 300px;
 	background-color: #14181D;
 }
-
 .characters-wrapper{
 	margin-top: 10vh;
 	position: relative;
@@ -240,6 +242,9 @@ a{
 .characters-wrapper .news{
 	position: relative;
 	transform: translateY(-70px);
+	display: block;
+	width: 100%;
+	max-width: 100%;
 }
 .news .characters{
 	display: grid;
@@ -280,8 +285,11 @@ a{
 .news .characters .character .lozad.sr { background-color: rgba(210, 143, 214, .5); }
 .news .characters .character .lozad.r { background-color: rgba(0, 144, 255, .5); }
 .news .characters .character .margin { 
-	align-items: end; width: 100%; 
+	align-items: end; 
+	width: 100%; 
 	border: none;
+	display: flex;
+	flex-flow: row wrap;
 }
 .news .characters .character .margin .content { 
 	width: 100%;
@@ -293,6 +301,12 @@ a{
 .news .characters .character .margin .content h2{ 
 	font-weight: 400;
 	font-size: .85rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: initial;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 }
 .character.covering:hover {
 	transform: translateY(-5px);
@@ -473,6 +487,10 @@ a{
 	}
 	.sidebar{
 		flex: 0 0 400px;
+	}
+
+	.game-menu .button {
+		margin-bottom: 0;
 	}
 }
 
