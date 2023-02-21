@@ -295,6 +295,9 @@ a{
 	background-color: transparent;
 	padding: 0;
 }
+.news .characters.characters-embed{ 
+	margin-bottom: 1.5rem;
+}
 .news .characters.characters-embed .character .margin .content { 
 	background-color: #272A2F;
 }
