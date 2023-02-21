@@ -15,7 +15,7 @@ get_header();
 				<?php if ( is_singular( 'guides' ) ) { ?>
 					<img class="lozad small-thumbnail" data-src="<?php echo the_post_thumbnail_url(); ?>">
 					<h1><?php the_title(); ?></h1>
-				<?php } if ( is_singular( 'characters' ) ) { ?>
+				<?php } else if ( is_singular( 'characters' ) ) { ?>
 					<h1><?php the_title(); ?></h1>
 				<?php } else { ?>
 					<p class="date"><?php echo the_date(); ?> </p>
