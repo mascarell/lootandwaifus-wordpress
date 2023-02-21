@@ -291,6 +291,13 @@ a{
 	display: flex;
 	flex-flow: row wrap;
 }
+.news .characters .character a.margin { 
+	background-color: transparent;
+	padding: 0;
+}
+.news .characters.characters-embed .character .margin .content { 
+	background-color: #272A2F;
+}
 .news .characters .character .margin .content { 
 	width: 100%;
 	align-items: end; 
