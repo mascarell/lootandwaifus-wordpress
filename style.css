@@ -281,7 +281,7 @@ a{
 	left: 0;
 }
 /* Character custom colors for rarity */
-.news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(248, 54, 0, .8) 0%, rgba(249, 212, 35, .8) 100%); }
+.news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(255, 109, 69, 0.8) 0%, rgba(249, 212, 35, .8) 100%); }
 .news .characters .character .bg.sr { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
 .news .characters .character .lozad.r { background-color: rgba(0, 144, 255, .5); }
 .news .characters .character .margin { 
