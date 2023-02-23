@@ -18,6 +18,8 @@ $category_id = $categories[0]->name;
 			<?php
 				$query = new WP_Query( array(
 						'post_type'      => 'characters',
+						'orderby'        => 'title',
+						'order'          => 'DESC',
 						'posts_per_page' => -1,
 						'no_found_rows'  => true,
 						'category_name'  => $category_id
