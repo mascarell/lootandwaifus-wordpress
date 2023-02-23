@@ -6,6 +6,7 @@ if ( $tags ) {
 ?>
 
 <div class="post character covering container" data-character-name="<?php the_title(); ?>">
+	<div class="bg <?php echo $first_tag->slug; ?>"></div>
 	<div class="lozad <?php echo $first_tag->slug; ?>" data-background-image="<?php echo the_post_thumbnail_url(); ?>"></div>
 	<a href="<?php the_permalink(); ?>" class="margin">
 		<div class="content">

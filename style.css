@@ -270,7 +270,7 @@ a{
 	overflow: hidden;
 }
 .news .characters .character.hidden{ display: none; }
-.news .characters .character .lozad{
+.news .characters .character .lozad, .news .characters .character .bg{
 	background-size: cover;
 	background-position: center;
 	content: '';
@@ -281,8 +281,8 @@ a{
 	left: 0;
 }
 /* Character custom colors for rarity */
-.news .characters .character .lozad.ssr { background-color: rgba(235, 237, 99, .65); }
-.news .characters .character .lozad.sr { background-color: rgba(210, 143, 214, .5); }
+.news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(248, 54, 0, .8) 0%, rgba(249, 212, 35, .8) 100%); }
+.news .characters .character .bg.sr { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
 .news .characters .character .lozad.r { background-color: rgba(0, 144, 255, .5); }
 .news .characters .character .margin { 
 	align-items: end; 
