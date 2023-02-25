@@ -127,8 +127,8 @@
 	function changeURL() {
 		if (history.pushState) {
 			// Make sure the parameter is not empty
-			let units = charactersId.length ? `?units=${charactersId.join(',')}` : ''
-			let team1 = team1Id.length ? `&team1=${team1Id.join(',')}` : ''
+			let units = charactersId.length ? `?units=${charactersId.join(',')}` : '?units='
+			let team1 = team1Id.length ? `&team1=${team1Id.join(',')}` : '&team1='
 
 			let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + units + team1;
 			window.history.pushState({ path: newurl }, '', newurl);
