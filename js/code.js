@@ -34,6 +34,39 @@
 	});
 })(jQuery);
 
+// Scroll while dragging things
+// no idea how it works xd https://stackoverflow.com/questions/18809678/make-html5-draggable-items-scroll-the-page
+(function ($) {
+	var stop = true;
+	$(".filtered .character.builder").on("drag", function (e) {
+
+		stop = true;
+
+		if (e.originalEvent.clientY < 150) {
+			stop = false;
+			scroll(-1)
+		}
+
+		if (e.originalEvent.clientY > ($(window).height() - 150)) {
+			stop = false;
+			scroll(1)
+		}
+
+	});
+
+	$(".filtered .character.builder").on("dragend", function (e) {
+		stop = true;
+	});
+
+	var scroll = function (step) {
+		var scrollY = $(window).scrollTop();
+		$(window).scrollTop(scrollY + step);
+		if (!stop) {
+			setTimeout(function () { scroll(step) }, 20);
+		}
+	}
+})(jQuery);
+
 // TEAM BUILDER FOR NIKKE
 (function ($) {
 	// disable default draover on document
