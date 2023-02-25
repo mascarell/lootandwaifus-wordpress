@@ -8,6 +8,12 @@
 			<li>People can send you a new url with team suggestions</li>
 			<li>No cookies and no account needed</li>
 		</ul>
+
+		<h3>TODO:</h3>
+
+		<ul>
+			<li>Add up to 3 team suggestions instead of 1</li>
+		</ul>
 	</div>
 	
 	<div class="container">
