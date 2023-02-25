@@ -12,6 +12,7 @@ $category_id = $categories[0]->name;
 <div class="double characters-wrapper builder animated">
 	<div class="news">
 		<div class="teams">
+			<h3>Currently WIP, might not fully work</h3>
 			<h3>Your team</h3>
 
 			<div class="characters">
