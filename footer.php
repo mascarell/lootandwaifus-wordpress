@@ -14,9 +14,7 @@
 </div>
 
 <!-- Load the Twitch embed JavaScript file -->
-<script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<!-- <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
 	new Twitch.Embed("twitch-embed", {
 		autoplay: true,
@@ -28,7 +26,7 @@
 		height: 480,
 		channel: "sefhi_922",
 	});
-</script>
+</script> -->
 
 <?php wp_footer(); ?>
 

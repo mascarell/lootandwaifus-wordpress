@@ -14,7 +14,7 @@ $category_id = $categories[0]->name;
 		<div class="character-filters">
 			<input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
 		</div>
-		<div class="characters">
+		<div class="characters filtered">
 			<?php
 				$query = new WP_Query( array(
 						'post_type'      => 'characters',

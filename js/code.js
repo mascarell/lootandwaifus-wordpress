@@ -17,7 +17,7 @@
 // Filter characters
 (function ($) {
   // character list
-  const characters = [...document.querySelectorAll('.character')];
+  const characters = [...document.querySelectorAll('.characters.filtered .character')];
 	const input = document.querySelector('input[type="search"]');
 
 	input.addEventListener('input', () => {
@@ -32,4 +32,119 @@
 			}
 		}
 	});
+})(jQuery);
+
+// TEAM BUILDER FOR NIKKE
+(function ($) {
+	// disable default draover on document
+	document.addEventListener("dragover", function (event) {
+		event.preventDefault();
+	});
+
+	// Get parameters
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+
+	// variables to control team builder settings and selected units
+	let units = urlParams.has('units') ? urlParams.get('units') : '';
+	let team1 = urlParams.has('team1') ? urlParams.get('team1') : '';
+	// we transform those into arrays
+	let unitsArray = units.split(',');
+	let team1Array = team1.split(',');
+	
+  // character list
+  const characters = [...document.querySelectorAll('.filtered .character.builder')];
+  const team1Characters = [...document.querySelectorAll('.teams .characters .character')];
+	let charactersId = [];
+	let team1Id = [];
+
+	// variables related to drag and drop
+	let draggedElement;
+
+	// on page load, select units if we have the url parameter
+	if (urlParams.has('units')) {
+		characters.forEach(character => {
+			let id = character.dataset.characterId; // id of the character
+
+			if (unitsArray[0] !== '') {
+				if(unitsArray.indexOf(id) !== -1) { // If the unit is on the url parameters
+					charactersId.push(id);
+					character.classList.toggle('selected');
+				} else { // if we don't have the unit, we just hide it so people only see what we have
+					character.classList.add('unavailable');
+				}
+			}
+		});
+	}
+	// on page load, add units to your team if we have the url parameter
+	if (urlParams.has('team1')) {
+		try {
+			// remove duplicates of same unit to avoid problems
+			let uniqueCharacters = [...new Set(team1Array)];
+			
+			for (let character = 0; character < team1Characters.length; character++) {
+				let element = document.querySelector(`[data-character-id='${uniqueCharacters[character]}']`);
+				team1Characters[character].innerHTML = element.innerHTML;
+				// console.log(character)
+			}
+		} catch (error) { }
+
+		// update images
+		const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+		observer.observe();
+	}
+
+	// select and deselect units on click
+	characters.forEach(character => {
+		character.addEventListener('click', e => {
+			character.classList.toggle('selected');
+			let id = character.dataset.characterId;
+
+			// Update arrays of units
+			charactersId.indexOf(id) === -1 ? charactersId.push(id) : charactersId.splice(charactersId.indexOf(id), 1);
+
+			// Update the url
+			changeURL();
+		})
+	});
+
+	// event listener for every character so we can drag them
+	characters.forEach(character => {
+		character.addEventListener('dragstart', e => {
+			draggedElement = e.target.innerHTML;
+		});
+	});
+	// drop over
+	team1Characters.forEach(character => {
+		character.addEventListener('drop', e => {
+			e.target.outerHTML = draggedElement;
+			updateTeam1Array();
+			changeURL();
+		});
+	});
+
+	// Changing url it's going to be better on it's own function just in case
+	function changeURL() {
+		if (history.pushState) {
+			// Make sure the parameter is not empty
+			let units = charactersId.length ? `?units=${charactersId.join(',')}` : ''
+			let team1 = team1Id.length ? `&team1=${team1Id.join(',')}` : ''
+
+			let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + units + team1;
+			window.history.pushState({ path: newurl }, '', newurl);
+		}
+	}
+
+	function updateTeam1Array() {
+		let ids = []; // tmp variable for ids of the team 1
+
+		team1Characters.forEach(character => {
+			// Update arrays of units
+			let id = character.querySelector('.margin').dataset.characterId;
+
+			id != undefined ? ids.push(character.querySelector('.margin').dataset.characterId) : ''
+		});
+
+		team1Id = ids;
+	}
 })(jQuery);
