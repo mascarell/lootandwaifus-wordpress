@@ -14,6 +14,11 @@ $category_id = $categories[0]->name;
 		<div class="teams">
 			<span class="advice">Team builder works best on PC, mobile can be funky until I do an update</span>
 			<h3>Your team</h3>
+			<div class="team-switch">
+				<span class="team1">Team 1</span>
+				<span class="team2">Team 2</span>
+				<span class="team3">Team 3</span>
+			</div>
 
 			<div class="characters">
 				<div class="post builder character covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>

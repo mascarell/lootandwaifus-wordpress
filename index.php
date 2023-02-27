@@ -11,13 +11,9 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
-	<!-- <a href="<?php echo home_url(); ?>/limbus-company" class="game limbus covering">
+	<a href="<?php echo home_url(); ?>/limbus-company" class="game limbus covering">
 		<div>
 			<p>Limbus Company</p>
-		</div>
-	</a> -->
-	<a class="game">
-		<div>
 		</div>
 	</a>
 	<a class="game">
