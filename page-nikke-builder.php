@@ -12,6 +12,7 @@ $category_id = $categories[0]->name;
 <div class="double characters-wrapper builder animated">
 	<div class="news">
 		<div class="teams">
+			<span class="advice">Team builder works best on PC, mobile can be funky until I do an update</span>
 			<h3>Your team</h3>
 
 			<div class="characters">

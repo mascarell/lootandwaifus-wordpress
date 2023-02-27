@@ -342,6 +342,9 @@ a{
 .teams > h3{
 	font-weight: 400;
 }
+.builder .advice{
+	color: #ebed63;
+}
 
 /* Basic list styling */
 .container ul li{
@@ -536,6 +539,9 @@ a{
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 62em){
+	.builder .advice {
+		display: none;
+	}
 }
 
 ::selection {
