@@ -12,7 +12,6 @@
 		<h3>TODO:</h3>
 
 		<ul>
-			<li>Add up to 3 team suggestions instead of 1</li>
 			<li>Smart suggestions for team synergies</li>
 		</ul>
 	</div>

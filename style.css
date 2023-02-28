@@ -341,10 +341,34 @@ a{
 }
 .teams > h3{
 	font-weight: 400;
+	margin-bottom: .5rem;
 }
 .builder .advice{
 	color: #ebed63;
 }
+.team-switch {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: .5rem;
+}
+.team-switch span {
+	text-transform: uppercase;
+	font-size: .9rem;
+	margin-right: .5rem;
+	background-color: #14181D;
+	padding: .25rem .75rem;
+	border-radius: 12px;
+	min-width: 30px;
+}
+.team-switch span.active {
+	background-color: #202442;
+}
+.team-switch span:hover {
+	cursor: pointer;
+}
+.teams .characters .character.notSelected { display: none; }
 
 /* Basic list styling */
 .container ul li{

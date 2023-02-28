@@ -73,10 +73,13 @@
 	document.addEventListener("dragover", function (event) {
 		event.preventDefault();
 	});
-
+	
 	// Get parameters
 	const queryString = window.location.search;
 	const urlParams = new URLSearchParams(queryString);
+
+	// If there were units preselected, you can't toggle them
+	const activeTeam = urlParams.has('units') ? true : false;
 
 	// variables to control team builder settings and selected units
 	let units = urlParams.has('units') ? urlParams.get('units') : '';
@@ -114,11 +117,23 @@
 		try {
 			// remove duplicates of same unit to avoid problems
 			let uniqueCharacters = [...new Set(team1Array)];
-			
-			for (let character = 0; character < team1Characters.length; character++) {
-				let element = document.querySelector(`[data-character-id='${uniqueCharacters[character]}']`);
-				team1Characters[character].innerHTML = element.innerHTML;
-				// console.log(character)
+			let selectedCharacters = [];
+
+			// add characters on the url to a tmp variable "selectedCharacters" so we bypass innerHTML not giving us duplicates
+			for (let character = 0; character < team1Array.length; character++) {
+				if(team1Array[character] != '0') {
+					let element = document.querySelector(`[data-character-id='${team1Array[character]}']`);
+					selectedCharacters.push(element);
+				} else {
+					selectedCharacters.push('');
+				}
+			}
+
+			// Update units we have on the url to show on our squads
+			for (let character = 0; character < team1Array.length; character++) {
+				if(team1Array[character] != '0') {
+					team1Characters[character].innerHTML = selectedCharacters[character].innerHTML;
+				}
 			}
 		} catch (error) { }
 
@@ -129,16 +144,68 @@
 
 	// select and deselect units on click
 	characters.forEach(character => {
-		character.addEventListener('click', e => {
-			character.classList.toggle('selected');
-			let id = character.dataset.characterId;
+		if(!activeTeam) {
+			character.addEventListener('click', e => {
+				character.classList.toggle('selected');
+				let id = character.dataset.characterId;
+	
+				// Update arrays of units
+				charactersId.indexOf(id) === -1 ? charactersId.push(id) : charactersId.splice(charactersId.indexOf(id), 1);
+	
+				// Update the url
+				changeURL();
+			});
+		}
+	});
 
-			// Update arrays of units
-			charactersId.indexOf(id) === -1 ? charactersId.push(id) : charactersId.splice(charactersId.indexOf(id), 1);
+	// event listener so we can toggle teams 1 to 3 visible
+	let teamSwitch = [...document.querySelectorAll('.team-switch span')];
+	teamSwitch.forEach(switchs => {
+		switchs.addEventListener('click', (e) => {
+			// array with all the characters
+			let team = [...document.querySelectorAll('.teams .characters > .character')];
+			let teamButtons = [...document.querySelectorAll('.team-switch span')];
 
-			// Update the url
-			changeURL();
-		})
+			// show teams from 1 to 3
+			switch (e.target.className.split(" ")[0]) {
+				case 'team1':
+					// show current active team
+					for (let i = 0; i < team.length; i++) {
+						let character = team[i]
+						character.classList.contains('team1') ? character.classList.remove('notSelected') : character.classList.add('notSelected')
+					}
+					// show current active team button
+					for (let i = 0; i < teamButtons.length; i++) {
+						teamButtons[i].classList.contains('team1') ? teamButtons[i].classList.add('active') : teamButtons[i].classList.remove('active');
+					}
+					break;
+				case 'team2':
+					// show current active team
+					for (let i = 0; i < team.length; i++) {
+						let character = team[i]
+						character.classList.contains('team2') ? character.classList.remove('notSelected') : character.classList.add('notSelected')						
+					}
+					// show current active team button
+					for (let i = 0; i < teamButtons.length; i++) {
+						teamButtons[i].classList.contains('team2') ? teamButtons[i].classList.add('active') : teamButtons[i].classList.remove('active');
+					}
+					break;
+				case 'team3':
+					// show current active team
+					for (let i = 0; i < team.length; i++) {
+						let character = team[i]
+						character.classList.contains('team3') ? character.classList.remove('notSelected') : character.classList.add('notSelected')					
+					}
+					// show current active team button
+					for (let i = 0; i < teamButtons.length; i++) {
+						teamButtons[i].classList.contains('team3') ? teamButtons[i].classList.add('active') : teamButtons[i].classList.remove('active');
+					}
+					break;
+				default:
+					console.log(e.target.classList.value)
+					break;
+			}
+		});
 	});
 
 	// event listener for every character so we can drag them
@@ -160,10 +227,10 @@
 	function changeURL() {
 		if (history.pushState) {
 			// Make sure the parameter is not empty
-			let units = charactersId.length ? `?units=${charactersId.join(',')}` : '?units='
+			let units = charactersId.length ? `units=${charactersId.join(',')}` : ''
 			let team1 = team1Id.length ? `&team1=${team1Id.join(',')}` : '&team1='
 
-			let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + units + team1;
+			let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + units + team1;
 			window.history.pushState({ path: newurl }, '', newurl);
 		}
 	}
@@ -175,7 +242,7 @@
 			// Update arrays of units
 			let id = character.querySelector('.margin').dataset.characterId;
 
-			id != undefined ? ids.push(character.querySelector('.margin').dataset.characterId) : ''
+			id != null ? ids.push(character.querySelector('.margin').dataset.characterId) : ids.push('0');
 		});
 
 		team1Id = ids;
