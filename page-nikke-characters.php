@@ -9,6 +9,7 @@ $category_id = $categories[0]->name;
 
 ?>
 
+
 <div class="double characters-wrapper animated">
 	<div class="news">
 		<div class="character-filters">

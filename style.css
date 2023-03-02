@@ -33,7 +33,7 @@ html{ margin: 0; padding: 0;}
 .separator{
 	content: '';
 	width: 100%;
-	margin-bottom: 20vh;
+	margin-bottom: 10vh;
 	display: block;
 }
 
@@ -49,6 +49,25 @@ a{
 	border-radius: 12px;
 	position: relative;
 	margin: 1rem .5rem;
+}
+
+/* Streamers, latest videos and information on top of every game */
+.container.latest h4{
+	font-weight: 400;
+	color: #23F1C0;
+}
+.streamer{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: .5rem;
+}
+.streamer img{
+	width: 100%;
+	max-width: 50px;
+	border-radius: 50%;
+	margin-right: .5rem;
 }
 
 .double{
@@ -73,7 +92,7 @@ a{
 .button svg{
 	display: block;
 	width: 24px;
-	margin-right: 1rem;
+	margin-right: .5rem;
 }
 
 .game-menu{ 
@@ -210,6 +229,46 @@ a{
 }
 
 #twitch-embed{ margin-bottom: 1rem; }
+.cp-streamweasels{
+	position: relative;
+	top: 0 !important;
+	left: 0 !important;
+	height: auto !important;
+}
+.cp-streamweasels__inner{
+	overflow: visible !important;
+	height: auto !important;
+	border: none !important;
+}
+.cp-streamweasels__twitch-logo { display: none !important; }
+.cp-streamweasels--status .cp-streamweasels__streams{ padding: 0 !important; }
+.cp-streamweasels--status .cp-streamweasels__streams .cp-stream {
+	background-color: transparent !important;
+	background: none !important;
+	border: none !important;
+}
+.cp-stream__inner{
+	border: none !important;
+}
+.cp-stream__status::before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: -10px;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 1000px;
+	animation: blinking 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+@keyframes blinking {  
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+/* .cp-stream__image{
+	display: block !important;
+} */
 
 .character-filters{
 	width: 100%;
@@ -538,6 +597,26 @@ a{
 /* sidebar css */
 .sidebar h3{
 	font-weight: 500;
+}
+
+#map{
+	width: 100%;
+	height: 600px;
+	border-radius: 12px;
+	padding: 1rem;
+	background-color: transparent;
+}
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+	background: #14181D;
+	/* width: 300px; */
+	color: #ffffff;
+	padding: .5rem;
+}
+.custom .leaflet-popup-content-wrapper img {
+	width: 100%;
+	max-width: 100%;
+	margin-top: .5rem;
 }
 
 /* Tablets */

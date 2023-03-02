@@ -16,54 +16,60 @@
 
 // Filter characters
 (function ($) {
-  // character list
-  const characters = [...document.querySelectorAll('.characters.filtered .character')];
-	const input = document.querySelector('input[type="search"]');
+	try {
+		// character list
+		const characters = [...document.querySelectorAll('.characters.filtered .character')];
+		const input = document.querySelector('input[type="search"]');
 
-	input.addEventListener('input', () => {
-		for (let i = 0; i < characters.length; i++) {
-			let characterName = characters[i].dataset.characterName.toLowerCase();
-			let characterValue = characterName.includes(input.value) ? true : false;
+		input.addEventListener('input', () => {
+			for (let i = 0; i < characters.length; i++) {
+				let characterName = characters[i].dataset.characterName.toLowerCase();
+				let characterValue = characterName.includes(input.value) ? true : false;
 
-			if(characterValue) { // character can be searched
-				characters[i].classList.remove('hidden');
-			} else { // character can't be searched
-				characters[i].classList.add('hidden');
+				if (characterValue) { // character can be searched
+					characters[i].classList.remove('hidden');
+				} else { // character can't be searched
+					characters[i].classList.add('hidden');
+				}
 			}
-		}
-	});
+		});
+	} catch (error) {
+	}
 })(jQuery);
 
 // Scroll while dragging things
 // no idea how it works xd https://stackoverflow.com/questions/18809678/make-html5-draggable-items-scroll-the-page
 (function ($) {
-	var stop = true;
-	$(".filtered .character.builder").on("drag", function (e) {
+	try {
+		var stop = true;
+		$(".filtered .character.builder").on("drag", function (e) {
 
-		stop = true;
+			stop = true;
 
-		if (e.originalEvent.clientY < 150) {
-			stop = false;
-			scroll(-1)
-		}
+			if (e.originalEvent.clientY < 150) {
+				stop = false;
+				scroll(-1)
+			}
 
-		if (e.originalEvent.clientY > ($(window).height() - 150)) {
-			stop = false;
-			scroll(1)
-		}
+			if (e.originalEvent.clientY > ($(window).height() - 150)) {
+				stop = false;
+				scroll(1)
+			}
 
-	});
+		});
 
-	$(".filtered .character.builder").on("dragend", function (e) {
-		stop = true;
-	});
+		$(".filtered .character.builder").on("dragend", function (e) {
+			stop = true;
+		});
 
-	var scroll = function (step) {
-		var scrollY = $(window).scrollTop();
-		$(window).scrollTop(scrollY + step);
-		if (!stop) {
-			setTimeout(function () { scroll(step) }, 20);
-		}
+		var scroll = function (step) {
+			var scrollY = $(window).scrollTop();
+			$(window).scrollTop(scrollY + step);
+			if (!stop) {
+				setTimeout(function () { scroll(step) }, 20);
+			}
+		}	
+	} catch (error) {
 	}
 })(jQuery);
 
@@ -247,4 +253,9 @@
 
 		team1Id = ids;
 	}
+})(jQuery);
+
+// TEAM BUILDER FOR NIKKE
+(function ($) {
+
 })(jQuery);

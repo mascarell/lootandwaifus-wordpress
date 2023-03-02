@@ -7,6 +7,8 @@
 		<?php get_template_part('template-parts/buttons/twitch'); ?>
 	</div>
 
+	<?php get_template_part('template-parts/streamers'); ?>
+
 	<div class="container">
 		<h3>Sponsor</h3>
 

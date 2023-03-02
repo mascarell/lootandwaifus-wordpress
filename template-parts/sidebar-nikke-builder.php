@@ -8,12 +8,6 @@
 			<li>People can send you a new url with team suggestions</li>
 			<li>No cookies and no account needed</li>
 		</ul>
-
-		<h3>TODO:</h3>
-
-		<ul>
-			<li>Smart suggestions for team synergies</li>
-		</ul>
 	</div>
 	
 	<div class="container">
@@ -23,6 +17,8 @@
 		<p></p>
 		<?php get_template_part('template-parts/buttons/twitch'); ?>
 	</div>
+
+	<?php get_template_part('template-parts/streamers'); ?>
 
 	<div class="container">
 		<h3>Sponsor</h3>
