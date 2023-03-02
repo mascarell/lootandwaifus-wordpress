@@ -69,11 +69,11 @@ $category_id = $categories[0]->name;
 				};
 
 				// ONLY FOR DEVELOPMENT, click to add marker
-				map.on("click", function(e){
-					let position = xy(e.latlng.lng, e.latlng.lat);
-					let mp = new L.Marker(position, {icon: markerIcon}).addTo(map);
-					console.log(position);
-				});
+				// map.on("click", function(e){
+				// 	let position = xy(e.latlng.lng, e.latlng.lat);
+				// 	let mp = new L.Marker(position, {icon: markerIcon}).addTo(map);
+				// 	console.log(position);
+				// });
 
 				// Popups are different for each relic, which sucks but it is what it is
 				let customPopup = `Relic name #41 <img src="<?php echo get_theme_file_uri('images/xd.png'); ?>" />`;
