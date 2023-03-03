@@ -44,11 +44,13 @@ $category_id = $categories[0]->name;
 				let chapter1 = L.layerGroup().addTo(map);
 				let chapter2 = L.layerGroup();
 				let chapter3 = L.layerGroup();
+				let chapter4 = L.layerGroup();
 
 				// Image backgrounds for each layer & chapter
 				let chapter1Image = L.imageOverlay(`<?php echo get_theme_file_uri('images/maps/map1.webp'); ?>`, bounds).addTo(chapter1);
 				let chapter2Image = L.imageOverlay(`<?php echo get_theme_file_uri('images/maps/map2.webp'); ?>`, bounds).addTo(chapter2);
 				let chapter3Image = L.imageOverlay(`<?php echo get_theme_file_uri('images/maps/map3.webp'); ?>`, bounds).addTo(chapter3);
+				let chapter4Image = L.imageOverlay(`<?php echo get_theme_file_uri('images/maps/map4.webp'); ?>`, bounds).addTo(chapter4);
 
 				// custom marker image options
 				let markerIcon = L.icon({
@@ -84,17 +86,17 @@ $category_id = $categories[0]->name;
 					'className' : 'custom'
 				}
 
-				// Chapter 1 relics
+				// Chapter 1 normal relics
 				L.marker(xy(686, 610.65625), {icon: markerIcon}).addTo(chapter1).bindPopup('Commander Recruitment Announcement – Outline for Round 1 of Recruitment',customOptions);
 				L.marker(xy(1057, 815.65625), {icon: markerIcon}).addTo(chapter1).bindPopup('Commander Recruitment Announcement – Outline for Round 2 of Recruitment',customOptions);
 				L.marker(xy(821, 969.65625), {icon: markerIcon}).addTo(chapter1).bindPopup('Commander Recruitment Announcement – Outline for Round 3 of Recruitment',customOptions);
-				// Chapter 2 relics
+				// Chapter 2 normal relics
 				L.marker(xy(1330, 570.65625), {icon: markerIcon}).addTo(chapter2).bindPopup('Gems x100',customOptions);
 				L.marker(xy(1155, 647.65625), {icon: markerIcon}).addTo(chapter2).bindPopup('A Man’s Memoir – February 7, XX',customOptions);
 				L.marker(xy(1105, 968.65625), {icon: markerIcon}).addTo(chapter2).bindPopup('11:05 AM',customOptions);
 				L.marker(xy(584, 800.65625), {icon: markerIcon}).addTo(chapter2).bindPopup('A Man’s Memoir – December 5, XX',customOptions);
 				L.marker(xy(643, 985.65625), {icon: markerIcon}).addTo(chapter2).bindPopup('A Man’s Memoir- August 21, XX',customOptions);
-				// Chapter 3 relics
+				// Chapter 3 normal relics
 				L.marker(xy(752.25, 426.265625), {icon: markerIcon}).addTo(chapter3).bindPopup('Observatory Blueprint',customOptions);
 				L.marker(xy(1172.75, 305.765625), {icon: markerIcon}).addTo(chapter3).bindPopup('The Godness Fall – After World',customOptions);
 				L.marker(xy(1069.25, 541.765625), {icon: markerIcon}).addTo(chapter3).bindPopup('Police Station Blueprint',customOptions);
@@ -105,11 +107,24 @@ $category_id = $categories[0]->name;
 				L.marker(xy(832.5, 903.53125), {icon: markerIcon}).addTo(chapter3).bindPopup('Toy Store Blueprint',customOptions);
 				L.marker(xy(909.25, 985.265625), {icon: markerIcon}).addTo(chapter3).bindPopup('Risk – Wandering Soul',customOptions);
 				L.marker(xy(379, 906.53125), {icon: markerIcon}).addTo(chapter3).bindPopup('Train Station Blueprint',customOptions);
+				// Chapter 4 normal relics
+				L.marker(xy(791, 173.53125), {icon: markerIcon}).addTo(chapter4).bindPopup('Chat Log_Early Adopter.txt – 08:05 PM',customOptions);
+				L.marker(xy(1486, 496.03125), {icon: markerIcon}).addTo(chapter4).bindPopup('500x Credits',customOptions);
+				L.marker(xy(1228, 627.03125), {icon: markerIcon}).addTo(chapter4).bindPopup('Workshop Blueprint',customOptions);
+				L.marker(xy(1165.5, 829.03125), {icon: markerIcon}).addTo(chapter4).bindPopup('Chat Log_Early Adopter.txt – 12:01 AM',customOptions);
+				L.marker(xy(1128.5, 940.03125), {icon: markerIcon}).addTo(chapter4).bindPopup('Chat Log_Early Adopter.txt – 09:55 AM',customOptions);
+				L.marker(xy(996, 946.53125), {icon: markerIcon}).addTo(chapter4).bindPopup('Good Day Commander- After World',customOptions);
+				L.marker(xy(945, 915.03125), {icon: markerIcon}).addTo(chapter4).bindPopup('Generator Blueprint',customOptions);
+				L.marker(xy(1007.5, 780.03125), {icon: markerIcon}).addTo(chapter4).bindPopup('Floral Tribute – Wandering Soul',customOptions);
+				L.marker(xy(694.53125, 915), {icon: markerIcon}).addTo(chapter4).bindPopup('Armory Blueprint',customOptions);
+				L.marker(xy(801.03125, 627.5), {icon: markerIcon}).addTo(chapter4).bindPopup('Incoming rapture – Wandering Soul',customOptions);
+				L.marker(xy(625.5, 530.53125), {icon: markerIcon}).addTo(chapter4).bindPopup('Chat Log_Early Adopter.txt – 05:37 PM',customOptions);
 
 				L.control.layers({
 					"Chapter 1": chapter1,
 					"Chapter 2": chapter2,
 					"Chapter 3": chapter3,
+					"Chapter 4": chapter4,
 				}).addTo(map);
 				
 				map.setView( [500, 1000], 0);
