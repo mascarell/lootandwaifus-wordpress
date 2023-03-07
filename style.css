@@ -86,14 +86,18 @@ a{
 	color: white;
 	transition: .25s linear;
 }
-.button:hover{
-	background-color: #0D1116;
-}
+.button:hover{ background-color: #0D1116; }
 .button svg{
+	transition: .25s linear;
 	display: block;
 	width: 24px;
 	margin-right: .5rem;
 }
+.button path{ transition: .25s linear; }
+.game-menu .button{ background: none; }
+.game-menu .button:hover{ color: #23F1C0; }
+.game-menu .button:hover svg{ color: #23F1C0; }
+.game-menu .button:hover path{ fill: #23F1C0; }
 
 .game-menu{ 
 	margin-top: 1rem; 
