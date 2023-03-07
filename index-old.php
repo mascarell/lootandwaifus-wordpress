@@ -25,7 +25,7 @@ get_header();
 	</a>
 </div>
 
-<!-- <div class="double">
+<div class="double">
 	<div class="news">
 		<div class="posts animated">
 			<?php
@@ -51,7 +51,7 @@ get_header();
 	</div>
 
 	<?php get_template_part('template-parts/sidebar'); ?>
-</div> -->
+</div>
 
 <?php
 

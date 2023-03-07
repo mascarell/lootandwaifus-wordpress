@@ -41,6 +41,7 @@ $category_id = $categories[0]->name;
 
 		<div class="character-filters">
 			<input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
+			<!-- <a class="select-all">Select all</a> -->
 		</div>
 
 		<div class="characters filtered">

@@ -287,12 +287,24 @@ a{
 	padding: .5rem 1rem;
 	font-size: 1.1rem;
 	color: white;
+	margin-right: .5rem;
 	transition: .15s linear;
 }
 .character-filters #search:focus{
 	outline: none;
 	max-width: 300px;
 	background-color: #14181D;
+}
+.select-all{
+	padding: .5rem 1rem;
+	font-size: .9rem;
+	font-weight: 300;
+	color: white;
+	transition: .15s linear;
+}
+.select-all:hover{
+	cursor: pointer;
+	color: #23F1C0;
 }
 .characters-wrapper{
 	margin-top: 10vh;

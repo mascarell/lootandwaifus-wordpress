@@ -11,7 +11,7 @@
 	</div>
 	
 	<div class="container">
-		<p>If you want to stay up to date with all the content we publish the best way is to follow me on Twitter.</p>
+		<p>If you want to stay up to date with all the content we publish the best way is to follow us on Twitter.</p>
 
 		<?php get_template_part('template-parts/buttons/twitter'); ?>
 		<p></p>
