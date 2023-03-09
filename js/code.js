@@ -257,39 +257,3 @@
 	} catch (error) {
 	}
 })(jQuery);
-
-// gantt chart
-(function ($) {
-	try {
-		google.charts.load('current', { 'packages': ['gantt'] });
-		google.charts.setOnLoadCallback(drawChart);
-
-		function drawChart() {
-			let data = new google.visualization.DataTable();
-				data.addColumn('string', 'Task ID');
-				data.addColumn('string', 'Task Name');
-				data.addColumn('string', 'Resource');
-				data.addColumn('date', 'Start Date');
-				data.addColumn('date', 'End Date');
-				data.addColumn('number', 'Duration');
-				data.addColumn('number', 'Percent Complete');
-				data.addColumn('string', 'Dependencies');
-
-			data.addRows([
-				['Basketball', 'Basketball Season', 'sports', new Date(2014, 9, 28), new Date(2015, 5, 20), null, 86, null],
-				['Hockey', 'Hockey Season', 'sports', new Date(2014, 9, 8), new Date(2015, 5, 21), null, 89, null],
-			]);
-
-			let options = {
-				gantt: {
-					trackHeight: 30
-				}
-			};
-
-			let chart = new google.visualization.Gantt(document.getElementById('chart_div'));
-
-			chart.draw(data, options);
-		}
-	} catch (error) {
-	}
-})(jQuery);

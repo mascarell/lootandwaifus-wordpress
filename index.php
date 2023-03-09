@@ -53,10 +53,6 @@ get_header();
 	<?php get_template_part('template-parts/sidebar'); ?>
 </div>
 
-<div class="container">
-	<div id="chart_div"></div>
-</div>
-
 <?php
 
 get_footer();

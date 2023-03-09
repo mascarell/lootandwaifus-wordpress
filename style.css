@@ -472,13 +472,81 @@ a{
 	vertical-align: top;
 }
 
-.guides-wrapper{
-	margin-top: 10vh;
+/* EVENTS */
+.events{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.events .boss{ 
+	flex: 0 0 350px; 
+	min-height: 220px;
+	overflow: hidden;
+}
+.events .boss span{ 
+	width: 100%;
+	height: calc(100% - 60px);
+	position: absolute;
+	left: 0;
+	top: 60px;
+	z-index: 1;
+	background-size: cover;
+	background-position: center;
+}
+.events .boss span.train { background-image: url(images/bosses/train.webp); }
+.events .boss span.modernia { background-image: url(images/bosses/modernia.webp); }
+.events .boss span.gravedigger { background-image: url(images/bosses/gravedigger.webp); }
+.events .boss span.chatterbox { background-image: url(images/bosses/chatterbox.webp); }
+.events .boss span.blacksmith { background-image: url(images/bosses/blacksmith.webp); }
+.events .boss h3, .recent h3{
+	font-weight: 400;
+	margin-top: 0;
+	z-index: 2;
 	position: relative;
+	flex: 0 0 100%;
 }
-.guides-wrapper .news{
-	transform: translateY(-35px);
+.recent{ 
+	flex: 2; 
+	margin-bottom: 0; 
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	min-height: 220px;
 }
+.recent-news{
+	text-decoration: none;
+	flex: 0 0 49%;
+	color: white;
+	font-size: .9rem;
+	margin: 0;
+	padding: 0;
+}
+.recent-news p{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: initial;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.recent-news span{
+	margin-right: .3rem;
+	font-size: .75rem;
+	text-transform: uppercase;
+	color: #23F1C0;
+	opacity: .5;
+}
+
+/* hr css */
+hr{
+	height: 2px;
+	background-color: #0D1116;
+	border: none;
+}
+
 .news .guides-title{
 	font-weight: 400;
 	padding: 0;
@@ -488,7 +556,7 @@ a{
 	max-height: 35px;
 }
 .news .guides-title:not(:first-child){
-	margin-top: 10vh;
+	margin-top: 5vh;
 }
 .news .guides{
 	display: grid;
