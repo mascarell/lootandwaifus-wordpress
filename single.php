@@ -18,7 +18,7 @@ get_header();
 				<?php } else if ( is_singular( 'characters' ) ) { ?>
 					<h1><?php the_title(); ?></h1>
 				<?php } else { ?>
-					<p class="date"><?php echo the_date(); ?> </p>
+					<p class="date"><?php echo the_date(); ?></p>
 					<h1><?php the_title(); ?></h1>
 					<img class="lozad thumbnail" data-src="<?php echo the_post_thumbnail_url(); ?>">
 				<?php } ?>

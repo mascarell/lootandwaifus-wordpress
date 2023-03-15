@@ -51,6 +51,30 @@ a{
 	margin: 1rem .5rem;
 }
 
+/* Author box */
+.author h4{
+	font-weight: 400;
+	color: #23F1C0;
+	margin: 0;
+}
+.author p{
+	font-size: .9rem;
+	margin: .5rem 0;
+}
+.author svg{
+	width: 22px;
+	margin-right: .5rem;
+}
+.author em{ color: #ebed63; font-style: normal; font-weight: 500; }
+.author strong{ color: #23F1C0; font-weight: 500; }
+.author a{
+	color: inherit;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 /* Streamers, latest videos and information on top of every game */
 .container.latest h4{
 	font-weight: 400;
@@ -98,6 +122,14 @@ a{
 .game-menu .button:hover{ color: #23F1C0; }
 .game-menu .button:hover svg{ color: #23F1C0; }
 .game-menu .button:hover path{ fill: #23F1C0; }
+.game-menu .button.support:hover svg{ color: #fff; }
+.game-menu .button.support:hover path{ fill: #fff; }
+.button.support{
+	background: #b09205;
+}
+.button.support:hover{
+	color: white;
+}
 
 .game-menu{ 
 	margin-top: 1rem; 
@@ -545,6 +577,70 @@ hr{
 	height: 2px;
 	background-color: #0D1116;
 	border: none;
+}
+
+/* tooltips plugin */
+.tooltipsincontent{
+	border-bottom: none !important;
+	color: #ffaf47 !important;
+	font-weight: 500;
+	position: relative;
+	margin-left: 18px;
+}
+.tooltipsincontent::before{
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: -16px;
+	width: 12px;
+	height: 12px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('images/tooltip.png');
+}
+.tooltipsall:hover, .tooltipsincontent:hover{ cursor: pointer; }
+.qtip{
+	max-width: 400px;
+	background-color: rgba(13, 17, 22, .95);
+	color: inherit;
+	border: 1px solid #fff;
+	padding: .5rem;
+	border-radius: 4px;
+}
+.qtip-content{
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+}
+.qtip-content hr{
+	background-color: #fff;
+	height: 1px;
+}
+.qtip-content ul, .qtip-content figure{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.qtip-content br{
+	content: "";
+	margin: 1em;
+	display: block;
+	font-size: 24%;
+}
+.qtip-content img{
+	max-width: 64px;
+	margin: 0;
+	padding: 0;
+}
+.qtip-content strong{
+	font-weight: 500;
+	color: #23F1C0;
+}
+.qtip-content em{
+	font-weight: 500;
+	color: #ebed63;
+	font-style: normal;
 }
 
 .news .guides-title{
