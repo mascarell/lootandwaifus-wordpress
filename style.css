@@ -780,7 +780,7 @@ hr{
 	margin-bottom: 0 !important;
 }
 .uagb-tab a{
-	background-color: none !important;
+	background-color: transparent !important;
 	color: white !important;
 }
 .uagb-tab.uagb-tabs__active a{
