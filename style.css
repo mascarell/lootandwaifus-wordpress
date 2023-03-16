@@ -131,11 +131,11 @@ a{
 	color: white;
 }
 
-.game-menu{ 
-	margin-top: 1rem; 
+.game-menu{
+	margin-top: 1rem;
 	margin-left: .5rem;
 }
-.game-menu .button{ 
+.game-menu .button{
 	margin-bottom: .5rem;
 }
 .game-logo{
@@ -298,7 +298,7 @@ a{
 	border-radius: 1000px;
 	animation: blinking 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
 }
-@keyframes blinking {  
+@keyframes blinking {
   from { opacity: 1; }
   to { opacity: 0; }
 }
@@ -394,31 +394,31 @@ a{
 .news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(255, 179, 72, 0.8) 0%, rgba(255, 244, 87, 0.8) 100%); }
 .news .characters .character .bg.sr { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
 .news .characters .character .bg.r { background-image: linear-gradient(to top, rgba(0, 144, 255, .8) 0%, rgba(154, 203, 240, 0.8) 100%); }
-.news .characters .character .margin { 
-	align-items: end; 
-	width: 100%; 
+.news .characters .character .margin {
+	align-items: end;
+	width: 100%;
 	border: none;
 	display: flex;
 	flex-flow: row wrap;
 }
-.news .characters .character a.margin { 
+.news .characters .character a.margin {
 	background-color: transparent;
 	padding: 0;
 }
-.news .characters.characters-embed{ 
+.news .characters.characters-embed{
 	margin-bottom: 1.5rem;
 }
-.news .characters.characters-embed .character .margin .content { 
+.news .characters.characters-embed .character .margin .content {
 	background-color: #272A2F;
 }
-.news .characters .character .margin .content { 
+.news .characters .character .margin .content {
 	width: 100%;
-	align-items: end; 
+	align-items: end;
 	text-align: center;
 	border-radius: 0;
 	background-color: #14181D;
 }
-.news .characters .character .margin .content h2{ 
+.news .characters .character .margin .content h2{
 	font-weight: 400;
 	font-size: .85rem;
 	overflow: hidden;
@@ -511,12 +511,12 @@ a{
 	align-items: flex-start;
 	justify-content: space-between;
 }
-.events .boss{ 
-	flex: 0 0 350px; 
+.events .boss{
+	flex: 0 0 350px;
 	min-height: 220px;
 	overflow: hidden;
 }
-.events .boss span{ 
+.events .boss span{
 	width: 100%;
 	height: calc(100% - 60px);
 	position: absolute;
@@ -538,9 +538,9 @@ a{
 	position: relative;
 	flex: 0 0 100%;
 }
-.recent{ 
-	flex: 2; 
-	margin-bottom: 0; 
+.recent{
+	flex: 2;
+	margin-bottom: 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -774,6 +774,20 @@ hr{
 	color: white;
 }
 
+/* tabs custom css for block */
+.uagb-tab {
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
+}
+.uagb-tab a{
+	background-color: none !important;
+	color: white !important;
+}
+.uagb-tab.uagb-tabs__active a{
+	color: #23F1C0 !important;
+	background-color: #202442 !important;
+}
+
 /* sidebar css */
 .sidebar h3{
 	font-weight: 500;
@@ -804,7 +818,7 @@ hr{
 	.double {
 		flex-flow: row nowrap;
 	}
-	
+
 	.news{
 		flex: auto;
 	}
