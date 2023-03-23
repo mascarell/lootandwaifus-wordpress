@@ -26,24 +26,10 @@ get_header();
 				<div class="article-content">
 					<?php the_content(); ?> <!-- Page Content -->
 				</div>
-
-				<?php if ( is_singular( 'post' ) ) { ?>
-					<hr>
-					<div class="recent">
-						<h3>Recent news</h3>
-						<?php
-							$query = new WP_Query( array(
-									'post_type'      => 'post',
-									'posts_per_page' => 12,
-							) );
-							if ( $query->have_posts() ) :
-									while ( $query->have_posts() ) : $query->the_post();
-										get_template_part('template-parts/recent-news');
-									endwhile; wp_reset_postdata();
-							endif; 
-						?>
-					</div>
-				<?php }  ?>
+					
+				<div class="article-comments">
+					<?php comments_template(); ?>
+				</div>
 
 			<?php
 				endwhile; //resetting the page loop
