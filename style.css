@@ -732,6 +732,27 @@ hr{
 .news .post.guide:hover .margin .content h2{
 	color: #23F1C0;
 }
+.guide.covering .updated{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 70px;
+	text-align: center;
+	height: 22px;
+	background-color: #272A2F;
+	color: white;
+	font-size: .8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	z-index: 1;
+	border-radius: 4px;
+	border: 2px solid #272A2F;
+	pointer-events: none;
+	transition: .25s linear;
+}
+.guide.covering:hover .updated{
+	transform: translateY(-5px);
+}
 
 .pagination{
 	display: flex;
