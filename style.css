@@ -98,6 +98,10 @@ a{
 	display: flex;
 	flex-flow: row wrap;
 }
+.double .news{
+	width: 100%;
+	max-width: 100%;
+}
 
 .button{
 	display: inline-flex;
@@ -656,7 +660,7 @@ hr{
 }
 .news .guides{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 	gap: 1rem;
 	margin: .5rem;
 	margin-bottom: 0;
@@ -985,6 +989,9 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	}
 	.news .post .margin {
 		flex-flow: row nowrap;
+	}
+	.news .guides {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	}
 	.sidebar{
 		flex: 0 0 400px;
