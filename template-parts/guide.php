@@ -1,7 +1,7 @@
 <div class="post guide covering container">
 		<?php
 	$last_modified = strtotime(get_the_modified_date('Y-m-d')); // get the last modified date of the post
-	$one_week_ago = strtotime('-1 week'); // get the timestamp of one week ago
+	$one_week_ago = strtotime('-4 days'); // get the timestamp of 4 days ago
 
 	if ($last_modified > $one_week_ago) {
 		?> <span class="updated">updated</span> <?php
