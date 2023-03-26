@@ -3,7 +3,11 @@
 // Include styles
 function sefhi_styles()
 {
-	wp_enqueue_style('style', get_stylesheet_uri());
+	// get version number from CSS file so we can easily cache and update it
+	$theme = wp_get_theme();
+	$version = $theme->get( 'Version' );
+	
+	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $version );
 	wp_enqueue_script( 'code', get_template_directory_uri() . '/js/code.js', array('jquery'), '1.0', true );
 }
 add_action('wp_enqueue_scripts', 'sefhi_styles');
@@ -71,17 +75,6 @@ function new_excerpt_more( $more )
 	return '...';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
-
-// Remove WP Version From Styles	
-add_filter( 'style_loader_src', 'sdt_remove_ver_css_js', 9999 );
-// Remove WP Version From Scripts
-add_filter( 'script_loader_src', 'sdt_remove_ver_css_js', 9999 );
-// Function to remove version numbers
-function sdt_remove_ver_css_js( $src ) {
-	if ( strpos( $src, 'ver=' ) )
-		$src = remove_query_arg( 'ver', $src );
-	return $src;
-}
 
 function page_tagcat_settings() {
 // Add tag metabox to page

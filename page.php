@@ -22,6 +22,10 @@ get_header();
 				endwhile; //resetting the page loop
 				wp_reset_query(); //resetting the page query
 			?>
+
+			<?php if ( comments_open() ) { 
+				?> <div class="article-comments"> <?php comments_template(); ?> </div> <?php
+			} ?>
 		</div>
 	</div>
 </div>

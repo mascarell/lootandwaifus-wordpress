@@ -14,6 +14,99 @@
   observer.observe();
 })(jQuery);
 
+// Event chart
+(function ($) {
+	try {
+		$(document).ready(function () {
+			const chartContainer = document.querySelector('.chart-events');
+			const chartContent = document.querySelector('.chart-container');
+
+			// scroll on the chart container
+			chartContainer.addEventListener('wheel', (e) => {
+				e.preventDefault(); // prevent the default mousewheel behavior
+				chartContainer.scrollLeft += e.deltaY; // scroll horizontally based on the deltaY value
+			});
+			
+			// Get the current date
+			let today = new Date();
+			// Get the date from 20 days ago and 20 days after for the chart
+			let chartStartDate = new Date(today.getTime() - (20 * 24 * 60 * 60 * 1000));
+			let chartStartDateReference = new Date(today.getTime() - (20 * 24 * 60 * 60 * 1000)); // date start just as reference
+			let chartEndDate = new Date(today.getTime() + (20 * 24 * 60 * 60 * 1000));
+
+			// Create the chart header with dates
+			let $header = $('<div class="chart-header"></div>');
+			let currentDate = chartStartDate;
+			while (currentDate <= chartEndDate) {
+				// Abbreviated day of the week so we can display it above the day
+				let weekday = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'][new Date(currentDate).getDay()]
+				
+				if (new Date(currentDate).setHours(0, 0, 0, 0) == new Date(today).setHours(0, 0, 0, 0)) {
+					$header.append(`
+						<div class="chart-header-item current">
+						<span>${weekday}</span>
+						${currentDate.getDate()}
+						</div>
+					`);
+					currentDate.setDate(currentDate.getDate() + 1);
+				} else {
+					$header.append(`
+						<div class="chart-header-item">
+						<span>${weekday}</span>
+						${currentDate.getDate()}
+						</div>
+					`);
+					currentDate.setDate(currentDate.getDate() + 1);
+				}
+			}
+			$('.chart-dates').append($header);
+
+			// Position the chart bars based on start and end dates
+			$('.chart-bar').each(function () {
+				let startDate = new Date($(this).attr('data-start-date'));
+				let endDate = new Date($(this).attr('data-end-date'));
+
+				// to avoid events going off the chart on the right side, we check when they end
+				// if it's later than the end of the chart date, we use that one instead
+				let finalEndDate = endDate > chartEndDate ? chartEndDate : endDate
+
+				// Get the width of each date header element
+				let headerItems = document.querySelectorAll(".chart-header-item");
+				let headerItemWidthPx = headerItems[0].offsetWidth;
+				let eventWidth = Math.round((finalEndDate.getTime() - startDate.getTime()) / (24 * 60 * 60 * 1000) * headerItemWidthPx);
+
+				if (startDate < chartStartDateReference) { // event is negative, all the way to the left
+					const diffTime = Math.abs(chartStartDateReference - startDate); // get the absolute difference in milliseconds
+					const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); // convert the difference to days and round up
+	
+					$(this).css({
+						'width': eventWidth,
+						'margin-left': -(diffDays * headerItemWidthPx) + headerItemWidthPx 
+					});
+				} else { // event is fully in the chart
+					const diffTime = Math.abs(chartStartDateReference - startDate); // get the absolute difference in milliseconds
+					const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); // convert the difference to days and round up
+	
+					$(this).css({
+						'width': eventWidth,
+						'margin-left': (diffDays * headerItemWidthPx)
+					});
+				}
+			});
+		});
+
+		window.onload = function () {
+			document.querySelector('.chart-events').scrollTo({
+				top: 0,
+				left: 425,
+				behavior: "smooth",
+			});
+		}
+	} catch (error) {
+		console.error(error)
+	}
+})(jQuery);
+
 // Filter characters
 (function ($) {
 	try {

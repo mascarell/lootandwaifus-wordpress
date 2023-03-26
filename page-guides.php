@@ -9,6 +9,37 @@ $category_id = $categories[0]->name;
 
 ?>
 
+<!-- Gantt chart with current events -->
+<div class="container animated chart-parent">
+	<div class="chart-events">
+		<!-- Date header will be dynamically created using JavaScript -->
+		<div class="chart-dates"></div>
+	
+		<div class="chart-container">
+			<!-- Additional chart bars can be added here -->
+			<?php
+				$eventQuery = new WP_Query( array(
+						'meta_key'       => 'end_date',
+						'meta_value'     => date('Y-m-d', strtotime('-22 days')),
+						'meta_compare'   => '>=',
+						'post_type'      => 'events',
+						'posts_per_page' => -1,
+						'category_name'  => $category_id
+				) );
+				if ( $eventQuery->have_posts() ) :
+						while ( $eventQuery->have_posts() ) : $eventQuery->the_post();
+							get_template_part('template-parts/active-events');
+						endwhile; wp_reset_postdata();
+				endif; 
+			?>
+			<!-- <div class="chart-bar" data-start-date="2023-03-18" data-end-date="2023-03-26">Title of the event</div>
+			<div class="chart-bar" data-start-date="2023-03-25" data-end-date="2023-04-28"></div>
+			<div class="chart-bar" data-start-date="2023-03-02" data-end-date="2023-03-18"></div> -->
+		</div>
+	</div>
+</div>
+
+<!-- Current special interception and latest news -->
 <div class="events animated">
 	<div class="boss container">
 		<?php
@@ -73,7 +104,7 @@ $category_id = $categories[0]->name;
 	</div>
 </div>
 
-
+<!-- all the guides -->
 <div class="double guides-wrapper animated">
 	<div class="news">
 		<?php

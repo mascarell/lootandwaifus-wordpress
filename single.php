@@ -27,9 +27,9 @@ get_header();
 					<?php the_content(); ?> <!-- Page Content -->
 				</div>
 					
-				<div class="article-comments">
-					<?php comments_template(); ?>
-				</div>
+				<?php if ( comments_open() ) { 
+					?> <div class="article-comments"> <?php comments_template(); ?> </div> <?php
+				} ?>
 
 			<?php
 				endwhile; //resetting the page loop

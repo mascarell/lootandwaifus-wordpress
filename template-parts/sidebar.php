@@ -20,11 +20,9 @@
 		<?php get_template_part('template-parts/buttons/discord'); ?>
 	</div>
 
-	<?php get_template_part('template-parts/streamers'); ?>
-
-	<!-- <div class="container">
+	<div class="container">
 		<h3>Sponsor</h3>
 
 		<p>If you want to sponsor the website or our social media platforms, you can send an email to <a class="email" href="mailto:contact@lootandwaifus.com">contact@lootandwaifus.com</a>.</p>
-	</div> -->
+	</div>
 </div>

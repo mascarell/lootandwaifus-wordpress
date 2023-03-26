@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.0.0
+Version: 1.0.5
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&family=Unbounded:wght@500&display=swap');
@@ -79,19 +79,6 @@ a{
 .container.latest h4{
 	font-weight: 400;
 	color: #23F1C0;
-}
-.streamer{
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: flex-start;
-	margin-bottom: .5rem;
-}
-.streamer img{
-	width: 100%;
-	max-width: 50px;
-	border-radius: 50%;
-	margin-right: .5rem;
 }
 
 .double{
@@ -977,6 +964,95 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	margin-right: 0.5rem;
 	transition: .15s linear;
 }
+
+/* Gantt chart */
+.chart-container { width: 100%; }
+.chart-parent { margin-bottom: 0; }
+.chart-events {
+	position: relative;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	/* width: 100%; */
+	width: 2050px;
+	max-width: 100%;
+	padding-bottom: 2rem;
+}
+.chart-header {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	font-size: 14px;
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+.chart-header-item {
+	text-align: center;
+	min-width: 50px;
+	position: relative;
+	display: flex;
+	flex-flow: column wrap;
+}
+.chart-header-item span {
+	color: white;
+	opacity: .4;
+	font-weight: 400;
+}
+.chart-header-item::before {
+	content: '';
+	width: 1px;
+	height: 200px;
+	background-color: rgba(255, 255, 255, .1);
+	position: absolute;
+	left: 24px;
+	top: 45px;
+}
+.chart-header-item.current {
+	color: #23F1C0;
+	font-weight: 500;
+}
+.chart-header-item.current::before {
+	background-color: rgba(255, 255, 255, .1);
+	background-color: #23F1C0;
+}
+.chart-bar {
+	position: relative;
+	height: 50px;
+	background-color: #ebed63;
+	border-radius: 50px;
+	z-index: 1;
+	color: #0D1116;
+	text-align: right;
+	padding-right: 15px;
+	transform: translateX(+25px);
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-position: left top;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.chart-bar .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 100%;
+	z-index: 1;
+}
+.chart-bar p{
+	position: relative;
+	z-index: 2;
+	font-weight: 500;
+}
+.chart-events::-webkit-scrollbar { height: 8px; }
+.chart-events::-webkit-scrollbar-track { background-color: transparent; }
+.chart-events::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 10px;
+}
+.chart-events::-webkit-scrollbar-thumb:hover { background-color: #555; }
 
 /* Tablets */
 @media only screen and (min-width : 48em){
