@@ -32,9 +32,6 @@ $category_id = $categories[0]->name;
 						endwhile; wp_reset_postdata();
 				endif; 
 			?>
-			<!-- <div class="chart-bar" data-start-date="2023-03-18" data-end-date="2023-03-26">Title of the event</div>
-			<div class="chart-bar" data-start-date="2023-03-25" data-end-date="2023-04-28"></div>
-			<div class="chart-bar" data-start-date="2023-03-02" data-end-date="2023-03-18"></div> -->
 		</div>
 	</div>
 </div>
