@@ -55,7 +55,7 @@ $category_id = $categories[0]->name;
 			$currentHour = date('H');
 	
 			// Determine which text to display based on time and day of year
-			if ($currentHour >= 21) {
+			if ($currentHour >= 22) {
 					// If it's past 9pm, show the text for the next day
 					$dayOfYear = date('z') + 2; // Add 2 to skip the current day and go to the next day
 			} else {
