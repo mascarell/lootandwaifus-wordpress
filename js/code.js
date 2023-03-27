@@ -18,8 +18,16 @@
 (function ($) {
 	try {
 		$(document).ready(function () {
+			// Basic variables to get all the containers from the events
 			const chartContainer = document.querySelector('.chart-events');
 			const chartContent = document.querySelector('.chart-container');
+			const chartParent = document.querySelector('.chart-parent');
+			const showAllEventsButton = document.querySelector('.show-more');
+
+			// Show all events button
+			showAllEventsButton.addEventListener('click', () => {
+				chartParent.classList.add('open');
+			});
 
 			// scroll on the chart container
 			chartContainer.addEventListener('wheel', (e) => {

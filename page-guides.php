@@ -11,6 +11,7 @@ $category_id = $categories[0]->name;
 
 <!-- Gantt chart with current events -->
 <div class="container animated chart-parent">
+	<div class="show-more">show all events</div>
 	<div class="chart-events">
 		<!-- Date header will be dynamically created using JavaScript -->
 		<div class="chart-dates"></div>
