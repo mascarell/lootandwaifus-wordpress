@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.0.9
+Version: 1.1.0
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&family=Unbounded:wght@500&display=swap');
@@ -109,12 +109,6 @@ a{
 	margin-right: .5rem;
 }
 .button path{ transition: .25s linear; }
-.game-menu .button{ background: none; }
-.game-menu .button:hover{ color: #23F1C0; }
-.game-menu .button:hover svg{ color: #23F1C0; }
-.game-menu .button:hover path{ fill: #23F1C0; }
-.game-menu .button.support:hover svg{ color: #fff; }
-.game-menu .button.support:hover path{ fill: #fff; }
 .button.support{
 	background: #b09205;
 }
@@ -122,16 +116,154 @@ a{
 	color: white;
 }
 
-.game-menu{
-	margin-top: 1rem;
-	margin-left: .5rem;
+/* menus */
+.top-menu{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 1;
+	background-color: #14181D;
+	border-bottom: 2px solid #000;
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-.game-menu .button{
-	margin-bottom: .5rem;
+.top-menu-contaier{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	max-width: 1280px;
+}
+.top-menu .loot-logo{
+	line-height: 25px;
+	height: 25px;
+}
+.top-menu ul{
+	margin: 0;
+	padding: 0;
+	margin-left: 4rem;
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	position: relative;
+}
+.top-menu ul li{
+	position: relative;
+}
+.top-menu ul a{
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: .5rem 1.5rem;
+	line-height: 40px;
+	display: block;
+	position: relative;
+	font-size: .9rem;
+}
+.top-menu ul a:hover{
+	background-color: #0D1116;
+}
+.top-menu ul .sub-menu{
+	display: none;
+	flex-flow: column wrap;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #14181D;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+}
+.top-menu ul .sub-menu li a{
+	font-size: .8rem;
+	text-transform: capitalize;
+	padding: 1rem .5rem;
+	line-height: 20px;
+}
+.top-menu ul li:hover .sub-menu{
+	display: flex;
+	border: 2px solid #000;
 }
 .game-logo{
 	max-width: 154px;
 	margin-left: 1rem;
+}
+.game-menu{ display: none; }
+
+/* burger menu */
+.b-menu {
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	padding-left: 15.5px;
+	padding-top: 11px;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 60px;
+	z-index: 12;
+}
+.b-bun--top {
+	height: 2px;
+	top: 0;
+	width: 25px;
+}
+.b-bun--mid {
+	height: 2px;
+	top: 6px;
+	width: 25px;
+}
+.b-bun--bottom {
+	height: 2px;
+	top: 12px;
+	width: 25px;
+}
+.b-bun {
+	background: #fff;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+/* overlay menu */
+.overlay{
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #0D1116;
+	border-bottom: 2px solid #000;
+	padding: 1rem;
+	transition: .25s linear;
+}
+.overlay.open{ 
+	top: 42px;
+}
+.overlay ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.overlay ul li a{
+	color: white;
+	font-size: 1.2rem;
+}
+.overlay ul li{
+	margin-bottom: 1rem;
+}
+.overlay ul li .sub-menu{
+	list-style-type: circle;
+	margin-top: 1rem;
+	margin-left: 2rem;
 }
 
 .games{
@@ -339,7 +471,7 @@ a{
 }
 .characters-wrapper .news{
 	position: relative;
-	transform: translateY(-70px);
+	/* transform: translateY(-70px); */
 	display: block;
 	width: 100%;
 	max-width: 100%;
@@ -1085,6 +1217,11 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 
 /* Tablets */
 @media only screen and (min-width : 48em){
+	.top-menu-contaier { justify-content: flex-start; }
+	.game-menu{ display: block; }
+	.b-menu{ display: none; }
+	.overlay{ display: none; }
+
 	.double {
 		flex-flow: row nowrap;
 	}
@@ -1104,10 +1241,6 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 
 	.events .boss {
 		flex: 0 0 350px;
-	}
-
-	.game-menu .button {
-		margin-bottom: 0;
 	}
 
 	.recent-news {

@@ -12,6 +12,11 @@
   // Lozad
   const observer = lozad(); // lazy loads elements with default selector as '.lozad'
   observer.observe();
+
+	// Open and close menu
+	document.querySelector('.b-menu').addEventListener('click', () => {
+		document.querySelector('.overlay').classList.toggle('open');
+	});
 })(jQuery);
 
 // Event chart

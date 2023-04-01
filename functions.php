@@ -52,7 +52,8 @@ function crown_setup()
 
 	// Navigation menus
 	register_nav_menus(array(
-		'primary' => __('Main menu'),
+		'main' => __('No game menu'),
+		'nikke' => __('Nikke menu'),
 		'footer' => __('Footer menu')
 	));
 
