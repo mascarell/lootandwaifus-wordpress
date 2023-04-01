@@ -39,7 +39,7 @@
 	</div>
 </div>
 
-<div class="overlay">
+<div class="overlay-menu">
 	<?php 
 		if($category_id == 'nikke') { 
 			$args = array( 'theme_location' => 'nikke' );
