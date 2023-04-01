@@ -15,7 +15,7 @@
 
 	// Open and close menu
 	document.querySelector('.b-menu').addEventListener('click', () => {
-		document.querySelector('.overlay').classList.toggle('open');
+		document.querySelector('.overlay-menu').classList.toggle('open');
 	});
 })(jQuery);
 
