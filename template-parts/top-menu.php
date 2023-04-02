@@ -23,8 +23,10 @@
 				if($category_id == 'nikke') { 
 					$args = array( 'theme_location' => 'nikke' );
 					wp_nav_menu( $args );
-				} else if($category_id == 'limbus-company') { 
-				} else { 
+				} else if($category_id == 'higan') { 
+					$args = array( 'theme_location' => 'higan' );
+					wp_nav_menu( $args );
+				} else {  
 					$args = array( 'theme_location' => 'main' );
 					wp_nav_menu( $args );
 				} 
@@ -44,7 +46,9 @@
 		if($category_id == 'nikke') { 
 			$args = array( 'theme_location' => 'nikke' );
 			wp_nav_menu( $args );
-		} else if($category_id == 'limbus-company') { 
+		} else if($category_id == 'higan') { 
+			$args = array( 'theme_location' => 'higan' );
+			wp_nav_menu( $args );
 		} else { 
 			$args = array( 'theme_location' => 'main' );
 			wp_nav_menu( $args );

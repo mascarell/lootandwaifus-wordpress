@@ -54,6 +54,7 @@ function crown_setup()
 	register_nav_menus(array(
 		'main' => __('No game menu'),
 		'nikke' => __('Nikke menu'),
+		'higan' => __('Higan menu'),
 		'footer' => __('Footer menu')
 	));
 

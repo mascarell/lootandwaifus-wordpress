@@ -37,70 +37,78 @@ $category_id = $categories[0]->name;
 	</div>
 </div>
 
-<!-- Current special interception and latest news -->
-<div class="events animated">
-	<div class="boss container">
-		<?php
-			// Set the timezone to Spain, bosses reset at 9pm for me
-			date_default_timezone_set('Europe/Madrid');
-			// Array of 5 texts
-			$texts = array(
-					'Chatterbox',
-					'Modernia',
-					'Alteisen MK.VI',
-					'Grave Digger',
-					'Blacksmith'
-			);
-	
-			// Get the current time
-			$currentHour = date('H');
-	
-			// Determine which text to display based on time and day of year
-			if ($currentHour >= 22) {
-					// If it's past 9pm, show the text for the next day
-					$dayOfYear = date('z') + 2; // Add 2 to skip the current day and go to the next day
-			} else {
-					// Otherwise, show the text for the current day
-					$dayOfYear = date('z') + 1; // Add 1 to get the current day
-			}
-			$textIndex = ($dayOfYear - 1) % 5; // Use modulus operator to cycle through texts
+<?php 
+if($category_id == 'nikke') { 
+	?>
+	<!-- Current special interception and latest news -->
+	<div class="events animated">
+		<div class="boss container">
+			<?php
+				// Set the timezone to Spain, bosses reset at 9pm for me
+				date_default_timezone_set('Europe/Madrid');
+				// Array of 5 texts
+				$texts = array(
+						'Chatterbox',
+						'Modernia',
+						'Alteisen MK.VI',
+						'Grave Digger',
+						'Blacksmith'
+				);
+		
+				// Get the current time
+				$currentHour = date('H');
+		
+				// Determine which text to display based on time and day of year
+				if ($currentHour >= 22) {
+						// If it's past 9pm, show the text for the next day
+						$dayOfYear = date('z') + 2; // Add 2 to skip the current day and go to the next day
+				} else {
+						// Otherwise, show the text for the current day
+						$dayOfYear = date('z') + 1; // Add 1 to get the current day
+				}
+				$textIndex = ($dayOfYear - 1) % 5; // Use modulus operator to cycle through texts
 
-			switch ($textIndex) { // Show boss of the day
-				case 0:
-					?> <h3>Today's SI: Chatterbox</h3><span class="chatterbox"></span> <?php
-					break;
-				case 1:
-					?> <h3>Today's SI: Modernia</h3><span class="modernia"></span> <?php
-					break;
-				case 2:
-					?> <h3>Today's SI: Alteisen MK.VI</h3><span class="train"></span> <?php
-					break;
-				case 3:
-					?> <h3>Today's SI: Grave Digger</h3><span class="gravedigger"></span> <?php
-					break;
-				case 4:
-					?> <h3>Today's SI: Blacksmith</h3><span class="blacksmith"></span> <?php
-					break;
-			}
-		?>
-	</div>
+				switch ($textIndex) { // Show boss of the day
+					case 0:
+						?> <h3>Today's SI: Chatterbox</h3><span class="chatterbox"></span> <?php
+						break;
+					case 1:
+						?> <h3>Today's SI: Modernia</h3><span class="modernia"></span> <?php
+						break;
+					case 2:
+						?> <h3>Today's SI: Alteisen MK.VI</h3><span class="train"></span> <?php
+						break;
+					case 3:
+						?> <h3>Today's SI: Grave Digger</h3><span class="gravedigger"></span> <?php
+						break;
+					case 4:
+						?> <h3>Today's SI: Blacksmith</h3><span class="blacksmith"></span> <?php
+						break;
+				}
+			?>
+		</div>
 
-	<div class="container recent">
-		<h3>Recent news</h3>
-		<?php
-			$query = new WP_Query( array(
-					'post_type'      => 'post',
-					'posts_per_page' => 12,
-					'category_name'  => $category_id
-			) );
-			if ( $query->have_posts() ) :
-					while ( $query->have_posts() ) : $query->the_post();
-						get_template_part('template-parts/recent-news');
-					endwhile; wp_reset_postdata();
-			endif; 
-		?>
+		<div class="container recent">
+			<h3>Recent news</h3>
+			<?php
+				$query = new WP_Query( array(
+						'post_type'      => 'post',
+						'posts_per_page' => 12,
+						'category_name'  => $category_id
+				) );
+				if ( $query->have_posts() ) :
+						while ( $query->have_posts() ) : $query->the_post();
+							get_template_part('template-parts/recent-news');
+						endwhile; wp_reset_postdata();
+				endif; 
+			?>
+		</div>
 	</div>
-</div>
+	<?php
+} else if($category_id == 'limbus-company') { 
+} else { 
+} 
+?>
 
 <!-- all the guides -->
 <div class="double guides-wrapper animated">
