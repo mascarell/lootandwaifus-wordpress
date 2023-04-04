@@ -19,8 +19,8 @@
 	</div>
 
 	<div class="container">
-		<h3>Sponsor</h3>
-
-		<p>If you want to sponsor the website or our social media platforms, you can send an email to <a class="email" href="mailto:contact@lootandwaifus.com">contact@lootandwaifus.com</a>.</p>
+		<a class="patreon" href="https://patreon.com/lootandwaifus" target="_blank" rel="noopener noreferrer">
+			<img src="<?php echo get_theme_file_uri('images/patreon.png'); ?>" loading="lazy" alt="support us on patreon">
+		</a>
 	</div>
 </div>

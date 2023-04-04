@@ -38,7 +38,7 @@ $category_id = $categories[0]->name;
 </div>
 
 <?php 
-if($category_id == 'nikke') { 
+if($category_id == 'Nikke') { 
 	?>
 	<!-- Current special interception and latest news -->
 	<div class="events animated">
