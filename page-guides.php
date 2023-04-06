@@ -105,7 +105,7 @@ if($category_id == 'Nikke') {
 		</div>
 	</div>
 	<?php
-} else if($category_id == 'limbus-company') { 
+} else if($category_id == 'haze') { 
 } else { 
 } 
 ?>

@@ -11,13 +11,9 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
-	<!-- <a href="<?php echo home_url(); ?>/higan" class="game higan covering">
+	<a href="<?php echo home_url(); ?>/haze" class="game haze covering">
 		<div>
-			<p>Higan: Eruthyll</p>
-		</div>
-	</a> -->
-	<a class="game">
-		<div>
+			<p>Haze Reverb</p>
 		</div>
 	</a>
 	<a class="game">

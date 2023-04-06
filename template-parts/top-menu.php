@@ -24,7 +24,7 @@
 					$args = array( 'theme_location' => 'nikke' );
 					wp_nav_menu( $args );
 				} else if($category_id == 'higan') { 
-					$args = array( 'theme_location' => 'higan' );
+					$args = array( 'theme_location' => 'haze' );
 					wp_nav_menu( $args );
 				} else {  
 					$args = array( 'theme_location' => 'main' );
@@ -47,7 +47,7 @@
 			$args = array( 'theme_location' => 'nikke' );
 			wp_nav_menu( $args );
 		} else if($category_id == 'higan') { 
-			$args = array( 'theme_location' => 'higan' );
+			$args = array( 'theme_location' => 'haze' );
 			wp_nav_menu( $args );
 		} else { 
 			$args = array( 'theme_location' => 'main' );
