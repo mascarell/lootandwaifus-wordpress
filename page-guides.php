@@ -21,7 +21,7 @@ $category_id = $categories[0]->name;
 			<?php
 				$eventQuery = new WP_Query( array(
 						'meta_key'       => 'end_date',
-						'meta_value'     => date('Y-m-d', strtotime('-22 days')),
+						'meta_value'     => date('Y-m-d', strtotime('-14 days')),
 						'meta_compare'   => '>=',
 						'post_type'      => 'events',
 						'posts_per_page' => -1,

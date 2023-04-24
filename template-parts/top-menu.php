@@ -23,7 +23,7 @@
 				if($category_id == 'nikke') { 
 					$args = array( 'theme_location' => 'nikke' );
 					wp_nav_menu( $args );
-				} else if($category_id == 'higan') { 
+				} else if($category_id == 'haze') { 
 					$args = array( 'theme_location' => 'haze' );
 					wp_nav_menu( $args );
 				} else {  

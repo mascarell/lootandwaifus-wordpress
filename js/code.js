@@ -42,10 +42,10 @@
 			
 			// Get the current date
 			let today = new Date();
-			// Get the date from 20 days ago and 20 days after for the chart
-			let chartStartDate = new Date(today.getTime() - (20 * 24 * 60 * 60 * 1000));
-			let chartStartDateReference = new Date(today.getTime() - (20 * 24 * 60 * 60 * 1000)); // date start just as reference
-			let chartEndDate = new Date(today.getTime() + (20 * 24 * 60 * 60 * 1000));
+			// Get the date from 14 days ago and 14 days after for the chart
+			let chartStartDate = new Date(today.getTime() - (14 * 24 * 60 * 60 * 1000));
+			let chartStartDateReference = new Date(today.getTime() - (14 * 24 * 60 * 60 * 1000)); // date start just as reference
+			let chartEndDate = new Date(today.getTime() + (14 * 24 * 60 * 60 * 1000));
 
 			// Create the chart header with dates
 			let $header = $('<div class="chart-header"></div>');

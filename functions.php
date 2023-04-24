@@ -9,8 +9,7 @@ function sefhi_styles()
 	
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $version );
 	// wp_enqueue_script( 'code', get_template_directory_uri() . '/js/code.js', array('jquery'), '1.0', true );
-	wp_enqueue_script( 'code', get_template_directory_uri() . '/js/code.js', array(), filemtime( get_template_directory() . '/js/code.js' ), true,
-);
+	wp_enqueue_script( 'code', get_template_directory_uri() . '/js/code.js', array(), filemtime( get_template_directory() . '/js/code.js' ), true,);
 }
 add_action('wp_enqueue_scripts', 'sefhi_styles');
 
