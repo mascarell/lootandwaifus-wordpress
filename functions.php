@@ -259,6 +259,7 @@ function characters() {
 }
 add_action( 'init', 'characters', 0 );
 
+// remove email and url fields from comments
 function remove_comment_fields($fields) {
 	unset($fields['email']);
 	unset($fields['url']);
