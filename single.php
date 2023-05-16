@@ -26,6 +26,10 @@ get_header();
 				<div class="article-content">
 					<?php the_content(); ?> <!-- Page Content -->
 				</div>
+
+				<a href="https://discord.gg/rdCkPuPkDq" target="_blank" rel="noopener noreferrer">
+					<img class="join-discord" src="<?php echo get_theme_file_uri('images/join-discord.png'); ?>" loading="lazy" alt="join our discord server">
+				</a>
 					
 				<?php if ( comments_open() ) { 
 					?> <div class="article-comments"> <?php comments_template(); ?> </div> <?php
