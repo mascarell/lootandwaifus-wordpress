@@ -321,13 +321,19 @@ img.join-discord{ max-width: 100%; }
 }
 /* games that we cover image */
 .games .game.nikke div {
-	background: url("images/anis.png");
+	background: url("images/nikke.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .games .game.haze div {
-	background: url("images/haze.jpg");
+	background: url("images/haze.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game.snowbreak div {
+	background: url("images/snowbreak.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
