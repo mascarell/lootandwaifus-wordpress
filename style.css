@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.2.2
+Version: 1.2.3
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -383,6 +383,9 @@ img.join-discord{ max-width: 100%; }
 	margin: 0;
 	font-weight: 500;
 }
+.news .article.container {
+	background-color: transparent;
+}
 
 .error img{
 	width: 100%;
@@ -620,7 +623,7 @@ img.join-discord{ max-width: 100%; }
 
 /* Custom css for blocks on articles */
 .wp-block-table.skill table {
-	background-color: #272A2F;
+	background-color: #14181D;
 	border-radius: 12px;
 }
 .wp-block-table.skill table, .wp-block-table.skill td, .wp-block-table.skill td {
@@ -1069,14 +1072,14 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	padding: .5rem 1.25rem;
 	resize: none;
 	background-color: transparent;
-	border: 2px solid #0D1116;
+	border: 2px solid #272A2F;
 	font-size: 1.1rem;
 	color: white;
 	transition: .15s linear;
 	margin-top: .5rem;
 }
 .comment-respond input:focus, .comment-respond textarea:focus{ 
-	background-color: #0D1116;
+	background-color: #272A2F;
 	outline: none; 
 }
 .comment-respond input[type=submit] {
@@ -1092,7 +1095,7 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	font-size: initial;
 }
 .comment-respond input[type=submit]:hover {
-	background-color: #0D1116;
+	background-color: #272A2F;
 	cursor: pointer;
 }
 .comment-navigation{
