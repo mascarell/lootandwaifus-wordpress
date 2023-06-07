@@ -3,10 +3,10 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.2.1
+Version: 1.2.2
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
 
 *,
 *::before,
@@ -20,7 +20,7 @@ body {
 	background: #0D1116;
 	font-size: 1rem;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 html{ margin: 0; padding: 0;}
 
@@ -39,7 +39,7 @@ html{ margin: 0; padding: 0;}
 
 a{
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 a.patreon img{ max-width: 100%; }
@@ -57,7 +57,7 @@ img.join-discord{ max-width: 100%; }
 
 /* Author box */
 .author h4{
-	font-weight: 400;
+	font-weight: 300;
 	color: #23F1C0;
 	margin: 0;
 }
@@ -81,7 +81,7 @@ img.join-discord{ max-width: 100%; }
 
 /* Streamers, latest videos and information on top of every game */
 .container.latest h4{
-	font-weight: 400;
+	font-weight: 300;
 	color: #23F1C0;
 }
 
@@ -164,7 +164,7 @@ img.join-discord{ max-width: 100%; }
 }
 .top-menu ul a{
 	color: white;
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: uppercase;
 	padding: .5rem 1.5rem;
 	line-height: 40px;
@@ -361,7 +361,7 @@ img.join-discord{ max-width: 100%; }
 }
 .article .article-content{
 	font-size: 1.1rem;
-	font-weight: 400;
+	font-weight: 300;
 }
 .article .article-content strong{
 	color: #23F1C0;
@@ -555,7 +555,7 @@ img.join-discord{ max-width: 100%; }
 	background-color: #14181D;
 }
 .news .characters .character .margin .content h2{
-	font-weight: 400;
+	font-weight: 300;
 	font-size: .85rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -583,7 +583,7 @@ img.join-discord{ max-width: 100%; }
 	margin: 0 auto;
 }
 .teams > h3{
-	font-weight: 400;
+	font-weight: 300;
 	margin-bottom: .5rem;
 }
 .builder .advice{
@@ -670,7 +670,7 @@ img.join-discord{ max-width: 100%; }
 .events .boss span.chatterbox { background-image: url(images/bosses/chatterbox.webp); }
 .events .boss span.blacksmith { background-image: url(images/bosses/blacksmith.webp); }
 .events .boss h3, .recent h3{
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: 0;
 	z-index: 2;
 	position: relative;
@@ -782,7 +782,7 @@ hr{
 }
 
 .news .guides-title{
-	font-weight: 400;
+	font-weight: 300;
 	padding: 0;
 	margin: 0;
 	padding-left: 1rem;
@@ -854,7 +854,7 @@ hr{
 }
 .news .post.guide .margin .content h2{
 	font-size: 1.1rem;
-	font-weight: 400;
+	font-weight: 300;
 }
 .news .post .margin .content h2{
 	font-weight: 500;
@@ -975,7 +975,7 @@ hr{
 /* comments */
 /* Comment list styling */
 #comments h2{
-	font-weight: 400;
+	font-weight: 300;
 	width: 100%;
 	text-align: center;
 	padding: 1rem;
@@ -1038,7 +1038,7 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 }
 .comment-respond a, .comment-body a{
 	color: #ebed63;
-	font-weight: 400;
+	font-weight: 300;
 }
 .comment-reply-link {
 	font-size: 12px;
@@ -1171,7 +1171,7 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 .chart-header-item span {
 	color: white;
 	opacity: .4;
-	font-weight: 400;
+	font-weight: 300;
 }
 .chart-header-item::before {
 	content: '';
