@@ -13,11 +13,9 @@
 	<?php } ?>
 
 	<div class="container">
-		<p>If you want to stay up to date with all the content we publish the best way is to check us on Twitter.</p>
+		<h3>Sponsor us</h3>
 
-		<?php get_template_part('template-parts/buttons/twitter'); ?>
-		<p></p>
-		<?php get_template_part('template-parts/buttons/discord'); ?>
+		<p>Want to sponsor the website and/or our YouTube videos? You can say hello at <a class="email" href="mailto:contact@lootandwaifus.com">contact@lootandwaifus.com</a> and we'll get back to you.</p>
 	</div>
 
 	<div class="container">
