@@ -111,7 +111,7 @@
 		window.onload = function () {
 			document.querySelector('.chart-events').scrollTo({
 				top: 0,
-				left: 425,
+				left: 300,
 				behavior: "smooth",
 			});
 		}

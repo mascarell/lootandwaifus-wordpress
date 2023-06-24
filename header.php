@@ -30,7 +30,7 @@
 </head>
 <body <?php body_class(); ?> >
 
-<div class="bg"></div>
+<div class="static-noise"></div>
 <div id="particles-js"></div>
 
 <div class="separator"></div>

@@ -9,34 +9,6 @@ $category_id = $categories[0]->name;
 
 ?>
 
-<!-- Gantt chart with current events -->
-<div class="container animated chart-parent">
-	<div class="show-more">show all events</div>
-	<div class="chart-events">
-		<!-- Date header will be dynamically created using JavaScript -->
-		<div class="chart-dates"></div>
-	
-		<div class="chart-container">
-			<!-- Additional chart bars can be added here -->
-			<?php
-				$eventQuery = new WP_Query( array(
-						'meta_key'       => 'end_date',
-						'meta_value'     => date('Y-m-d', strtotime('-14 days')),
-						'meta_compare'   => '>=',
-						'post_type'      => 'events',
-						'posts_per_page' => -1,
-						'category_name'  => $category_id
-				) );
-				if ( $eventQuery->have_posts() ) :
-						while ( $eventQuery->have_posts() ) : $eventQuery->the_post();
-							get_template_part('template-parts/active-events');
-						endwhile; wp_reset_postdata();
-				endif; 
-			?>
-		</div>
-	</div>
-</div>
-
 <?php 
 if($category_id == 'Nikke') { 
 	?>
@@ -88,25 +60,64 @@ if($category_id == 'Nikke') {
 			?>
 		</div>
 
-		<div class="container recent">
-			<h3>Recent news</h3>
-			<?php
-				$query = new WP_Query( array(
-						'post_type'      => 'post',
-						'posts_per_page' => 12,
-						'category_name'  => $category_id
-				) );
-				if ( $query->have_posts() ) :
-						while ( $query->have_posts() ) : $query->the_post();
-							get_template_part('template-parts/recent-news');
-						endwhile; wp_reset_postdata();
-				endif; 
-			?>
+		<!-- Gantt chart with current events -->
+		<div class="container animated chart-parent">
+			<div class="show-more">show all events</div>
+			<div class="chart-events">
+				<!-- Date header will be dynamically created using JavaScript -->
+				<div class="chart-dates"></div>
+			
+				<div class="chart-container">
+					<!-- Additional chart bars can be added here -->
+					<?php
+						$eventQuery = new WP_Query( array(
+								'meta_key'       => 'end_date',
+								'meta_value'     => date('Y-m-d', strtotime('-14 days')),
+								'meta_compare'   => '>=',
+								'post_type'      => 'events',
+								'posts_per_page' => -1,
+								'category_name'  => $category_id
+						) );
+						if ( $eventQuery->have_posts() ) :
+								while ( $eventQuery->have_posts() ) : $eventQuery->the_post();
+									get_template_part('template-parts/active-events');
+								endwhile; wp_reset_postdata();
+						endif; 
+					?>
+				</div>
+			</div>
 		</div>
 	</div>
 	<?php
-} else if($category_id == 'haze') { 
-} else { 
+} else if($category_id == 'haze') { ?>
+	<!-- Gantt chart with current events -->
+	<div class="container animated chart-parent">
+		<div class="show-more">show all events</div>
+		<div class="chart-events">
+			<!-- Date header will be dynamically created using JavaScript -->
+			<div class="chart-dates"></div>
+		
+			<div class="chart-container">
+				<!-- Additional chart bars can be added here -->
+				<?php
+					$eventQuery = new WP_Query( array(
+							'meta_key'       => 'end_date',
+							'meta_value'     => date('Y-m-d', strtotime('-14 days')),
+							'meta_compare'   => '>=',
+							'post_type'      => 'events',
+							'posts_per_page' => -1,
+							'category_name'  => $category_id
+					) );
+					if ( $eventQuery->have_posts() ) :
+							while ( $eventQuery->have_posts() ) : $eventQuery->the_post();
+								get_template_part('template-parts/active-events');
+							endwhile; wp_reset_postdata();
+					endif; 
+				?>
+			</div>
+		</div>
+	</div>
+<?php } else { 
 } 
 ?>
 
