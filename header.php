@@ -20,11 +20,18 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
+	<!-- Google Ads -->
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9374214313904321" crossorigin="anonymous"></script>
+
+	<!-- Particle.js -->
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   
 	<?php wp_head(); ?>	
 </head>
 <body <?php body_class(); ?> >
+
+<div class="bg"></div>
+<div id="particles-js"></div>
 
 <div class="separator"></div>
 
