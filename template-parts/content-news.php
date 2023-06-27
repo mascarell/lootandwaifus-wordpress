@@ -1,4 +1,4 @@
-<div class="post container">
+<div class="post container news-article">
 	<div class="margin">
 		<a class="thumbnail" href="<?php the_permalink(); ?>">
 			<div class="img lozad" data-background-image="<?php echo the_post_thumbnail_url(); ?>"></div>
