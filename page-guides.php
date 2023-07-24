@@ -89,7 +89,7 @@ if($category_id == 'Nikke') {
 		</div>
 	</div>
 	<?php
-} else if($category_id == 'Haze') { ?>
+} else if($category_id == 'Eversoul') { ?>
 	<!-- Gantt chart with current events -->
 	<div class="container animated chart-parent">
 		<div class="show-more">show all events</div>
