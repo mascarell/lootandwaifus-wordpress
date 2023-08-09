@@ -11,9 +11,8 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
-	<a href="<?php echo home_url(); ?>/eversoul" class="game eversoul covering">
+	<a class="game">
 		<div>
-			<p>Eversoul</p>
 		</div>
 	</a>
 	<a class="game">
