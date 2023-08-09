@@ -326,6 +326,12 @@ img.join-discord{ max-width: 100%; }
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.games .game.reverse div {
+	background: url("images/reverse.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .games .game p{
 	margin: 0;
 	color: white;

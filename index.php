@@ -11,8 +11,9 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
-	<a class="game">
+	<a href="<?php echo home_url(); ?>/reverse1999" class="game reverse covering">
 		<div>
+			<p>Reverse:1999</p>
 		</div>
 	</a>
 	<a class="game">
