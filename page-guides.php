@@ -12,6 +12,25 @@ $category_id = $categories[0]->name;
 <?php 
 if($category_id == 'Nikke') { 
 	?>
+		<div class="game-info animated">
+			<div class="logo">
+				<img src="<?php echo get_theme_file_uri('images/nikke-logo.png'); ?>" loading="lazy" alt="nikke logo">
+			</div>
+
+			<div>
+				<h1>NIKKE: Goddess of Victory wiki</h1>
+				<p>Welcome to your ultimate NIKKE wiki with character, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
+			</div>
+		</div>
+	<?php
+} else if($category_id == 'Noneidk') { ?>
+	<?php } else { 
+	} 
+?>
+
+<?php 
+if($category_id == 'Nikke') { 
+	?>
 	<!-- Current special interception and latest news -->
 	<div class="events animated">
 		<div class="boss container">
@@ -89,7 +108,7 @@ if($category_id == 'Nikke') {
 		</div>
 	</div>
 	<?php
-} else if($category_id == 'Reverse') { ?>
+} else if($category_id == 'Noneidk') { ?>
 	<!-- Gantt chart with current events -->
 	<div class="container animated chart-parent">
 		<div class="show-more">show all events</div>

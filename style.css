@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.3.6
+Version: 1.3.7
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -327,7 +327,13 @@ img.join-discord{ max-width: 100%; }
 	background-size: cover;
 }
 .games .game.reverse div {
-	background: url("images/reverse.webp");
+	background: url("images/reverse.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game.snowbreak div {
+	background: url("images/snowbreak.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -336,6 +342,34 @@ img.join-discord{ max-width: 100%; }
 	margin: 0;
 	color: white;
 	font-weight: 500;
+}
+
+/* SEO title for the games */
+.game-info{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.game-info .logo{
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
+.game-info img{
+	width: 100%;
+	max-width: 128px;
+}
+.game-info h1, .game-info p{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.game-info h1{
+	font-weight: 500;
+	font-size: 1.4rem;
 }
 
 /* static noise background */
@@ -360,6 +394,7 @@ img.join-discord{ max-width: 100%; }
 	width: 100%;
 	height: 100%;
 	opacity: .5;
+	pointer-events: none;
 }
 
 @keyframes bg-animation {
@@ -1293,6 +1328,22 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	.game-menu{ display: block; }
 	.b-menu{ display: none; }
 	.overlay-menu{ display: none; }
+
+	/* SEO title for the games */
+	.game-info{
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+	.game-info img{
+		max-width: 240px;
+		margin-right: 200px;
+	}
+	.game-info h1, .game-info p{
+		text-align: left;
+	}
+	.game-info h1{
+		font-size: 1.6rem;
+	}
 
 	.double {
 		flex-flow: row nowrap;

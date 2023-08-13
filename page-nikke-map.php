@@ -15,17 +15,18 @@ $category_id = $categories[0]->name;
 			<div class="article-content">
 				<h2>Interactive Nikke map</h2>
 				<p><strong>To change chapters, use the layers button</strong> on the top right of the map.</p>
-				<p>	Also, yes. Right now there's only a couple chapters because I have to to this manually, if you wanna know when I update the map, you have my Twitter on the sidebar.</p>
+				<p>	Also, yes. Right now there's only a couple chapters because I have to to this manually, if you wanna know when I update the map, you can follow me on <a href="https://twitter.com/sefhi_" target="_blank" rel="noopener noreferrer">Twitter</a></p>
 			</div>
 
 			<div id="map" class="map"></div>
 
 			<div class="article-content">
-				<p>If you find an error in one of the maps, feel free to message me in Discord (Sefhi#9684) or you can find my Twitter on the sidebar.</p>
+				<p>If you find an error in one of the maps, feel free to message me in Discord (Sefhi#9684) or you can follow me on <a href="https://twitter.com/sefhi_" target="_blank" rel="noopener noreferrer">Twitter</a>.</p>
 				<p>
 					Sources for the maps: 
 					<a href="https://www.artstation.com/redgrapes" target="_blank" rel="noopener noreferrer">Artist Jang Sumin</a> 
 					<a href="https://twitter.com/a___ajt/status/1614519409191817217" target="_blank" rel="noopener noreferrer">キュウビ ajt</a> 
+					<a href="https://nikke.gg" target="_blank" rel="noopener noreferrer">nikke.gg</a> 
 				</p>
 			</div>
 
