@@ -9,6 +9,7 @@ $category_id = $categories[0]->name;
 
 ?>
 
+<!-- Game titles for better SEO -->
 <?php 
 if($category_id == 'Nikke') { 
 	?>
@@ -19,7 +20,7 @@ if($category_id == 'Nikke') {
 
 			<div>
 				<h1>NIKKE: Goddess of Victory wiki</h1>
-				<p>Welcome to your ultimate NIKKE wiki with character, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
+				<p>Welcome to your ultimate NIKKE wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
 			</div>
 		</div>
 	<?php

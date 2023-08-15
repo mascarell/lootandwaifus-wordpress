@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.3.7
+Version: 1.4
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -386,6 +386,7 @@ img.join-discord{ max-width: 100%; }
   animation: bg-animation .2s infinite;
   opacity: .5;
   visibility: visible;
+	pointer-events: none;
 }
 #particles-js{
 	position: fixed;
@@ -1322,6 +1323,39 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	border-radius: 0;
 }
 
+/* latest video on landing page */
+.latest-video{
+	display: flex;
+	flex-flow: column-reverse wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 1rem;
+}
+.latest-video > div{
+	flex: 0 0 100%;
+}
+.latest-video img{
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	border: 2px solid white;
+}
+.latest-video h2{
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #ebed63;
+}
+.latest-video a{
+	border: 1px solid white;
+	padding: .75rem 1.2rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
 /* Tablets */
 @media only screen and (min-width : 48em){
 	.top-menu-contaier { justify-content: flex-start; }
@@ -1371,6 +1405,19 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 
 	.recent-news {
 		flex: 0 0 49%;
+	}
+
+	.latest-video {
+		flex-flow: row nowrap;
+	}
+	.latest-video>div {
+		flex: 0 0 50%;
+	}
+	.latest-video img {
+		margin: 1.5rem;
+	}
+	.latest-video h2 {
+		font-size: 2rem;
 	}
 }
 

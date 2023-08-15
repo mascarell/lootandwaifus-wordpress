@@ -267,4 +267,47 @@ function remove_comment_fields($fields) {
 }
 add_filter('comment_form_default_fields', 'remove_comment_fields');
 
+// WP customizer, index section with latest video
+function custom_theme_customizer( $wp_customize ) {
+    // Create a new section
+    $wp_customize->add_section( 'custom_section', array(
+			'title'       => __( 'Latest video', 'custom-theme' ),
+			'priority'    => 160,
+    ) );
+
+		// thumbnail for the video
+		$wp_customize->add_setting( 'custom_image', array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		) );
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'custom_image', array(
+			'label'       => __( 'Thumbnail', 'custom-theme' ),
+			'section'     => 'custom_section',
+			'settings'    => 'custom_image',
+		) ) );
+
+		// link for the video
+		$wp_customize->add_setting( 'custom_link', array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		) );
+		$wp_customize->add_control( 'custom_link', array(
+			'label'       => __( 'Link for the video', 'custom-theme' ),
+			'section'     => 'custom_section',
+			'type'        => 'url',
+		) );
+
+		// Title for the video
+		$wp_customize->add_setting( 'custom_title', array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field',
+		) );
+		$wp_customize->add_control( 'custom_title', array(
+			'label'       => __( 'CTA / title for the video', 'custom-theme' ),
+			'section'     => 'custom_section',
+			'type'        => 'text',
+		) );
+}
+add_action( 'customize_register', 'custom_theme_customizer' );
+
 ?>
