@@ -5,7 +5,7 @@ get_header();
 ?>
 
 <!-- Latest video section with WP customizer -->
-<div class="latest-video">
+<div class="latest-video animated">
 	<div>
 		<?php
 			$custom_link = get_theme_mod( 'custom_link' );
