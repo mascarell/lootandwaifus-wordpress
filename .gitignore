@@ -90,6 +90,7 @@ dist
 
 # vscode settings
 .vscode/
+.vscode/sftp.json
 vscode/
 stfp.json
 
