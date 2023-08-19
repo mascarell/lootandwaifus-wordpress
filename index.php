@@ -32,18 +32,9 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
-	<!-- <a class="game reverse covering">
+	<a class="game reverse covering">
 		<div>
-			<p>Reverse: 1999</p>
-		</div>
-	</a>
-	<a class="game snowbreak covering">
-		<div>
-			<p>Snowbreak: Containment Zone</p>
-		</div>
-	</a> -->
-	<a class="game">
-		<div>
+			<p>Reverse: 1999 (coming soon)</p>
 		</div>
 	</a>
 	<a class="game">
