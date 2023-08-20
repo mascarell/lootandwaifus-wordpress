@@ -4,7 +4,6 @@ The code is a mess, I'm just open sourcing it in case people want to contribute 
 
 - event timeline
 - daily special interception
-- interactive map
 - team builder
 
 Some stuff will not work just by using this theme on your website tho, we use some plugins (love and hate WordPress, but c'est la vie).
