@@ -18,15 +18,28 @@ if($category_id == 'Nikke') {
 				<img src="<?php echo get_theme_file_uri('images/nikke-logo.png'); ?>" loading="lazy" alt="nikke logo">
 			</div>
 
-			<div>
+			<div class="game-info-text">
 				<h1>NIKKE: Goddess of Victory wiki</h1>
 				<p>Welcome to your ultimate NIKKE wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
 			</div>
 		</div>
 	<?php
+} else if($category_id == 'Reverse: 1999') {
+	?>
+		<div class="game-info animated">
+			<div class="logo">
+				<img src="<?php echo get_theme_file_uri('images/reverse-logo.png'); ?>" loading="lazy" alt="nikke logo">
+			</div>
+
+			<div class="game-info-text">
+				<h1>Reverse: 1999 wiki</h1>
+				<p>Welcome to your ultimate Reverse: 1999 wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
+			</div>
+		</div>
+	<?php
 } else if($category_id == 'Noneidk') { ?>
-	<?php } else { 
-	} 
+<?php } else { 
+} 
 ?>
 
 <?php 

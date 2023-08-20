@@ -23,8 +23,8 @@
 				if($category_id == 'nikke') { 
 					$args = array( 'theme_location' => 'nikke' );
 					wp_nav_menu( $args );
-				} else if($category_id == 'haze') { 
-					$args = array( 'theme_location' => 'haze' );
+				} else if($category_id == 'reverse-1999') { 
+					$args = array( 'theme_location' => 'reverse-1999' );
 					wp_nav_menu( $args );
 				} else {  
 					$args = array( 'theme_location' => 'main' );
@@ -46,8 +46,8 @@
 		if($category_id == 'nikke') { 
 			$args = array( 'theme_location' => 'nikke' );
 			wp_nav_menu( $args );
-		} else if($category_id == 'higan') { 
-			$args = array( 'theme_location' => 'haze' );
+		} else if($category_id == 'reverse-1999') { 
+			$args = array( 'theme_location' => 'reverse-1999' );
 			wp_nav_menu( $args );
 		} else { 
 			$args = array( 'theme_location' => 'main' );

@@ -53,7 +53,7 @@ function crown_setup()
 	register_nav_menus(array(
 		'main' => __('No game menu'),
 		'nikke' => __('Nikke menu'),
-		'haze' => __('Haze menu'),
+		'reverse-1999' => __('Reverse: 1999 menu'),
 		'footer' => __('Footer menu')
 	));
 
