@@ -730,6 +730,9 @@ img.join-discord{ max-width: 100%; }
 	opacity: .7;
 	display: none;
 }
+.wp-block-table.skill.tier table tr td:first-of-type {
+	display: initial;
+}
 .wp-block-table.skill table tr td:last-of-type {
 	padding-left: 2rem;
 	padding: .75rem;
