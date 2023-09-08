@@ -9,28 +9,11 @@
 			<li>No cookies and no account needed</li>
 		</ul>
 	</div>
-<!-- 	
+	
 	<div class="container">
 		<h3>Sponsor us</h3>
 
 		<p>Want to sponsor the website and/or our YouTube videos? You can say hello at <a class="email" href="mailto:contact@lootandwaifus.com">contact@lootandwaifus.com</a> and we'll get back to you.</p>
-	</div> -->
-
-	<div class="container">
-		<!-- Add a placeholder for the Twitch embed -->
-		<div id="twitch-embed"></div>
-
-		<!-- Load the Twitch embed JavaScript file -->
-		<script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-		<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-		<script type="text/javascript">
-			new Twitch.Embed("twitch-embed", {
-				width: '100%',
-				height: 480,
-				channel: "sefhi_922",
-			});
-		</script>
 	</div>
 
 	<div class="container">

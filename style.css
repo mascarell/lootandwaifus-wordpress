@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.4.3
+Version: 1.4.4
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -470,48 +470,6 @@ img.join-discord{ max-width: 100%; }
 	padding: 0;
 	font-weight: 500;
 }
-
-#twitch-embed{ margin-bottom: 1rem; }
-.cp-streamweasels{
-	position: relative;
-	top: 0 !important;
-	left: 0 !important;
-	height: auto !important;
-}
-.cp-streamweasels__inner{
-	overflow: visible !important;
-	height: auto !important;
-	border: none !important;
-}
-.cp-streamweasels__twitch-logo { display: none !important; }
-.cp-streamweasels--status .cp-streamweasels__streams{ padding: 0 !important; }
-.cp-streamweasels--status .cp-streamweasels__streams .cp-stream {
-	background-color: transparent !important;
-	background: none !important;
-	border: none !important;
-}
-.cp-stream__inner{
-	border: none !important;
-}
-.cp-stream__status::before{
-	display: block;
-	content: '';
-	position: absolute;
-	top: 4px;
-	left: -10px;
-	width: 10px;
-	height: 10px;
-	background-color: red;
-	border-radius: 1000px;
-	animation: blinking 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
-}
-@keyframes blinking {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-/* .cp-stream__image{
-	display: block !important;
-} */
 
 .character-filters{
 	width: 100%;
