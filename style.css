@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.4.5
+Version: 1.4.6
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -1335,6 +1335,39 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	text-transform: uppercase;
 	display: inline-block;
 }
+
+.tier-list .row{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.tier-list .row .characters{
+  flex: 0 0 calc(100% - 150px);
+}
+.tier-list .row .tier{
+  width: 150px;
+  align-self: stretch;
+  min-width: 150px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #000;
+  margin: 1rem 0 .5rem 0;
+  border-radius: 8px;
+}
+.tier-list .row .tier.tier-0{ background-color: #e57373; } /* tier 0 */
+.tier-list .row .tier.tier-1{ background-color: #ffb74d; } /* tier 0.5 */
+.tier-list .row .tier.tier-2{ background-color: #fff176; } /* tier 1 */
+.tier-list .row .tier.tier-3{ background-color: #aed581; } /* tier 1.5 */
+.tier-list .row .tier.tier-4{ background-color: #81c784; } /* tier 2 */
+.tier-list .row .tier.tier-5{ background-color: #8197c7; } /* tier 3 */
 
 /* Tablets */
 @media only screen and (min-width : 48em){

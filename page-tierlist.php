@@ -15,9 +15,7 @@ $category_id = $categories[0]->name;
       <div class="article-content">
           <h1><?php the_title(); ?></h1>
     
-          <p>Welcome to our tier list for <?php echo $category_id; ?>.</p>
-    
-          <p>This is an overall <strong>PVE tier list</strong>, if you want to know more about each character and why they have that rating, you can click on them to read our full reviews.</p>
+          <p>If you want to know more about each character and why they have that rating, you can click on them to read our full reviews.</p>
     
           <p>Any questions you have about our ratings, feel free to join our <a href="https://discord.gg/rdCkPuPkDq" target="_blank" rel="noopener noreferrer">Discord</a> and ask about it.</p>
     
@@ -33,38 +31,60 @@ $category_id = $categories[0]->name;
     
           <p><em>Tier 1.5</em> : Decent units that are usually more niche and used only on specific team compositions or elements, making them lose some value outside that use.</p>
     
-          <p><em>Tier 2</em> : I don’t think most of the units here are worth investing BUT THEY HAVE SOME USES. Some for PVP, some for PVE. They’re not useless units, I just don’t think it’s worth investing unless they’re your waifus.</p>
-    
-          <p><em>Tier 3</em> : Situational units, in most cases they can be ignored for PVE. Sadly a lot of cool units in this tier, please buff them.</p>
+          <p><em>Tier 2</em> : Situational units, in most cases they can be ignored for PVE. Sadly a lot of cool units in this tier, please buff them.</p>
+          
+          <p><em>Tier 3</em> : I don’t think most of the units here are worth investing BUT THEY HAVE SOME USES. They’re not useless units, I just don’t think it’s worth investing unless they’re your waifus.</p>
+
+          <div class="tier-list">
+            <!-- TIER 0 UNITS -->
+            <div class="row">
+              <p class="tier tier-0">Tier 0</p>
+
+              <div class="characters">
+                <?php
+                  $args = array(
+                    'post_type' => 'characters', 
+                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'tag' => 'tier-0',
+                  );
+                  $query = new WP_Query($args);
+                  if ( $query->have_posts() ) :
+                    while ( $query->have_posts() ) : $query->the_post();
+                      get_template_part('template-parts/character');
+                    endwhile; wp_reset_postdata();
+                  endif; 
+                  ?>
+              </div>
+            </div>
+
+            <!-- TIER 0.5 UNITS -->
+            <div class="row">
+              <p class="tier tier-1">Tier 0.5</p>
+            </div>
+
+            <!-- TIER 1 UNITS -->
+            <div class="row">
+              <p class="tier tier-2">Tier 1</p>
+            </div>
+
+            <!-- TIER 1.5 UNITS -->
+            <div class="row">
+              <p class="tier tier-3">Tier 1.5</p>
+            </div>
+
+            <!-- TIER 2 UNITS -->
+            <div class="row">
+              <p class="tier tier-4">Tier 2</p>
+            </div>
+
+            <!-- TIER 3 UNITS -->
+            <div class="row">
+              <p class="tier tier-5">Tier 3</p>
+            </div>
+          </div>
 				</div>
 		</div>
 	</div>
-</div>
-
-<!-- all the guides -->
-<div class="double guides-wrapper animated">
-	<div class="news">	
-		<?php
-			$query = new WP_Query( array(
-					'post_type'      => 'guides',
-					'posts_per_page' => -1,
-					'no_found_rows'  => true,
-					'tag'            => 'general',
-					'category_name'  => $category_id
-			) );
-			if ( $query->have_posts() ) :
-					?> <h2 class="guides-title">General Guides ➜</h2><div class="guides"> <?php
-					while ( $query->have_posts() ) : $query->the_post();
-
-							get_template_part('template-parts/guide');
-
-					endwhile; wp_reset_postdata();
-					?> </div> <?php
-			endif; 
-		?>
-	</div>
-
-	<?php get_template_part('template-parts/sidebar'); ?>
 </div>
 
 <?php
