@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <!-- Hero section -->
-<div class="hero">
+<div class="hero animated">
   <h1>Your one-stop shop for in depth gacha games tier lists and guides</h1>
   <p>Loot & Waifus is a community driven wiki for the games we love and care about. Click down below on your favorite game to get started.</p>
 </div>
