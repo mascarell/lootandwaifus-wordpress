@@ -27,7 +27,7 @@ $category_id = $categories[0]->name;
     
           <p><em>Tier 0.5</em> : All these units could be Tier 0 if it wasn’t because of heavy investment, specific team compositions or both. They are, of course, units still worth using and investing into.</p>
     
-          <p><em>Tier 1</em> : Good units that can fit into a lot of teams and will help you on the end game modes we currently have.</p>
+          <p><em>Tier 1</em> : Good units that can fit into a lot of teams, will help you with game progression at any point and the end game modes we currently have.</p>
     
           <p><em>Tier 1.5</em> : Decent units that are usually more niche and used only on specific team compositions or elements, making them lose some value outside that use.</p>
     

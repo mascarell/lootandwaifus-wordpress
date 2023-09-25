@@ -25,27 +25,6 @@ get_header();
 	</div>
 </div>
 
-<!-- Games that we cover -->
-<div class="games container animated">
-	<a href="<?php echo home_url(); ?>/nikke" class="game nikke covering">
-		<div>
-			<p>Goddess of Victory: Nikke</p>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
-</div>
-
 <div class="double">
 	<div class="news">
 		<div class="posts animated">
