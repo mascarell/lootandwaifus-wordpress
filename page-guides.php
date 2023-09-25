@@ -20,7 +20,7 @@ if($category_id == 'Nikke') {
 
 			<div class="game-info-text">
 				<h1>NIKKE: Goddess of Victory wiki</h1>
-				<p>Welcome to your ultimate NIKKE wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
+				<p>Welcome to your ultimate NIKKE wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news and made custom tools for you like the interactive map and team builder.</p>
 			</div>
 		</div>
 	<?php
@@ -33,7 +33,7 @@ if($category_id == 'Nikke') {
 
 			<div class="game-info-text">
 				<h1>Reverse: 1999 wiki</h1>
-				<p>Welcome to your ultimate Reverse: 1999 wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news, leaks, datamines and made custom tools for you like the interactive map and team builder.</p>
+				<p>Welcome to your ultimate Reverse: 1999 wiki with character guides, boss guides and tips and tricks for the game. We also cover the latest news and made custom tools for you like the interactive map and team builder.</p>
 			</div>
 		</div>
 	<?php
