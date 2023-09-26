@@ -41,7 +41,6 @@ $category_id = $categories[0]->name;
 
 		<div class="character-filters">
 			<input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
-			<!-- <a class="select-all">Select all</a> -->
 		</div>
 
 		<div class="characters filtered">
@@ -58,7 +57,7 @@ $category_id = $categories[0]->name;
 
 						while ( $query->have_posts() ) : $query->the_post();
 
-								get_template_part('template-parts/character-builder');
+								get_template_part('template-parts/character');
 
 						endwhile; wp_reset_postdata();
 				endif; 
