@@ -56,9 +56,7 @@ $category_id = $categories[0]->name;
 				if ( $query->have_posts() ) :
 
 						while ( $query->have_posts() ) : $query->the_post();
-
-								get_template_part('template-parts/character');
-
+              get_template_part('template-parts/character-builder');
 						endwhile; wp_reset_postdata();
 				endif; 
 			?>

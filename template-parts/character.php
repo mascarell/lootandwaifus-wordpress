@@ -1,13 +1,13 @@
 <?php
-$tags = get_the_tags();
+  $tags = get_the_tags();
 
-// Initialize an empty array to store tag slugs
-$tag_slugs = array();
+  // Initialize an empty array to store tag slugs
+  $tag_slugs = array();
 
-// Loop through the tags and extract their slugs
-foreach ($tags as $tag) {
-  $tag_slugs[] = $tag->slug;
-}
+  // Loop through the tags and extract their slugs
+  foreach ($tags as $tag) {
+    $tag_slugs[] = $tag->slug;
+  }
 ?>
 
 <div class="post character covering container" data-character-name="<?php the_title(); ?>">

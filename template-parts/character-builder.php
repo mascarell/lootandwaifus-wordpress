@@ -1,4 +1,4 @@
-<?php while ( have_posts() ) : the_post();
+<?php
   $tags = get_the_tags();
 
   // Initialize an empty array to store tag slugs
@@ -19,5 +19,3 @@
 		</div>
 	</div>
 </div>
-
-<?php endwhile; // end of the loop. ?>
