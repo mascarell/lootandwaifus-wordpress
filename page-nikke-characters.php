@@ -9,25 +9,14 @@ $category_id = $categories[0]->name;
 
 ?>
 
-
 <div class="double characters-wrapper animated">
-	<div class="news">
-		<div class="character-filters">
-			<input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
-
-			<div class="character-skills">
-				<p>Filter by character skill type</p>
-				<div class="skills">
-					<a>Increase Explosion Radius</a>
-					<a>Defense Buff (Allies)</a>
-					<a>Defense Buff (Allies)</a>
-					<a class="active">Defense Buff (Allies)</a>
-					<a>Defense Buff (Allies)</a>
-					<a>Defense Buff (Allies)</a>
-					<a>Defense Buff (Allies)</a>
-				</div>
-			</div>
+  <div class="news">
+    <div class="character-filters">
+      <input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
 		</div>
+
+    <?php get_template_part('template-parts/database-filters'); ?>
+
 		<div class="characters filtered">
 			<?php
 				$query = new WP_Query( array(
@@ -42,7 +31,7 @@ $category_id = $categories[0]->name;
 
 						while ( $query->have_posts() ) : $query->the_post();
 
-								get_template_part('template-parts/character');
+              get_template_part('template-parts/character');
 
 						endwhile; wp_reset_postdata();
 				endif; 

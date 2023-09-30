@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.5
+Version: 1.5.2
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -492,10 +492,11 @@ img.join-discord{ max-width: 100%; }
 	justify-content: flex-start;
 	align-items: center;
 	padding: 1rem;
+  padding-bottom: 0;
 }
 .character-filters #search{
 	width: 100%;
-	max-width: 280px;
+	max-width: 100%;
 	background-color: transparent;
 	border: 2px solid #14181D;
 	border-radius: 12px;
@@ -519,32 +520,6 @@ img.join-discord{ max-width: 100%; }
 .select-all:hover{
 	cursor: pointer;
 	color: #23F1C0;
-}
-/* character filters by skill */
-.character-skills{
-	flex: 100%;
-	padding: .5rem;
-}
-.character-skills .skills{
-	display: flex;
-	flex-flow: row wrap;
-}
-.character-skills .skills a{
-	font-size: .9rem;
-	border-radius: 12px;
-	background-color: #14181D;
-	border: 1px solid #272A2F;
-	padding: .5rem 1rem;
-	margin-right: .5rem;
-	margin-bottom: .5rem;
-}
-.character-skills .skills a.active{
-	background-color: rgba(235, 237, 99, 0.08);
-	border: 1px solid #ebed63;
-	color: #ebed63;
-}
-.character-skills .skills a:hover{
-	cursor: pointer;
 }
 
 .characters-wrapper{
@@ -596,6 +571,7 @@ img.join-discord{ max-width: 100%; }
 	left: 0;
 }
 /* Character custom colors for rarity */
+.news .characters .character .bg.ur { background-image: linear-gradient(0deg, #f47f20ee 0%, #ffa860 74%); }
 .news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(255, 179, 72, 0.8) 0%, rgba(255, 244, 87, 0.8) 100%); }
 .news .characters .character .bg.sr { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
 .news .characters .character .bg.r { background-image: linear-gradient(to top, rgba(0, 144, 255, .8) 0%, rgba(154, 203, 240, 0.8) 100%); }
@@ -1004,6 +980,52 @@ hr{
 .footer .navbar ul li a{
 	margin-right: 1rem;
 	color: white;
+}
+
+/* character skill filters */
+.character-skills{
+  max-width: 100%;
+  height: 250px;
+  margin: 1rem;
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.character-skills input{
+  width: calc(100% - .5rem);
+  border-radius: 8px;
+  margin: .5rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+  border: none;
+}
+.character-skills span.tag{
+  display: inline-block;
+  padding: .25rem .5rem;
+  margin: .5rem;
+  border: 1px solid #202442;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: .25s linear;
+}
+.character-skills span.tag:hover{
+  background-color: #31b94d;
+  border-color: #31b94d;
+  cursor: pointer;
+}
+.character-skills::-webkit-scrollbar {
+  width: 10px;
+}
+.character-skills::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background: #f1f1f1;
+}
+.character-skills::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #888;
+}
+.character-skills::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* tabs custom css for block */
