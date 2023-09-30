@@ -21,7 +21,7 @@ get_header();
 	</a>
 	<a class="game reverse covering">
 		<div>
-			<p>Reverse:1999 (coming soon)</p>
+			<p>Reverse: 1999 (coming soon)</p>
 		</div>
 	</a>
 	<a class="game">
