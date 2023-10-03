@@ -19,6 +19,202 @@
 	});
 })(jQuery);
 
+// custom selects and filters in databases
+(function ($) {
+  try {
+    // Get all custom select containers
+    const customSelects = document.querySelectorAll(".custom-select");
+    let filters = [] // array with all our filters
+    let searchFilter = ''
+    // todo -> change this input by class or id instead, we have multiple search bars
+    const input = document.querySelector('#search');
+    // character list
+    const characters = [...document.querySelectorAll('.characters.filtered .character')];
+    const resetFiltersButton = document.querySelector('.reset-filters')
+    const advancedFiltersButton = document.querySelector('.advanced-filters')
+    const advancedTags = [...document.querySelectorAll('.tag')];
+    const advancedFiltersInput = document.querySelector('#filter');
+
+    customSelects.forEach((customSelect) => {
+      const selectBtn = customSelect.querySelector(".select-button");
+      const selectedValue = customSelect.querySelector(".selected-value");
+      const optionsList = customSelect.querySelectorAll(".select-dropdown li");
+
+      // add click event to select button
+      selectBtn.addEventListener("click", (e) => {
+        // Close all open selects
+        customSelects.forEach((select) => {
+          if (select !== customSelect) {
+            select.classList.remove("active");
+            select.querySelector(".select-button").setAttribute("aria-expanded", "false");
+          }
+        });
+
+        // Toggle the active class on the current select
+        customSelect.classList.toggle("active");
+        // Update the aria-expanded attribute based on the current state
+        selectBtn.setAttribute(
+          "aria-expanded",
+          selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
+        );
+
+        // Prevent the click event from propagating further (e.g., closing the select immediately)
+        e.stopPropagation();
+      });
+
+      optionsList.forEach((option) => {
+        function handler(e) {
+          // Click Events
+          if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0 && customSelect.classList.contains("active")) {
+            selectedValue.textContent = option.textContent;
+            customSelect.classList.remove("active");
+
+            // get all values from this select and remove them (if they're present) from the array before we add the new value to the filters array
+            const selectOptions = customSelect.querySelectorAll('input')
+            const selectOptionsID = Array.from(selectOptions).map(element => element.id);
+            
+            filters = filters.filter(item => !selectOptionsID.includes(item));
+
+            // Get and print the id attribute of the selected option
+            // const id = customSelect.getAttribute("id");
+            const id = option.querySelector('input').getAttribute("id");
+
+            if(id != '')
+              filters.push(id.toLowerCase())
+            
+            filterCharacters(filters, characters)
+          }
+        }
+
+        option.addEventListener("click", handler);
+      });
+    });
+
+    // Add a global click event to close selects when clicking outside
+    document.addEventListener("click", (e) => {
+      customSelects.forEach((customSelect) => {
+        if (!customSelect.contains(e.target)) {
+          customSelect.classList.remove("active");
+          customSelect.querySelector(".select-button").setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+
+    // our search bar is the first filter in the array
+    input.addEventListener('input', () => {
+      searchFilter = input.value;
+      filterCharacters(filters, characters)
+    });
+
+    // filter advanced tags
+    advancedFiltersInput.addEventListener('input', () => {
+      // characterName.includes(searchFilter)
+      advancedTags.forEach(tag => {
+        if (!tag.textContent.toLowerCase().includes(advancedFiltersInput.value))
+          tag.classList.add('hidden')
+        else
+          tag.classList.remove('hidden')
+      });
+    });
+
+    // advanced filters button toggle on/off
+    advancedFiltersButton.addEventListener('click', () => {
+      document.querySelector('.character-skills').classList.toggle('active')
+    })
+
+    // reset filters button
+    resetFiltersButton.addEventListener("click", () => {
+      filters = []
+      searchFilter = ''
+      input.value = ''
+
+      // remove all advanced tags selected
+      advancedTags.forEach(tag => {
+        tag.classList.remove('active')        
+      });
+      
+      // Iterate through all custom select containers and reset them
+      customSelects.forEach((customSelect) => {
+        // Reset the selected value text
+        const firstOption = customSelect.querySelector('ul li label').textContent
+        const selectedValue = customSelect.querySelector(".selected-value")
+
+        selectedValue.textContent = firstOption
+      });
+
+      filterCharacters(filters, characters)
+    });
+
+    // select and add tags to the filter array
+    advancedTags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        let tagFilter = tag.classList.item(1)
+        
+        // if the filter is already active, we remove it, if not, we push it to the filters array and update the character list
+        const index = filters.indexOf(tagFilter);
+
+        if (index !== -1) {
+          // Value exists in the array, so remove it
+          filters.splice(index, 1);
+          tag.classList.remove('active')      
+        } else {
+          // Value does not exist in the array, so add it
+          filters.push(tagFilter);
+          tag.classList.add('active')      
+        }
+
+        filterCharacters(filters, characters)
+      })
+    });
+
+    // filter characters
+    function filterCharacters(filters, characters) {
+      // if there are filters or we're searching for a character, the reset button should appear
+      if (filters.length > 0 || searchFilter)
+        resetFiltersButton.classList.add('active')
+      else
+        resetFiltersButton.classList.remove('active')
+      
+      for (let i = 0; i < characters.length; i++) {
+        const elementClasses = characters[i].querySelector('.bg').classList;
+        let characterName = characters[i].querySelector('.bg').classList.item(1);
+        let showCharacter = false
+        
+        // if we have active filters, we give them priority
+        if(filters.length > 0) {
+          for (const className of filters) {
+            // Check if the className exists in the element's classList
+            if (!elementClasses.contains(className)) {
+              // If any class is missing, the condition is not met
+              showCharacter = false
+              break; // Exit the loop early
+            }
+  
+            showCharacter = true
+  
+            // does the search bar includes this character name?
+            if (characterName.includes(searchFilter)) {
+              showCharacter = true
+            } else
+              showCharacter = false
+          }
+        // no filters active, so we first check search bar
+        } else {
+          if (characterName.includes(searchFilter))
+            showCharacter = true
+        }
+
+        if (showCharacter)
+          characters[i].classList.remove('hidden');
+        else
+          characters[i].classList.add('hidden');
+      }
+    }
+  } catch (error) {
+    console.log('error on custom selects')
+  }
+})(jQuery);
+
 // Event chart
 (function ($) {
 	try {
@@ -117,29 +313,6 @@
 		}
 	} catch (error) {
 		console.error(error)
-	}
-})(jQuery);
-
-// Filter characters
-(function ($) {
-	try {
-		// character list
-		const characters = [...document.querySelectorAll('.characters.filtered .character')];
-		const input = document.querySelector('input[type="search"]');
-
-		input.addEventListener('input', () => {
-			for (let i = 0; i < characters.length; i++) {
-				let characterName = characters[i].dataset.characterName.toLowerCase();
-				let characterValue = characterName.includes(input.value) ? true : false;
-
-				if (characterValue) { // character can be searched
-					characters[i].classList.remove('hidden');
-				} else { // character can't be searched
-					characters[i].classList.add('hidden');
-				}
-			}
-		});
-	} catch (error) {
 	}
 })(jQuery);
 

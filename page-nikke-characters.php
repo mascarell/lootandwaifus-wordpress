@@ -38,8 +38,6 @@ $category_id = $categories[0]->name;
 			?>
 		</div>
 	</div>
-
-	<?php get_template_part('template-parts/sidebar'); ?>
 </div>
 
 <?php

@@ -7,9 +7,18 @@ $category_id = $categories[0]->name;
 
 ?>
 
+<!-- Filter depending on what game we're currently in -->
+<?php 
+if($category_id == 'Nikke') { 
+  get_template_part('template-parts/filters/nikke');
+} else if($category_id == 'Reverse: 1999') {
+} else if($category_id == 'Noneidk') {
+} else { 
+} ?>
+
 <div class="character-skills container">
   <!-- filter input -->
-  <input type="search" id="filter" name="filter" placeholder="Filter skills: ATK buff, DEF buff, Attack speed, etc." autocomplete="off">
+  <input type="search" id="filter" name="filter" placeholder="Filter skills: Attack buff, HP recovery, etc." autocomplete="off">
   
   <?php
     // Replace 'your_custom_post_type' with the name of your custom post type.
@@ -42,7 +51,7 @@ $category_id = $categories[0]->name;
         foreach ($tags as $tag) {
           // Check if the tag's name is not in the tags to exclude array.
           if (!in_array($tag->name, $tags_to_exclude)) {
-            echo '<span class="tag">' . $tag->name . '</span>';
+            echo '<span class="tag ' . $tag->slug . '">' . $tag->name . '</span>';
           }
         }
     } else {
