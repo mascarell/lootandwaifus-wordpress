@@ -122,7 +122,7 @@ if($category_id == 'Nikke') {
 		</div>
 	</div>
 	<?php
-} else if($category_id == 'Noneidk') { ?>
+} else { ?>
 	<!-- Gantt chart with current events -->
 	<div class="container animated chart-parent">
 		<div class="show-more">show all events</div>
@@ -150,9 +150,7 @@ if($category_id == 'Nikke') {
 			</div>
 		</div>
 	</div>
-<?php } else { 
-} 
-?>
+<?php } ?>
 
 <!-- all the guides -->
 <div class="double guides-wrapper animated">
