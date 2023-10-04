@@ -102,7 +102,7 @@
 
     // our search bar is the first filter in the array
     input.addEventListener('input', () => {
-      searchFilter = input.value;
+      searchFilter = input.value.toLowerCase();
       filterCharacters(filters, characters)
     });
 
@@ -110,7 +110,7 @@
     advancedFiltersInput.addEventListener('input', () => {
       // characterName.includes(searchFilter)
       advancedTags.forEach(tag => {
-        if (!tag.textContent.toLowerCase().includes(advancedFiltersInput.value))
+        if (!tag.textContent.toLowerCase().includes(advancedFiltersInput.value.toLowerCase()))
           tag.classList.add('hidden')
         else
           tag.classList.remove('hidden')
