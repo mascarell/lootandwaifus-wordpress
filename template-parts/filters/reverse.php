@@ -11,20 +11,20 @@
         <label for="rarities">All rarities</label>
       </li>
       <li role="option">
-        <input type="radio" id="UR" name="social-account" />
-        <label for="UR">6✦</label>
+        <input type="radio" id="ur" name="social-account" />
+        <label for="ur">6✦</label>
       </li>
       <li role="option">
-        <input type="radio" id="SSR" name="social-account" />
-        <label for="SSR">5✦</label>
+        <input type="radio" id="ssr" name="social-account" />
+        <label for="ssr">5✦</label>
       </li>
       <li role="option">
-        <input type="radio" id="SR" name="social-account" />
-        <label for="SR">4✦</label>
+        <input type="radio" id="sr" name="social-account" />
+        <label for="sr">4✦</label>
       </li>
       <li role="option">
-        <input type="radio" id="R" name="social-account" />
-        <label for="R">3✦</label>
+        <input type="radio" id="r" name="social-account" />
+        <label for="r">3✦</label>
       </li>
     </ul>
   </div>
