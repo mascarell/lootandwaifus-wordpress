@@ -11,20 +11,20 @@
         <label for="rarities">All rarities</label>
       </li>
       <li role="option">
-        <input type="radio" id="six-stars" name="social-account" />
-        <label for="six-stars">6✦</label>
+        <input type="radio" id="UR" name="social-account" />
+        <label for="UR">6✦</label>
       </li>
       <li role="option">
-        <input type="radio" id="five-stars" name="social-account" />
-        <label for="five-stars">5✦</label>
+        <input type="radio" id="SSR" name="social-account" />
+        <label for="SSR">5✦</label>
       </li>
       <li role="option">
-        <input type="radio" id="four-stars" name="social-account" />
-        <label for="four-stars">4✦</label>
+        <input type="radio" id="SR" name="social-account" />
+        <label for="SR">4✦</label>
       </li>
       <li role="option">
-        <input type="radio" id="three-stars" name="social-account" />
-        <label for="three-stars">3✦</label>
+        <input type="radio" id="R" name="social-account" />
+        <label for="R">3✦</label>
       </li>
     </ul>
   </div>
