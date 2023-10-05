@@ -12,6 +12,7 @@ $category_id = $categories[0]->name;
 if($category_id == 'Nikke') { 
   get_template_part('template-parts/filters/nikke');
 } else if($category_id == 'Reverse: 1999') {
+  get_template_part('template-parts/filters/reverse');
 } else if($category_id == 'Noneidk') {
 } else { 
 } ?>
