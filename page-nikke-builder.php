@@ -39,9 +39,11 @@ $category_id = $categories[0]->name;
 			</div>
 		</div>
 
-		<div class="character-filters">
-			<input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
+    <div class="character-filters" style="display:none">
+      <input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
 		</div>
+    
+		<?php get_template_part('template-parts/database-filters'); ?>
 
 		<div class="characters filtered">
 			<?php
