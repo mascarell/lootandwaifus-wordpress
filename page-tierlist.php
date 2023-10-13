@@ -33,6 +33,7 @@ $category_id = $categories[0]->name;
                   $args = array(
                     'post_type' => 'characters', 
                     'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'category_name'  => $category_id,
                     'tag' => 'tier-0',
                   );
                   $query = new WP_Query($args);
@@ -54,6 +55,7 @@ $category_id = $categories[0]->name;
                   $args = array(
                     'post_type' => 'characters', 
                     'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'category_name'  => $category_id,
                     'tag' => 'tier-0-5',
                   );
                   $query = new WP_Query($args);
@@ -75,6 +77,7 @@ $category_id = $categories[0]->name;
                   $args = array(
                     'post_type' => 'characters', 
                     'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'category_name'  => $category_id,
                     'tag' => 'tier-1',
                   );
                   $query = new WP_Query($args);
@@ -96,6 +99,7 @@ $category_id = $categories[0]->name;
                   $args = array(
                     'post_type' => 'characters', 
                     'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'category_name'  => $category_id,
                     'tag' => 'tier-1-5',
                   );
                   $query = new WP_Query($args);
@@ -117,6 +121,7 @@ $category_id = $categories[0]->name;
                   $args = array(
                     'post_type' => 'characters', 
                     'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'category_name'  => $category_id,
                     'tag' => 'tier-2',
                   );
                   $query = new WP_Query($args);
@@ -138,6 +143,7 @@ $category_id = $categories[0]->name;
                   $args = array(
                     'post_type' => 'characters', 
                     'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                    'category_name'  => $category_id,
                     'tag' => 'tier-3',
                   );
                   $query = new WP_Query($args);
