@@ -25,136 +25,124 @@ $category_id = $categories[0]->name;
 
           <div class="tier-list">
             <!-- TIER 0 UNITS -->
-            <div class="row">
-              <p class="tier tier-0">Tier 0</p>
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-0',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-0">Tier 0</p><div class="characters filtered">
 
-              <div class="characters filtered">
-                <?php
-                  $args = array(
-                    'post_type' => 'characters', 
-                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
-                    'category_name'  => $category_id,
-                    'tag' => 'tier-0',
-                  );
-                  $query = new WP_Query($args);
-                  if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post();
-                      get_template_part('template-parts/character');
-                    endwhile; wp_reset_postdata();
-                  endif; 
-                  ?>
-              </div>
-            </div>
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character'); ?>
+                  
+                </div></div>
+                <?php endwhile; wp_reset_postdata();
+              endif; 
+            ?>
 
             <!-- TIER 0.5 UNITS -->
-            <div class="row">
-              <p class="tier tier-1">Tier 0.5</p>
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-0-5',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-0">Tier 0.5</p><div class="characters filtered">
 
-              <div class="characters filtered">
-                <?php
-                  $args = array(
-                    'post_type' => 'characters', 
-                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
-                    'category_name'  => $category_id,
-                    'tag' => 'tier-0-5',
-                  );
-                  $query = new WP_Query($args);
-                  if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post();
-                      get_template_part('template-parts/character');
-                    endwhile; wp_reset_postdata();
-                  endif; 
-                  ?>
-              </div>
-            </div>
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character'); ?>
+                  
+                </div></div>
+                <?php endwhile; wp_reset_postdata();
+              endif; 
+            ?>
 
             <!-- TIER 1 UNITS -->
-            <div class="row">
-              <p class="tier tier-2">Tier 1</p>
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-1',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-0">Tier 1</p><div class="characters filtered">
 
-              <div class="characters filtered">
-                <?php
-                  $args = array(
-                    'post_type' => 'characters', 
-                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
-                    'category_name'  => $category_id,
-                    'tag' => 'tier-1',
-                  );
-                  $query = new WP_Query($args);
-                  if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post();
-                      get_template_part('template-parts/character');
-                    endwhile; wp_reset_postdata();
-                  endif; 
-                  ?>
-              </div>
-            </div>
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character'); ?>
+                  
+                </div></div>
+                <?php endwhile; wp_reset_postdata();
+              endif; 
+            ?>
 
             <!-- TIER 1.5 UNITS -->
-            <div class="row">
-              <p class="tier tier-3">Tier 1.5</p>
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-1-5',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-0">Tier 1.5</p><div class="characters filtered">
 
-              <div class="characters filtered">
-                <?php
-                  $args = array(
-                    'post_type' => 'characters', 
-                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
-                    'category_name'  => $category_id,
-                    'tag' => 'tier-1-5',
-                  );
-                  $query = new WP_Query($args);
-                  if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post();
-                      get_template_part('template-parts/character');
-                    endwhile; wp_reset_postdata();
-                  endif; 
-                  ?>
-              </div>
-            </div>
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character'); ?>
+                  
+                </div></div>
+                <?php endwhile; wp_reset_postdata();
+              endif; 
+            ?>
 
             <!-- TIER 2 UNITS -->
-            <div class="row">
-              <p class="tier tier-4">Tier 2</p>
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-2',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-0">Tier 2</p><div class="characters filtered">
 
-              <div class="characters filtered">
-                <?php
-                  $args = array(
-                    'post_type' => 'characters', 
-                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
-                    'category_name'  => $category_id,
-                    'tag' => 'tier-2',
-                  );
-                  $query = new WP_Query($args);
-                  if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post();
-                      get_template_part('template-parts/character');
-                    endwhile; wp_reset_postdata();
-                  endif; 
-                  ?>
-              </div>
-            </div>
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character'); ?>
+                  
+                </div></div>
+                <?php endwhile; wp_reset_postdata();
+              endif; 
+            ?>
 
-            <!-- TIER 3 UNITS -->
-            <div class="row">
-              <p class="tier tier-5">Tier 3</p>
+              <!-- TIER 3 UNITS -->
+              <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-3',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-0">Tier 3</p><div class="characters filtered">
 
-              <div class="characters filtered">
-                <?php
-                  $args = array(
-                    'post_type' => 'characters', 
-                    'posts_per_page' => -1, // Set the number of posts to display, -1 for all
-                    'category_name'  => $category_id,
-                    'tag' => 'tier-3',
-                  );
-                  $query = new WP_Query($args);
-                  if ( $query->have_posts() ) :
-                    while ( $query->have_posts() ) : $query->the_post();
-                      get_template_part('template-parts/character');
-                    endwhile; wp_reset_postdata();
-                  endif; 
-                  ?>
-              </div>
-            </div>
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character'); ?>
+                  
+                </div></div>
+                <?php endwhile; wp_reset_postdata();
+              endif; 
+            ?>
           </div>
 				</div>
 		</div>
