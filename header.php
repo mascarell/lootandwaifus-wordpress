@@ -16,6 +16,9 @@
   <!-- Lozad -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9374214313904321" crossorigin="anonymous"></script>
+
 	<!-- Particle.js -->
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   
