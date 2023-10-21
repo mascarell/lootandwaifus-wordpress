@@ -77,8 +77,6 @@ get_header();
 
 		<?php get_template_part('template-parts/pagination'); ?>
 	</div>
-
-	<?php get_template_part('template-parts/sidebar'); ?>
 </div>
 
 <?php

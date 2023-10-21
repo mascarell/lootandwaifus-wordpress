@@ -21,6 +21,9 @@
 
 	<!-- Particle.js -->
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Remix icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
   
 	<?php wp_head(); ?>	
 </head>
@@ -31,6 +34,18 @@
 
 <div class="separator"></div>
 
-<div class="web">
+<header class="header">
+    <div class="header__container">
+      <div class="header__toggle" id="header-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
 
-<?php get_template_part('template-parts/top-menu'); ?>
+      <a href="#" class="header__logo">
+        <img src="<?php echo get_theme_file_uri('images/lootlogo.png'); ?>" loading="lazy" alt="loot & waifus logo">
+      </a>
+    </div>
+</header>
+
+<?php get_template_part('template-parts/global-sidebar'); ?>
+
+<main class="main" id="main">

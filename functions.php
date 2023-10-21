@@ -7,7 +7,10 @@ function sefhi_styles()
 	$theme = wp_get_theme();
 	$version = $theme->get( 'Version' );
 	
+  // main css file
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $version );
+  // sidebar css file
+  wp_enqueue_style('sidebar-css', get_template_directory_uri() . '/sidebar.css', array(),  $version, 'all');
 	// wp_enqueue_script( 'code', get_template_directory_uri() . '/js/code.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'code', get_template_directory_uri() . '/js/code.js', array(), filemtime( get_template_directory() . '/js/code.js' ), true,);
 }

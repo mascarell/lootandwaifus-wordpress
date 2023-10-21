@@ -133,7 +133,7 @@
 	);
 </script>
 
-</div>
+</main>
 
 <?php wp_footer(); ?>
 

@@ -1,22 +1,34 @@
-// Menu & overlay functionality
+// Lozad lazy loading
 (function ($) {
-  // Animations
-  const items = [...document.querySelectorAll('.animated')];
-
-  for (let i = 0; i < items.length; i++) {
-    setTimeout(function () {
-      items[i].classList.add('active');
-    }, 50 * (i + 1));
+  try {
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+  } catch (error) {
+    console.error(error)
   }
+})(jQuery);
 
-  // Lozad
-  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-  observer.observe();
+// sidebar functionality
+(function ($) {
+  try {
+    const showSidebar = (toggleId, sidebarId, mainId) => {
+      const toggle = document.getElementById(toggleId),
+        sidebar = document.getElementById(sidebarId),
+        main = document.getElementById(mainId)
 
-	// Open and close menu
-	document.querySelector('.b-menu').addEventListener('click', () => {
-		document.querySelector('.overlay-menu').classList.toggle('open');
-	});
+      if (toggle && sidebar && main) {
+        toggle.addEventListener('click', () => {
+          /* Show sidebar */
+          sidebar.classList.toggle('show-sidebar')
+          /* Add padding main */
+          main.classList.toggle('main-pd')
+        })
+      }
+    }
+    showSidebar('header-toggle', 'sidebar', 'main')
+  } catch (error) {
+    console.error(error)
+  }
 })(jQuery);
 
 // custom selects and filters in databases
