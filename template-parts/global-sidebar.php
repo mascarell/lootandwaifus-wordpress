@@ -142,12 +142,6 @@
               <span class="sidebar__link-name">Supporters</span>
               <span class="sidebar__link-floating">Supporters</span>
           </a>
-
-          <a href="<?php echo home_url(); ?>/team/" class="sidebar__link">
-              <i class="ri-team-line"></i>
-              <span class="sidebar__link-name">Team</span>
-              <span class="sidebar__link-floating">Team</span>
-          </a>
         </div>
     </div>
   </nav>
