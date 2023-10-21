@@ -8,6 +8,18 @@
   }
 })(jQuery);
 
+// animations
+(function ($) {
+  // Animations
+  const items = [...document.querySelectorAll('.animated')];
+
+  for (let i = 0; i < items.length; i++) {
+    setTimeout(function () {
+      items[i].classList.add('active');
+    }, 50 * (i + 1));
+  }
+})(jQuery);
+
 // sidebar functionality
 (function ($) {
   try {
