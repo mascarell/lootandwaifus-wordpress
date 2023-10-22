@@ -40,6 +40,12 @@
               <span class="sidebar__link-name">Characters</span>
               <span class="sidebar__link-floating">Characters</span>
           </a>
+
+          <a href="<?php echo home_url(); ?>/free-2-play-2023-nikke-challenge/" class="sidebar__link">
+              <i class="ri-money-dollar-circle-line"></i>
+              <span class="sidebar__link-name">F2P Challenge</span>
+              <span class="sidebar__link-floating">F2P Challenge</span>
+          </a>
         </div>
 
         <h3 class="sidebar__title">
