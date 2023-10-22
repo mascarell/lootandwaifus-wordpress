@@ -32,9 +32,6 @@
 }
 
 /*=============== LAYOUT ===============*/
-.main {
-  padding-top: 5rem;
-}
 
 /*=============== HEADER ===============*/
 .header {
@@ -322,7 +319,6 @@
 
   .main {
     padding-left: 300px;
-    padding-top: 6rem;
     transition: padding .4s;
     max-width: 1600px;
     margin: 0 auto;
