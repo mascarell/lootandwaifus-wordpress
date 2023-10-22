@@ -22,7 +22,13 @@
               <span class="sidebar__link-name">Home</span>
               <span class="sidebar__link-floating">Home</span>
           </a>
-          
+        </div>
+
+        <h3 class="sidebar__title">
+          <span>NIKKE</span>
+        </h3>
+
+        <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/nikke/" class="sidebar__link">
               <i class="ri-book-open-line"></i>
               <span class="sidebar__link-name">Guides</span>
@@ -79,7 +85,13 @@
               <span class="sidebar__link-name">Home</span>
               <span class="sidebar__link-floating">Home</span>
           </a>
-          
+        </div>
+
+        <h3 class="sidebar__title">
+          <span>Reverse: 1999</span>
+        </h3>
+        
+        <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/reverse-1999/" class="sidebar__link">
               <i class="ri-book-open-line"></i>
               <span class="sidebar__link-name">Guides</span>
