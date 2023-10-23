@@ -137,7 +137,7 @@
 }
 
 .sidebar__link {
-  color: var(--text-color);
+  color: var(--white-color);
   display: grid;
   grid-template-columns: repeat(2, max-content);
   align-items: center;
@@ -246,6 +246,10 @@
 @media screen and (min-width: 1024px) {
   .header__container {
     height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .sidebar__link {
+    color: var(--text-color);
   }
 
   .header__toggle {
