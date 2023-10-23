@@ -142,13 +142,7 @@
           <span>Support us</span>
         </h3>
 
-        <div class="sidebar__list">
-          <a href="https://discord.gg/rdCkPuPkDq" class="sidebar__link">
-              <i class="ri-discord-line"></i>
-              <span class="sidebar__link-name">Discord</span>
-              <span class="sidebar__link-floating">Discord</span>
-          </a>
-
+        <div class="sidebar__list">          
           <a href="https://www.patreon.com/lootandwaifus" class="sidebar__link">
               <i class="ri-patreon-line"></i>
               <span class="sidebar__link-name">Patreon</span>
@@ -159,6 +153,18 @@
               <i class="ri-heart-2-line"></i>
               <span class="sidebar__link-name">Supporters</span>
               <span class="sidebar__link-floating">Supporters</span>
+          </a>
+
+          <a href="https://discord.gg/rdCkPuPkDq" class="sidebar__link">
+              <i class="ri-discord-line"></i>
+              <span class="sidebar__link-name">Discord</span>
+              <span class="sidebar__link-floating">Discord</span>
+          </a>
+
+          <a href="https://twitter.com/sefhi_" class="sidebar__link">
+              <i class="ri-twitter-line"></i>
+              <span class="sidebar__link-name">Twitter</span>
+              <span class="sidebar__link-floating">Twitter</span>
           </a>
         </div>
     </div>
