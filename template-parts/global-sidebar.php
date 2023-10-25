@@ -160,12 +160,6 @@
               <span class="sidebar__link-name">Discord</span>
               <span class="sidebar__link-floating">Discord</span>
           </a>
-
-          <a href="https://twitter.com/sefhi_" class="sidebar__link">
-              <i class="ri-twitter-line"></i>
-              <span class="sidebar__link-name">Twitter</span>
-              <span class="sidebar__link-floating">Twitter</span>
-          </a>
         </div>
 
         <a href="https://www.ldplayer.net/?n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play" target="_blank" rel="noopener noreferrer">
