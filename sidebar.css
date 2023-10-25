@@ -46,6 +46,28 @@
   padding: 0 1.5rem;
 }
 
+a.play{
+  width: 100%;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  background: #F5C715;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  padding: 14px 22px;
+  text-align: center;
+}
+a.play img{
+  width: 100%;
+  max-width: 24px;
+  margin-right: .5rem;
+}
+
 .header::after {
   content: "";
   position: absolute;
