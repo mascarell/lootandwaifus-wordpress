@@ -61,11 +61,20 @@ a.play{
   font-weight: 500;
   padding: 14px 22px;
   text-align: center;
+  box-sizing: border-box;
 }
 a.play img{
   width: 100%;
   max-width: 24px;
   margin-right: .5rem;
+}
+a.play.big{
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+  margin-bottom: 1.5rem;
+}
+a.play.big img{
+  max-width: 48px;
 }
 .sidebar.show-sidebar a.play img{
   margin-right: 0;
