@@ -67,6 +67,12 @@ a.play img{
   max-width: 24px;
   margin-right: .5rem;
 }
+.sidebar.show-sidebar a.play img{
+  margin-right: 0;
+}
+.sidebar.show-sidebar a.play span {
+  display: none;
+}
 
 .header::after {
   content: "";

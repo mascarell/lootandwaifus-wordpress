@@ -170,7 +170,7 @@
 
         <a href="https://www.ldplayer.net/?n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play" target="_blank" rel="noopener noreferrer">
           <img src="<?php echo get_theme_file_uri('images/ldplayer.webp'); ?>" alt="ldplayer logo">
-          Play gachas on PC
+          <span>Play gachas on PC</span>
         </a>
     </div>
   </nav>
