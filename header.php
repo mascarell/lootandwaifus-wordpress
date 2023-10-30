@@ -41,7 +41,7 @@
       </div>
 
       <div>
-        <a href="https://www.ldplayer.net/?n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play discord" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/rdCkPuPkDq" class="play discord" target="_blank" rel="noopener noreferrer">
           <i class="ri-discord-fill"></i>
           <span>Discord</span>
         </a>
