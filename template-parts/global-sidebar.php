@@ -71,11 +71,11 @@
               <span class="sidebar__link-floating">Team builder</span>
           </a>
 
-          <!-- <a href="<?php echo home_url(); ?>/nikke-raids/" class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/nikke-raids/" class="sidebar__link">
               <i class="ri-sword-line"></i>
               <span class="sidebar__link-name">Raids</span>
               <span class="sidebar__link-floating">Raids</span>
-          </a> -->
+          </a>
 
           <a href="<?php echo home_url(); ?>/nikke-events/" class="sidebar__link">
               <i class="ri-calendar-event-line"></i>
