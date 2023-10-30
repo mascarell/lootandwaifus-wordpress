@@ -71,6 +71,12 @@
               <span class="sidebar__link-floating">Team builder</span>
           </a>
 
+          <!-- <a href="<?php echo home_url(); ?>/nikke-raids/" class="sidebar__link">
+              <i class="ri-sword-line"></i>
+              <span class="sidebar__link-name">Raids</span>
+              <span class="sidebar__link-floating">Raids</span>
+          </a> -->
+
           <a href="<?php echo home_url(); ?>/nikke-events/" class="sidebar__link">
               <i class="ri-calendar-event-line"></i>
               <span class="sidebar__link-name">Events</span>
@@ -136,7 +142,6 @@
               <span class="sidebar__link-floating">Reverse: 1999</span>
           </a>
         </div>
-      <?php } ?>
 
         <h3 class="sidebar__title">
           <span>Support us</span>
@@ -161,7 +166,7 @@
               <span class="sidebar__link-floating">Discord</span>
           </a>
         </div>
-
+      <?php } ?>
         <a href="https://www.ldplayer.net/?n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play" target="_blank" rel="noopener noreferrer">
           <img src="<?php echo get_theme_file_uri('images/ldplayer.webp'); ?>" alt="ldplayer logo">
           <span>Play gachas on PC</span>

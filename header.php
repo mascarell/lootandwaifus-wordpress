@@ -40,9 +40,15 @@
         <i class="ri-menu-line"></i>
       </div>
 
-      <a href="<?php echo home_url(); ?>" class="header__logo">
-        <img src="<?php echo get_theme_file_uri('images/lootlogo.png'); ?>" loading="lazy" alt="loot & waifus logo">
-      </a>
+      <div>
+        <a href="https://www.ldplayer.net/?n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play discord" target="_blank" rel="noopener noreferrer">
+          <i class="ri-discord-fill"></i>
+          <span>Discord</span>
+        </a>
+        <!-- <a href="<?php echo home_url(); ?>" class="header__logo">
+          <img src="<?php echo get_theme_file_uri('images/lootlogo.png'); ?>" loading="lazy" alt="loot & waifus logo">
+        </a> -->
+      </div>
     </div>
 </header>
 

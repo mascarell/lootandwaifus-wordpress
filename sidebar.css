@@ -63,7 +63,11 @@ a.play{
   text-align: center;
   box-sizing: border-box;
 }
-a.play img{
+a.play.discord{
+  background: #7289da;
+  margin-top: 0;
+}
+a.play img, a.play i{
   width: 100%;
   max-width: 24px;
   margin-right: .5rem;
