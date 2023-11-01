@@ -61,8 +61,8 @@
         <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/guides/nikke-interactive-map/" class="sidebar__link">
               <i class="ri-road-map-line"></i>
-              <span class="sidebar__link-name">Interactive map</span>
-              <span class="sidebar__link-floating">Interactive map</span>
+              <span class="sidebar__link-name">Lost Relics</span>
+              <span class="sidebar__link-floating">Lost Relics</span>
           </a>
 
           <a href="<?php echo home_url(); ?>/nikke-team-builder/" class="sidebar__link">
