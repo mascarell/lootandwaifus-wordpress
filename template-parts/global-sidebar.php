@@ -116,6 +116,18 @@
               <span class="sidebar__link-floating">Characters</span>
           </a>
         </div>
+
+        <h3 class="sidebar__title">
+          <span>Tools</span>
+        </h3>
+
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/reverse-1999-events/" class="sidebar__link">
+              <i class="ri-calendar-event-line"></i>
+              <span class="sidebar__link-name">Events</span>
+              <span class="sidebar__link-floating">Events</span>
+          </a>
+        </div>
       <?php } else { ?>
         <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/" class="sidebar__link">
