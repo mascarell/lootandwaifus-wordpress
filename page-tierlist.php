@@ -119,6 +119,25 @@ $category_id = $categories[0]->name;
               <?php endif;
             ?>
 
+            <!-- TIER 2.5 UNITS -->
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-2-5',
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier tier-5">Tier 2.5</p><div class="characters filtered">
+
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character');
+                endwhile; wp_reset_postdata(); ?>
+                </div></div>
+              <?php endif;
+            ?>
+
             <!-- TIER 3 UNITS -->
             <?php
               $args = array(
@@ -129,7 +148,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-5">Tier 3</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-6">Tier 3</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
