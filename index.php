@@ -53,7 +53,7 @@ get_header();
 	</a>
 </div>
 
-<div class="double">
+<!-- <div class="double">
 	<div class="news">
 		<div class="posts animated">
 			<?php
@@ -77,7 +77,7 @@ get_header();
 
 		<?php get_template_part('template-parts/pagination'); ?>
 	</div>
-</div>
+</div> -->
 
 <?php
 
