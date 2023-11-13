@@ -53,13 +53,13 @@ get_header();
 	</a>
 </div>
 
-<!-- <div class="double">
+<div class="double">
 	<div class="news">
 		<div class="posts animated">
 			<?php
 					$args = array(
 							'posts_per_page' => 8,
-							'post_type'      => 'post',
+							'post_type'      => array('post', 'guides', 'characters'),
 							'paged'          => get_query_var( 'paged' ),
 					);
 					$wp_query = new WP_Query( $args );
@@ -77,7 +77,7 @@ get_header();
 
 		<?php get_template_part('template-parts/pagination'); ?>
 	</div>
-</div> -->
+</div>
 
 <?php
 
