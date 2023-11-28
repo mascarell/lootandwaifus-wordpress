@@ -41,13 +41,14 @@
       </div>
 
       <div>
+        <!-- <a href="https://www.twitch.tv/sefhi_922" class="play twitch" target="_blank" rel="noopener noreferrer">
+          <i class="ri-twitch-fill"></i>
+          <span>Daily streams</span>
+        </a> -->
         <a href="https://discord.gg/rdCkPuPkDq" class="play discord" target="_blank" rel="noopener noreferrer">
           <i class="ri-discord-fill"></i>
           <span>Discord</span>
         </a>
-        <!-- <a href="<?php echo home_url(); ?>" class="header__logo">
-          <img src="<?php echo get_theme_file_uri('images/lootlogo.png'); ?>" loading="lazy" alt="loot & waifus logo">
-        </a> -->
       </div>
     </div>
 </header>

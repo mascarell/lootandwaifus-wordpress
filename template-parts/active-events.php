@@ -3,11 +3,12 @@
 	$startDate = get_post_meta( get_the_ID(), 'start_date', true );
 	$endDate = get_post_meta( get_the_ID(), 'end_date', true );
 	$bgColor = get_post_meta( get_the_ID(), 'bgColor', true );
+	$eventLink = get_post_meta( get_the_ID(), 'eventLink', true );
 ?>
 
 <a 
 	class="chart-bar lozad" 
-	href="<?php the_permalink(); ?>" 
+	<?php if ( ! empty( $eventLink ) ) { ?> href="<?php echo $eventLink; ?>" <?php } ?>
 	data-start-date="<?php if ( ! empty( $startDate ) ) { echo $startDate; } ?>" 
 	data-end-date="<?php if ( ! empty( $endDate ) ) { echo $endDate; } ?>"
 	style="background-color: <?php if ( ! empty( $bgColor ) ) { echo $bgColor; } ?>"

@@ -31,6 +31,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-0',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
@@ -50,6 +52,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-0-5',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
@@ -69,6 +73,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-1',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
@@ -88,6 +94,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-1-5',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
@@ -107,6 +115,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-2',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
@@ -126,6 +136,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-2-5',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
@@ -145,6 +157,8 @@ $category_id = $categories[0]->name;
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
                 'tag' => 'tier-3',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>

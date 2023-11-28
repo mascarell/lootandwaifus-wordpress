@@ -468,6 +468,35 @@
 			}
 		});
 
+    // if there's an active team, hide select all and remove all buttons
+    if (activeTeam) {
+      document.getElementById('select-all').style.display = "none"
+      document.getElementById('remove-all').style.display = "none"
+    }
+
+    // select and remove all units
+    // Add event listener for "Select All" button
+    document.getElementById('select-all').addEventListener('click', function () {
+      characters.forEach(character => {
+        character.classList.add('selected');
+        let id = character.dataset.characterId;
+        // Update arrays of units
+        charactersId.indexOf(id) === -1 ? charactersId.push(id) : null;
+      });
+      changeURL();
+    });
+
+    // Add event listener for "Deselect All" button
+    document.getElementById('remove-all').addEventListener('click', function () {
+      characters.forEach(character => {
+        character.classList.remove('selected');
+        let id = character.dataset.characterId;
+        // Update arrays of units
+        charactersId.indexOf(id) === -1 ? null : charactersId.splice(charactersId.indexOf(id), 1);
+      });
+      changeURL();
+    });
+
 		// event listener so we can toggle teams 1 to 3 visible
 		let teamSwitch = [...document.querySelectorAll('.team-switch span')];
 		teamSwitch.forEach(switchs => {

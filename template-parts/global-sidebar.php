@@ -35,11 +35,11 @@
               <span class="sidebar__link-floating">Guides</span>
           </a>
           
-          <!-- <a href="#" class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/nikke-pve-tier-list" class="sidebar__link">
               <i class="ri-line-chart-line"></i>
               <span class="sidebar__link-name">Tier list</span>
               <span class="sidebar__link-floating">Tier list</span>
-          </a> -->
+          </a>
 
           <a href="<?php echo home_url(); ?>/nikke-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
@@ -53,6 +53,12 @@
         </h3>
 
         <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/guides/nikke-codes/" class="sidebar__link">
+              <i class="ri-vip-diamond-line"></i>
+              <span class="sidebar__link-name">Free codes</span>
+              <span class="sidebar__link-floating">Free codes</span>
+          </a>
+
           <a href="<?php echo home_url(); ?>/guides/nikke-interactive-map/" class="sidebar__link">
               <i class="ri-road-map-line"></i>
               <span class="sidebar__link-name">Lost Relics</span>
@@ -98,20 +104,32 @@
               <span class="sidebar__link-floating">Guides</span>
           </a>
           
-          <a href="<?php echo home_url(); ?>/reverse-1999-tier-list/" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-tier-list/" class="sidebar__link">
               <i class="ri-line-chart-line"></i>
               <span class="sidebar__link-name">Tier list</span>
               <span class="sidebar__link-floating">Tier list</span>
-          </a>
+          </a> -->
 
           <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
               <span class="sidebar__link-name">Characters</span>
               <span class="sidebar__link-floating">Characters</span>
           </a>
+
+          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
+              <i class="ri-instance-line"></i>
+              <span class="sidebar__link-name">Psychubes</span>
+              <span class="sidebar__link-floating">Psychubes</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
+              <i class="ri-shirt-line"></i>
+              <span class="sidebar__link-name">Skins</span>
+              <span class="sidebar__link-floating">Skins</span>
+          </a> -->
         </div>
 
-        <h3 class="sidebar__title">
+        <!-- <h3 class="sidebar__title">
           <span>Tools</span>
         </h3>
 
@@ -121,7 +139,7 @@
               <span class="sidebar__link-name">Events</span>
               <span class="sidebar__link-floating">Events</span>
           </a>
-        </div>
+        </div> -->
       <?php } else { ?>
         <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/" class="sidebar__link">
@@ -138,8 +156,14 @@
         <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/nikke" class="sidebar__link">
               <i class="ri-crosshair-2-line"></i>
-              <span class="sidebar__link-name">NIKKE</span>
-              <span class="sidebar__link-floating">NIKKE</span>
+              <span class="sidebar__link-name">GoV: NIKKE</span>
+              <span class="sidebar__link-floating">GoV: NIKKE</span>
+          </a>
+          
+          <a class="sidebar__link">
+              <i class="ri-vip-crown-line"></i>
+              <span class="sidebar__link-name">Overlord: KoN</span>
+              <span class="sidebar__link-floating">Overlord: KoN</span>
           </a>
           
           <a href="<?php echo home_url(); ?>/reverse-1999" class="sidebar__link">

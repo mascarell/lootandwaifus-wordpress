@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.6.2
+Version: 1.6.5
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -138,159 +138,6 @@ a.patreon img{ max-width: 100%; }
 	color: white;
 }
 
-/* menus */
-.top-menu{
-	position: fixed !important;
-	top: 0;
-	left: 0;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
-	z-index: 1;
-	background-color: #14181D;
-	border-bottom: 2px solid #000;
-	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-.logged-in .top-menu{
-	top: 32px;
-}
-.top-menu-contaier{
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 100%;
-	position: relative;
-	max-width: 1280px;
-}
-.top-menu .loot-logo{
-	line-height: 25px;
-	height: 25px;
-}
-.top-menu ul{
-	margin: 0;
-	padding: 0;
-	margin-left: 4rem;
-	list-style-type: none;
-	display: flex;
-	flex-flow: row nowrap;
-	position: relative;
-}
-.top-menu ul li{
-	position: relative;
-}
-.top-menu ul a{
-	color: white;
-	font-weight: 300;
-	text-transform: uppercase;
-	padding: .5rem 1.5rem;
-	line-height: 40px;
-	display: block;
-	position: relative;
-	font-size: .9rem;
-}
-.top-menu ul a:hover{
-	background-color: #0D1116;
-}
-.top-menu ul .sub-menu{
-	display: none;
-	flex-flow: column wrap;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background-color: #14181D;
-	width: 200px;
-	margin: 0;
-	padding: 0;
-}
-.top-menu ul .sub-menu li a{
-	font-size: .8rem;
-	text-transform: capitalize;
-	padding: 1rem .5rem;
-	line-height: 20px;
-}
-.top-menu ul li:hover .sub-menu{
-	display: flex;
-	border: 2px solid #000;
-}
-.game-logo{
-	max-width: 154px !important;
-	margin-left: 1rem;
-}
-.game-menu{ display: none; }
-
-/* burger menu */
-.b-menu {
-	cursor: pointer;
-	display: inline-block;
-	height: 40px;
-	padding-left: 15.5px;
-	padding-top: 11px;
-	position: relative;
-	-webkit-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	width: 60px;
-	z-index: 12;
-}
-.b-bun--top {
-	height: 2px;
-	top: 0;
-	width: 25px;
-}
-.b-bun--mid {
-	height: 2px;
-	top: 6px;
-	width: 25px;
-}
-.b-bun--bottom {
-	height: 2px;
-	top: 12px;
-	width: 25px;
-}
-.b-bun {
-	background: #fff;
-	position: relative;
-	-webkit-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-
-/* overlay menu */
-.overlay-menu{
-	position: fixed;
-	top: -100%;
-	width: 100%;
-	z-index: 1;
-	background-color: #0D1116;
-	border-bottom: 2px solid #000;
-	padding: 1rem;
-	transition: .25s linear;
-}
-.overlay-menu.open{ 
-	top: 42px;
-}
-.overlay-menu ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-.overlay-menu ul li a{
-	color: white;
-	font-size: 1.2rem;
-}
-.overlay-menu ul li{
-	margin-bottom: 1rem;
-}
-.overlay-menu ul li .sub-menu{
-	list-style-type: circle;
-	margin-top: 1rem;
-	margin-left: 2rem;
-}
-
 .games{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -350,8 +197,8 @@ a.patreon img{ max-width: 100%; }
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.games .game.snowbreak div {
-	background: url("images/snowbreak.webp");
+.games .game.overlord div {
+	background: url("images/albedo.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -514,17 +361,6 @@ a.patreon img{ max-width: 100%; }
 	outline: none;
 	background-color: #14181D;
 }
-.select-all{
-	padding: .5rem 1rem;
-	font-size: .9rem;
-	font-weight: 300;
-	color: white;
-	transition: .15s linear;
-}
-.select-all:hover{
-	cursor: pointer;
-	color: #23F1C0;
-}
 
 .characters-wrapper{
 	position: relative;
@@ -560,7 +396,26 @@ a.patreon img{ max-width: 100%; }
 	transition: .2s linear;
 	position: relative;
 	align-content: flex-end;
-	overflow: hidden;
+	/* overflow: hidden; */
+  margin-top: 1.5rem;
+}
+/* character flags */
+.news .characters .character .flags{
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.news .characters .character .flags .flag{
+  margin-right: .25rem;
+}
+.news .characters .character .flags .flag svg{
+  transform: translateY(2px);
 }
 .news .characters .character.hidden{ display: none; }
 .news .characters .character .lozad, .news .characters .character .bg{
@@ -568,6 +423,7 @@ a.patreon img{ max-width: 100%; }
 	background-position: center;
 	content: '';
 	position: absolute;
+  border-radius: 8px 8px 0 0;
 	width: 100%;
 	height: 150px;
 	top: 0;
@@ -602,8 +458,8 @@ a.patreon img{ max-width: 100%; }
 .news .characters .character .margin .content {
 	width: 100%;
 	align-items: end;
+  border-radius: 0 0 8px 8px;
 	text-align: center;
-	border-radius: 0;
 	background-color: #14181D;
 }
 .news .characters .character .margin .content h2{
@@ -1094,13 +950,21 @@ ul.children, ol.children{ margin-left: 10px; }
 /* Individual comment styling */
 li.comment {
 	margin-bottom: 20px;
-	border-bottom: 2px solid #272A2F;
+  border: 3px solid #272A2F;
+  border-radius: 12px;
+  font-size: 1.2rem;
 }
 ul.children li.comment, ol.children li.comment{ 
-	border-left: 2px solid #272A2F;
+  border: none;
 	border-bottom: none; 
 	margin-bottom: 0px;
+  border-top: 3px solid #272A2F;
+  border-radius: 0;
 	margin-left: 0;
+  padding-left: 20px;
+}
+ul.children li.comment, ol.children{ 
+  margin-left: 0;
 }
 .comment-body { 
 	padding: 10px;
@@ -1352,6 +1216,25 @@ li.comment img.avatar, .comment-notes { display: none !important; }
   margin-top: 2rem;
   margin-left: 2rem;
 }
+.container.news-article .margin .content .date{
+  display: flex;
+  flex-flow: row wrap;
+  color: #23F1C0;
+}
+.container.news-article .margin .content ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container.news-article .margin .content ul li a{
+  color: white;
+  padding: .3rem 1.2rem;
+  background-color: #14181D;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-left: 1rem;
+}
 .container.news-article .margin .thumbnail .img{
 	height: 200px;
 	border-radius: 0;
@@ -1391,19 +1274,15 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 }
 
 .tier-list .row{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 .tier-list .row .characters{
-  flex: 0 0 calc(100% - 150px);
+  flex: 0 0 100%;
 }
 .tier-list .row .tier{
-  width: 150px;
+  width: 100%;
   align-self: stretch;
   min-width: 150px;
   padding: 0;
@@ -1422,7 +1301,67 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 .tier-list .row .tier.tier-3{ background-color: #aed581; } /* tier 1.5 */
 .tier-list .row .tier.tier-4{ background-color: #81c784; } /* tier 2 */
 .tier-list .row .tier.tier-5{ background-color: #8197c7; } /* tier 2.5 */
-.tier-list .row .tier.tier-6{ background-color: #807FFF; } /* tier 3 */
+.tier-list .row .tier.tier-6{ background-color: #9481c7; } /* tier 3 */
+
+/* Tooltips */
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -125px;
+  padding: 7px;
+  width: 250px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: #202442;
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid #202442;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
 
 /* custom selects for databases */
 .filters{
@@ -1441,7 +1380,7 @@ li.comment img.avatar, .comment-notes { display: none !important; }
   margin-bottom: .5rem;
   margin-right: .5rem;
 }
-.select-button, .reset-filters, .advanced-filters {
+.select-button, .reset-filters, .filters-button{
   color: #fff;
   width: 100%;
   font-size: 1.15rem;
@@ -1459,31 +1398,31 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 .select-button:hover, .reset-filters:hover {
   background-color: #14181D;
 }
-.reset-filters, .advanced-filters{
+.filters-button{
   width: auto;
-  width: 100%;
+  width: calc(33% - 0.5rem);
   box-sizing: border-box;
-  border: 2px solid #b72a2a;
-  color: #b72a2a;
+  border: 2px solid #14181D;
+  color: white;
   max-height: 49px;
   font-weight: 500;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-.advanced-filters{
+  margin-right: 9px;
   display: flex;
-  color: white;
+  flex-flow: row nowrap;
   justify-content: flex-start;
-  border: 2px solid #14181D;
-  color: fff;
+  align-items: center;
 }
-.advanced-filters:hover{
+.reset-filters{
+  display: none;
+  justify-content: flex-start;
+  border: 2px solid #b72a2a;
+  color: #b72a2a;
+}
+.filters-button:hover{
   background-color: #14181D;
 }
 .reset-filters.active { display: flex; }
-.advanced-filters svg, .reset-filters svg{ margin-right: .5rem; }
+.filters-button svg { margin-right: .5rem; }
 .selected-value { text-align: left; }
 .arrow {
   border-left: 5px solid transparent;
@@ -1562,11 +1501,6 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 
 /* Tablets */
 @media only screen and (min-width : 48em){
-	.top-menu-contaier { justify-content: flex-start; }
-	.game-menu{ display: block; }
-	.b-menu{ display: none; }
-	.overlay-menu{ display: none; }
-
   /* advanced filters */
   .reset-filters, .advanced-filters, .custom-select{
     width: calc(33% - .5rem);
@@ -1594,6 +1528,15 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	.double {
 		flex-flow: row nowrap;
 	}
+
+  .tier-list .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+  .tier-list .row .characters { flex: 0 0 calc(100% - 150px); }
+  .tier-list .row .tier { width: 150px; }
 
 	.news{ flex: auto; }
 	.news .post .margin { flex-flow: row nowrap; }
