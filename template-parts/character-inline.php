@@ -10,7 +10,7 @@
   }
 ?>
 
-  <div class="post character covering container" data-character-name="<?php the_title(); ?>">
+  <div class="post character nomargin covering container" data-character-name="<?php the_title(); ?>">
     <div class="bg <?php echo implode(' ', $tag_slugs); ?>"></div>
     <div class="lozad <?php echo implode(' ', $tag_slugs); ?>" data-background-image="<?php echo the_post_thumbnail_url(); ?>"></div>
     <a href="<?php the_permalink(); ?>" class="margin">

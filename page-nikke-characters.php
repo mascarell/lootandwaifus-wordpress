@@ -31,7 +31,7 @@ $category_id = $categories[0]->name;
 
 						while ( $query->have_posts() ) : $query->the_post();
 
-              get_template_part('template-parts/character');
+              get_template_part('template-parts/character-nomargin');
 
 						endwhile; wp_reset_postdata();
 				endif; 
