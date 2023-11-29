@@ -410,10 +410,20 @@ a.patreon img{ max-width: 100%; }
   left: 5px;
   position: absolute;
   pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .character .bg::after{
   top: 30px;
 }
+/* REVERSE 1999 ICONS */
+.character .bg.plant::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-plant.webp); }
+.character .bg.star::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-star.webp); }
+.character .bg.beast::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-beast.webp); }
+.character .bg.intellect::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-intellect.webp); }
+.character .bg.mineral::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-mineral.webp); }
+.character .bg.spirit::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-spirit.webp); }
+/* NIKKE ICONS */
 .character .bg.fire::before{ background-image: url(images/nikke/nikke-fire.webp); }
 .character .bg.water::before{ background-image: url(images/nikke/nikke-water.webp); }
 .character .bg.wind::before{ background-image: url(images/nikke/nikke-wind.webp); }
