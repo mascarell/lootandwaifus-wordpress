@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.6.9
+Version: 1.6.91
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -51,30 +51,6 @@ a.patreon img{ max-width: 100%; }
 	border-radius: 12px;
 	position: relative;
 	margin: 1rem .5rem;
-}
-
-/* Author box */
-.author h4{
-	font-weight: 300;
-	color: #23F1C0;
-	margin: 0;
-}
-.author p{
-	font-size: .9rem;
-	margin: .5rem 0;
-}
-.author svg{
-	width: 22px;
-	margin-right: .5rem;
-}
-.author em{ color: #ebed63; font-style: normal; font-weight: 300; }
-.author strong{ color: #23F1C0; font-weight: 300; }
-.author a{
-	color: inherit;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	align-items: center;
 }
 
 /* ldplayer section promo */
@@ -660,6 +636,48 @@ a.patreon img{ max-width: 100%; }
 	text-transform: uppercase;
 	color: #23F1C0;
 	opacity: .5;
+}
+
+/* guide author css */
+.author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.author .info{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 1px solid #787878;
+}
+.author .info p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.author .info img{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.author .info .tag{
+  color: black;
+  padding: .1rem .25rem;
+  background-color: #ebed63;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.author .stats p{
+  margin: .5rem 0;
+  font-size: .9rem;
+  padding: 0;
+  line-height: 1;
 }
 
 /* hr css */
