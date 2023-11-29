@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.6.5
+Version: 1.6.6
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -399,6 +399,30 @@ a.patreon img{ max-width: 100%; }
 	/* overflow: hidden; */
   margin-top: 1.5rem;
 }
+/* character type icons */
+.character .bg::before, .character .bg::after{
+  content: '';
+  width: 20px;
+  height: 23px;
+  background-size: 20px 23px;
+  z-index: 999;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  pointer-events: none;
+}
+.character .bg::after{
+  top: 30px;
+}
+.character .bg.fire::before{ background-image: url(images/nikke/nikke-fire.webp); }
+.character .bg.water::before{ background-image: url(images/nikke/nikke-water.webp); }
+.character .bg.wind::before{ background-image: url(images/nikke/nikke-wind.webp); }
+.character .bg.electric::before{ background-image: url(images/nikke/nikke-electric.webp); }
+.character .bg.iron::before{ background-image: url(images/nikke/nikke-iron.webp); }
+.character .bg.burst-1::after{ background-image: url(images/nikke/nikke-1.webp); }
+.character .bg.burst-2::after{ background-image: url(images/nikke/nikke-2.webp); }
+.character .bg.burst-3::after{ background-image: url(images/nikke/nikke-3.webp); }
+.character .bg.burst-all::after{ background-image: url(images/nikke/nikke-all.webp); }
 /* character flags */
 .news .characters .character .flags{
   position: absolute;
