@@ -24,7 +24,7 @@ get_header();
                 $author_avatar = get_avatar($author_id, 96); // You can change the size (96 in this example) as needed
                 echo $author_avatar;
               ?>
-              <p>Sefhi</p>
+              <p><?php the_author(); ?></p>
               <span class="tag">writer</span>
             </div>
             <div class="stats">
