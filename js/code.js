@@ -376,6 +376,81 @@
 	}
 })(jQuery);
 
+// Team randomizer
+(function ($) {
+  try {
+    const characters = [...document.querySelectorAll('.filtered .character .bg')];
+    const randomCharacters = [...document.querySelectorAll('.post.builder')];
+    const team1 = [...document.querySelectorAll('.team1')];
+    const team2 = [...document.querySelectorAll('.team2')];
+    const team3 = [...document.querySelectorAll('.team3')];
+
+    for (let i = 0; i < randomCharacters.length; i++) {
+      setTimeout(function () {
+        randomCharacters[i].classList.add('active');
+      }, 50 * (i + 1));
+    }
+
+    // Add event listener for "Generate Teams" button
+    document.getElementById('generate-teams').addEventListener('click', function () {
+      // Call a function to generate teams based on selected units
+      generateTeam(team1);
+      generateTeam(team2);
+      generateTeam(team3);
+    });
+
+    // Function to select a random element from an array
+    function getRandomElement(array) {
+      const randomIndex = Math.floor(Math.random() * array.length);
+      return array.splice(randomIndex, 1)[0];
+    }
+
+    // Function to generate teams
+    function generateTeam(team) {
+      // Separate elements based on tags
+      const burst1Units = characters.filter(element => element.classList.contains('burst-1'));
+      const burst2Units = characters.filter(element => element.classList.contains('burst-2'));
+      const burst3Units = characters.filter(element => element.classList.contains('burst-3'));
+
+      // create array to return this team
+      let randomTeam = []
+      // Select 1 random burst 1 unit
+      randomTeam.push(getRandomElement(burst1Units))
+      // Select 1 random burst 2 unit
+      randomTeam.push(getRandomElement(burst2Units))
+      // Select 2 random burst 3 units
+      randomTeam.push(getRandomElement(burst3Units))
+      randomTeam.push(getRandomElement(burst3Units))
+      // last unit on the team is always random
+      randomTeam.push(characters[Math.floor(Math.random() * characters.length)])
+
+      // add units to the website
+      for (let i = 0; i < 5; i++) {
+        team[i].innerHTML = randomTeam[i].parentElement.innerHTML;
+        team[i].style.opacity = 0
+        team[i].classList.remove('active')
+      }
+
+      // update images
+      const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      observer.observe();
+
+      // update animations
+      updateAnimations();
+    }
+
+    function updateAnimations() {
+      for (let i = 0; i < randomCharacters.length; i++) {
+        setTimeout(function () {
+          randomCharacters[i].classList.add('active');
+        }, 50 * (i + 1));
+      }
+    }
+  } catch (error) {
+    console.log(error)
+  }
+})(jQuery);
+
 // TEAM BUILDER FOR NIKKE
 (function ($) {
 	try {

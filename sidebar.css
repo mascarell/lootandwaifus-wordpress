@@ -63,9 +63,15 @@ a.play{
   text-align: center;
   box-sizing: border-box;
 }
+a.play:hover{ cursor: pointer; }
 a.play.discord{
   background: #7289da;
   margin-top: 0;
+}
+a.play.randomizer{
+  background: #7289da;
+  margin-top: 0;
+  max-width: 350px;
 }
 a.play.twitch{
   background: #6441a5;

@@ -171,7 +171,7 @@
   $page_title = get_the_title(); // Get the current page title
 
   // Check if the current page ID is equal to X
-  if ($page_title ==  'Nikke Team Builder') { ?>
+  if ($page_title == 'Nikke Team Builder' || $page_title == 'NIKKE Random Team Generator') { ?>
     <button id="select-all" class="filters-button">
       <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" viewBox="0 0 24 24"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
       Select all

@@ -46,6 +46,12 @@
               <span class="sidebar__link-name">Characters</span>
               <span class="sidebar__link-floating">Characters</span>
           </a>
+
+          <a href="<?php echo home_url(); ?>/guides/nikke-codes/" class="sidebar__link">
+              <i class="ri-vip-diamond-line"></i>
+              <span class="sidebar__link-name">Free codes</span>
+              <span class="sidebar__link-floating">Free codes</span>
+          </a>
         </div>
 
         <h3 class="sidebar__title">
@@ -53,10 +59,10 @@
         </h3>
 
         <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/guides/nikke-codes/" class="sidebar__link">
-              <i class="ri-vip-diamond-line"></i>
-              <span class="sidebar__link-name">Free codes</span>
-              <span class="sidebar__link-floating">Free codes</span>
+          <a href="<?php echo home_url(); ?>/nikke-team-randomizer" class="sidebar__link">
+              <i class="ri-dice-2-line"></i>
+              <span class="sidebar__link-name">Team Randomizer</span>
+              <span class="sidebar__link-floating">Team Randomizer</span>
           </a>
 
           <a href="<?php echo home_url(); ?>/guides/nikke-interactive-map/" class="sidebar__link">

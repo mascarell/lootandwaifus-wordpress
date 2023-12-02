@@ -45,7 +45,7 @@ $category_id = $categories[0]->name;
 			</div>
 		</div>
 
-    <div class="character-filters" style="display:none">
+    <div class="character-filters" style="display:none;">
       <input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
 		</div>
     
