@@ -48,9 +48,9 @@ get_header();
 			<p>Overlord: King of Nazarick (soon)</p>
 		</div>
 	</a> -->
-	<a class="game browndust covering">
+	<a href="<?php echo home_url(); ?>/brown-dust-2" class="game browndust covering">
 		<div>
-			<p>Brown Dust 2 (soon)</p>
+			<p>Brown Dust 2</p>
 		</div>
 	</a>
 	<a class="game">

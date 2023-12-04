@@ -33,12 +33,25 @@ if($category_id == 'Nikke') {
   
 		<div class="game-info animated">
 			<div class="logo">
-				<img src="<?php echo get_theme_file_uri('images/reverse-logo.png'); ?>" loading="lazy" alt="nikke logo">
+				<img src="<?php echo get_theme_file_uri('images/reverse-logo.png'); ?>" loading="lazy" alt="reverse 1999 logo">
 			</div>
 
 			<div class="game-info-text">
 				<h1>Reverse: 1999 wiki</h1>
 				<p>Welcome to the ultimate Reverse: 1999 wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
+			</div>
+		</div>
+	<?php
+} else if($category_id == 'Brown Dust 2') {
+	?>  
+		<div class="game-info animated">
+			<div class="logo">
+				<img src="<?php echo get_theme_file_uri('images/brown-dust-2-logo.png'); ?>" loading="lazy" alt="brown dust 2 logo">
+			</div>
+
+			<div class="game-info-text">
+				<h1>Brown Dust 2 wiki</h1>
+				<p>Welcome to the ultimate Brown Dust 2 wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
 			</div>
 		</div>
 	<?php

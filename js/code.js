@@ -631,7 +631,8 @@
 		// drop over
 		team1Characters.forEach(character => {
 			character.addEventListener('drop', e => {
-				e.target.outerHTML = draggedElement;
+        e.target.innerHTML = null;
+				e.target.innerHTML = draggedElement;
 				updateTeam1Array();
 				changeURL();
 			});

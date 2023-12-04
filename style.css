@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.7.2
+Version: 1.7.3
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -495,6 +495,7 @@ a.patreon img{ max-width: 100%; }
 }
 /* Character stuff for the team builder */
 .character.builder{ opacity: .5; }
+.character.builder .margin{ pointer-events: none; }
 .teams .character{ opacity: 1; }
 .character.builder.selected{ opacity: 1; }
 .character.builder.unavailable{ display: none; }
@@ -603,6 +604,9 @@ a.patreon img{ max-width: 100%; }
 .events .boss span.gravedigger { background-image: url(images/bosses/gravedigger.webp); }
 .events .boss span.chatterbox { background-image: url(images/bosses/chatterbox.webp); }
 .events .boss span.blacksmith { background-image: url(images/bosses/blacksmith.webp); }
+.events .boss span.goblin { background-image: url(images/bosses/goblin-farm.webp); }
+.events .boss span.slime { background-image: url(images/bosses/slime-farm.webp); }
+.events .boss span.slime-and-goblin { background-image: url(images/bosses/goblin-and-slime-farm.jpg); }
 .events .boss h3, .recent h3{
 	font-weight: 300;
 	margin-top: 0;
