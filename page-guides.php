@@ -239,7 +239,7 @@ if($category_id == 'Nikke') {
     <?php
 			$query = new WP_Query( array(
 					'post_type'      => array('post', 'guides', 'characters'),
-					'posts_per_page' => 3,
+					'posts_per_page' => -1,
 					'no_found_rows'  => true,
 					'tag'            => 'featured',
 					'category_name'  => $category_id
