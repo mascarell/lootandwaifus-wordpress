@@ -238,14 +238,14 @@ if($category_id == 'Nikke') {
 	<div class="news">
     <?php
 			$query = new WP_Query( array(
-					'post_type'      => 'guides',
+					'post_type'      => array('post', 'guides', 'characters'),
 					'posts_per_page' => 3,
 					'no_found_rows'  => true,
-					'tag'            => '2023',
+					'tag'            => 'featured',
 					'category_name'  => $category_id
 			) );
 			if ( $query->have_posts() ) :
-					?> <h2 class="guides-title">Latest events ➜</h2><div class="guides"> <?php
+					?> <h2 class="guides-title">Featured content ➜</h2><div class="guides"> <?php
 					while ( $query->have_posts() ) : $query->the_post();
 
 							get_template_part('template-parts/guide');
