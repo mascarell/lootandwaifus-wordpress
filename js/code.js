@@ -520,6 +520,8 @@
 						team1Characters[character].innerHTML = selectedCharacters[character].innerHTML;
 					}
 				}
+
+        updateNotes();
 			} catch (error) { }
 
 			// update images
@@ -631,9 +633,9 @@
 		// drop over
 		team1Characters.forEach(character => {
 			character.addEventListener('drop', e => {
-        e.target.innerHTML = null;
 				e.target.innerHTML = draggedElement;
 				updateTeam1Array();
+        updateNotes();
 				changeURL();
 			});
 		});
@@ -649,6 +651,32 @@
 				window.history.pushState({ path: newurl }, '', newurl);
 			}
 		}
+
+    function updateNotes() {
+      const noteWrapper = document.querySelector('.notes p');
+      noteWrapper.innerHTML = ''
+
+      // get notes from selected characters
+      team1Characters.forEach(character => {
+        try {
+          let note = character.querySelector('.character-notes').dataset.notes;
+  
+          if(note != undefined) {
+            // create the new element for the note, including title on a <strong> tag
+            let noteTitle = document.createElement('em');
+            noteTitle.innerText = `${character.querySelector('h2').innerText} : `;
+
+            let noteElement = document.createElement('span');
+            noteElement.innerHTML = `${noteTitle.outerHTML} ${note}`;
+
+            // add the note to the actual website
+            noteWrapper.innerHTML += noteElement.outerHTML;
+          }
+        } catch (error) {
+        }
+
+      });
+    }
 
 		function updateTeam1Array() {
 			let ids = []; // tmp variable for ids of the team 1

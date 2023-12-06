@@ -495,7 +495,7 @@ a.patreon img{ max-width: 100%; }
 }
 /* Character stuff for the team builder */
 .character.builder{ opacity: .5; }
-.character.builder .margin{ pointer-events: none; }
+.character.builder .margin, .character.builder .margin .content, .character.builder .character-notes, .character.builder .lozad{ pointer-events: none; }
 .teams .character{ opacity: 1; }
 .character.builder.selected{ opacity: 1; }
 .character.builder.unavailable{ display: none; }
@@ -542,6 +542,14 @@ a.patreon img{ max-width: 100%; }
 /* Basic list styling */
 .container ul li{
 	margin-bottom: .5rem;
+}
+
+.notes p span, .uagb-block-d3db8fa2 .uagb-faq-content span{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
 }
 
 /* Custom css for blocks on articles */
