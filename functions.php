@@ -62,9 +62,6 @@ function crown_setup()
 
 	// Support for featured images
 	add_theme_support('post-thumbnails');
-
-	// Support for post formats
-	add_theme_support('post-formats');
 }
 add_action('after_setup_theme', 'crown_setup');
 
