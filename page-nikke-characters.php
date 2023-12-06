@@ -47,6 +47,7 @@ function showCharactersByRarity($tag_slug, $category_id) {
 			<?php
         // We have a different ordering method for reverse 1999 characters
         if($category_id == 'Reverse: 1999') {
+          // semi dirty way of doing it but better than it not working
           showCharactersByRarity('ur', $category_id);
           showCharactersByRarity('ssr', $category_id);
           showCharactersByRarity('sr', $category_id);
