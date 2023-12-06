@@ -313,4 +313,10 @@ function custom_theme_customizer( $wp_customize ) {
 }
 add_action( 'customize_register', 'custom_theme_customizer' );
 
+// Enable tags for pages
+function enable_page_tags() {
+  register_taxonomy_for_object_type('post_tag', 'page');
+}
+add_action('init', 'enable_page_tags');
+
 ?>

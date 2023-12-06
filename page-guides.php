@@ -238,7 +238,7 @@ if($category_id == 'Nikke') {
 	<div class="news">
     <?php
 			$query = new WP_Query( array(
-					'post_type'      => array('post', 'guides', 'characters'),
+					'post_type'      => array('post', 'guides', 'characters', 'page'),
 					'posts_per_page' => -1,
 					'no_found_rows'  => true,
 					'tag'            => 'featured',
