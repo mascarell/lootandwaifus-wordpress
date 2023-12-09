@@ -1,8 +1,16 @@
-<?php /* Template Name: Puzzles page */ ?>
+<?php
+/**
+ * Template Name: Puzzles page
+ * Template Post Type: guides
+ */
+?>
 
 <?php
 
 get_header();
+
+$categories = get_the_category();
+$category_id = $categories[0]->name;
 
 ?>
 
