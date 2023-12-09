@@ -18,6 +18,26 @@ $category_id = $categories[0]->name;
 <div class="double guides-wrapper animated">
 	<div class="news">
     <div class="article container animated">
+      <img class="lozad small-thumbnail" data-src="<?php echo the_post_thumbnail_url(); ?>">
+					<h1><?php the_title(); ?></h1>
+
+          <!-- Author -->
+          <div class="author">
+            <div class="info">
+              <?php
+                $author_id = get_the_author_meta('ID');
+                $author_avatar = get_avatar($author_id, 96); // You can change the size (96 in this example) as needed
+                echo $author_avatar;
+              ?>
+              <p><?php the_author(); ?></p>
+              <span class="tag">writer</span>
+            </div>
+            <div class="stats">
+              <p>Published on: <?php echo get_the_date(); ?></p>
+              <p>Last updated on: <?php echo get_the_modified_date(); ?></p>
+            </div>
+          </div>
+      
       <div class="article-content">
         <?php the_content(); ?>
       </div>
