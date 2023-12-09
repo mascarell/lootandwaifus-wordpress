@@ -123,7 +123,7 @@ function guides() {
 		'label'                 => __( 'Guide', 'guide' ),
 		'description'           => __( 'Guides for different games', 'guide' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'author','comments' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'author','comments', 'page-attributes' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
