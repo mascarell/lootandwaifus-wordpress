@@ -36,7 +36,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-0">Tier 0</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-0">T0</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
@@ -57,7 +57,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-1">Tier 0.5</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-1">T0.5</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
@@ -78,7 +78,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-2">Tier 1</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-2">T1</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
@@ -99,7 +99,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-3">Tier 1.5</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-3">T1.5</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
@@ -120,7 +120,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-4">Tier 2</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-4">T2</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
@@ -141,7 +141,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-5">Tier 2.5</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-5">T2.5</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
@@ -162,7 +162,7 @@ $category_id = $categories[0]->name;
               );
               $query = new WP_Query($args);
               if ( $query->have_posts() ) : ?>
-                <div class="row"><p class="tier tier-6">Tier 3</p><div class="characters filtered">
+                <div class="row"><p class="tier tier-6">T3</p><div class="characters filtered">
 
                 <?php while ( $query->have_posts() ) : $query->the_post();
                 get_template_part('template-parts/character');
