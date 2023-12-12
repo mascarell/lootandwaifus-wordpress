@@ -135,7 +135,7 @@
           </a> -->
         </div>
 
-        <!-- <h3 class="sidebar__title">
+        <h3 class="sidebar__title">
           <span>Tools</span>
         </h3>
 
@@ -145,7 +145,7 @@
               <span class="sidebar__link-name">Events</span>
               <span class="sidebar__link-floating">Events</span>
           </a>
-        </div> -->
+        </div>
       <!-- Brown Dust 2 menu -->
       <?php } else if($category_id == 'brown-dust-2') { ?>
         <div class="sidebar__list">
