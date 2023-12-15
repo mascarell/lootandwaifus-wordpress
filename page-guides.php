@@ -26,10 +26,10 @@ if($category_id == 'Nikke') {
 	<?php
 } else if($category_id == 'Reverse: 1999') {
 	?>
-    <a href="https://www.ldplayer.net/games/reverse-1999-on-pc.html?gameId=1365&n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play big animated" target="_blank" rel="noopener noreferrer">
+    <!-- <a href="https://www.ldplayer.net/games/reverse-1999-on-pc.html?gameId=1365&n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play big animated" target="_blank" rel="noopener noreferrer">
       <img src="<?php echo get_theme_file_uri('images/ldplayer.webp'); ?>" alt="ldplayer logo">
       <span>Play Reverse: 1999 on PC with LDPlayer</span>
-    </a>
+    </a> -->
   
 		<div class="game-info animated">
 			<div class="logo">
