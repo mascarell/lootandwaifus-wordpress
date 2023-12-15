@@ -36,22 +36,6 @@ get_header();
 		<div>
 		</div>
 	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
 </div>
 
 <div class="double">
