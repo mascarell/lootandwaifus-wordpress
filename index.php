@@ -4,31 +4,10 @@ get_header();
 
 ?>
 
-<!-- Latest video section with WP customizer -->
-<!-- <div class="latest-video animated">
-	<div>
-		<?php
-			$custom_link = get_theme_mod( 'custom_link' );
-			$custom_title = get_theme_mod( 'custom_title' );
-
-			if ( $custom_title ) { echo '<h2>' . esc_html( $custom_title ) . '</h2>'; }
-			if ( $custom_link ) { echo '<a target="_blank" href="' . esc_url( $custom_link ) . '">watch now</a>'; }
-		?>
-	</div>
-
-	<div>
-		<?php
-			$custom_image = get_theme_mod( 'custom_image' );
-
-			if ( $custom_image ) { echo '<img src="' . esc_url( $custom_image ) . '">'; }
-		?>
-	</div>
-</div> -->
-
 <!-- Hero section -->
 <div class="hero animated">
-  <h1>Your one-stop shop for in depth gacha games tier lists and guides</h1>
-  <p>Loot & Waifus is a community driven wiki for the games we love and care about. Click down below on your favorite game to get started.</p>
+  <h1>Your one-stop shop for in depth game guides, tier lists and more</h1>
+  <p>Loot & Waifus is a community driven wiki for the games we love and care about, both RPG and gacha. Click down below on your favorite game to get started.</p>
 </div>
 
 <!-- Games that we cover -->

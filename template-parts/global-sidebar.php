@@ -184,7 +184,7 @@
         </div>
 
         <h3 class="sidebar__title">
-          <span>Games</span>
+          <span>Gachas</span>
         </h3>
         
         <div class="sidebar__list">
