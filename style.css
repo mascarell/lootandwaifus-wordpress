@@ -516,6 +516,8 @@ a.patreon img{ max-width: 100%; }
 	max-width: 700px;
 	margin: 0 auto;
 }
+/* shorter versions for the team builder with 4 units instead of 5 per team */
+.teams.four .characters{ max-width: 650px; }
 .teams > h3{
 	font-weight: 300;
 	margin-bottom: .5rem;
