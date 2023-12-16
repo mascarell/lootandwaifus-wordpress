@@ -173,6 +173,18 @@
               <span class="sidebar__link-floating">Characters</span>
           </a> -->
         </div>
+
+        <h3 class="sidebar__title">
+          <span>Tools</span>
+        </h3>
+
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/brown-dust-2-events/" class="sidebar__link">
+              <i class="ri-calendar-event-line"></i>
+              <span class="sidebar__link-name">Events</span>
+              <span class="sidebar__link-floating">Events</span>
+          </a>
+        </div>
       <!-- No game menu -->
       <?php } else { ?>
         <div class="sidebar__list">
