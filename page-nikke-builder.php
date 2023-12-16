@@ -27,21 +27,21 @@ $category_id = $categories[0]->name;
 			</div>
 
 			<div class="characters">
-				<div class="post builder team1 character covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team1 character covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team1 character covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team1 character covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team1 character covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team2 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team2 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team2 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team2 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team2 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team3 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team3 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team3 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team3 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team3 character notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 			</div>
 		</div>
 
