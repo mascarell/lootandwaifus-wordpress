@@ -17,6 +17,8 @@ $category_id = $categories[0]->name;
         <span>Randomize teams</span>
       </a>
 
+      <div class="separator"></div>
+
 			<div class="characters random-characters">
 				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>

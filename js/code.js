@@ -421,8 +421,14 @@
       // Select 2 random burst 3 units
       randomTeam.push(getRandomElement(burst3Units))
       randomTeam.push(getRandomElement(burst3Units))
-      // last unit on the team is always random
-      randomTeam.push(characters[Math.floor(Math.random() * characters.length)])
+      
+      // last unit on the team is always random and not the same as others
+      let randomLastUnit;
+      do {
+        randomLastUnit = characters[Math.floor(Math.random() * characters.length)];
+      } while (randomTeam.some(unit => unit === randomLastUnit));
+
+      randomTeam.push(randomLastUnit);
 
       // add units to the website
       for (let i = 0; i < 5; i++) {
