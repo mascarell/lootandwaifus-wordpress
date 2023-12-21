@@ -1,3 +1,5 @@
+<?php get_template_part('template-parts/community-message'); ?>
+
 <div class="footer animated">
 	<!-- Copyright -->
 	<p class="copyright">&copy; <?php echo date("Y"); ?> Loot & Waifus</p>

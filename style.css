@@ -462,7 +462,7 @@ a.patreon img{ max-width: 100%; }
 .news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(255, 179, 72, 0.8) 0%, rgba(255, 244, 87, 0.8) 100%); }
 .news .characters .character .bg.sr { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
 .news .characters .character .bg.r { background-image: linear-gradient(to top, rgba(0, 144, 255, .8) 0%, rgba(154, 203, 240, 0.8) 100%); }
-.news .characters .character .bg.n { background-image: linear-gradient(to top, rgba(0, 167, 3, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
+.news .characters .character .bg.n { background-image: linear-gradient(to top, rgba(0, 130, 2, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
 .news .characters .character .margin {
 	align-items: end;
 	width: 100%;
@@ -1350,39 +1350,6 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 	border-radius: 0;
 }
 
-/* latest video on landing page */
-.latest-video{
-	display: flex;
-	flex-flow: column-reverse wrap;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0;
-	padding: 1rem;
-}
-.latest-video > div{
-	flex: 0 0 100%;
-}
-.latest-video img{
-	width: 100%;
-	max-width: 100%;
-	margin: 0;
-	border: 2px solid white;
-}
-.latest-video h2{
-	font-size: 1.6rem;
-	font-weight: 400;
-	color: #ebed63;
-}
-.latest-video a{
-	border: 1px solid white;
-	padding: .75rem 1.2rem;
-	font-size: 1.2rem;
-	font-weight: 400;
-	color: white;
-	text-transform: uppercase;
-	display: inline-block;
-}
-
 .tier-list .row{
   width: 100%;
   margin: 0;
@@ -1412,6 +1379,24 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 .tier-list .row .tier.tier-4{ background-color: #81c784; } /* tier 2 */
 .tier-list .row .tier.tier-5{ background-color: #8197c7; } /* tier 2.5 */
 .tier-list .row .tier.tier-6{ background-color: #9481c7; } /* tier 3 */
+
+/* community wiki message */
+.wiki{
+  background-color: transparent;
+  font-weight: 300;
+  border: 3px solid #272A2F;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+}
+.wiki p { margin: 0; padding: 0; }
+.wiki a{
+  color: #fff;
+  background-color: #202442;
+  border-radius: 3px;
+  padding: .1rem .25rem;
+  font-weight: 500;
+}
 
 /* Tooltips */
 /* Add this attribute to the element that needs a tooltip */
