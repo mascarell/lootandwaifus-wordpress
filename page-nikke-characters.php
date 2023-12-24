@@ -52,6 +52,7 @@ function showCharactersByRarity($tag_slug, $category_id) {
           showCharactersByRarity('ssr', $category_id);
           showCharactersByRarity('sr', $category_id);
           showCharactersByRarity('r', $category_id);
+          showCharactersByRarity('n', $category_id);
         } else {
           $query = new WP_Query( array(
               'post_type'      => 'characters',
