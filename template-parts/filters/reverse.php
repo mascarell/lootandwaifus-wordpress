@@ -97,6 +97,24 @@
     Advanced filters
   </button>
 
+  <?php
+  // Filters only for team builder
+  // Get the current page ID
+  $page_title = get_the_title(); // Get the current page title
+
+  // Check if the current page ID is equal to X
+  if ($page_title == 'Reverse: 1999 Team Builder') { ?>
+    <button id="select-all" class="filters-button">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" viewBox="0 0 24 24"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+      Select all
+    </button>
+
+    <button id="remove-all" class="filters-button">
+      <svg xmlns="http://www.w3.org/2000/svg"  fill="white" width="20" viewBox="0 0 24 24"><path d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"></path></svg>
+      Remove selected
+    </button>
+  <?php } ?>
+
   <button class="reset-filters">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b72a2a" width="24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
