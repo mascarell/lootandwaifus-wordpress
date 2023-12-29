@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.7.8.1
+Version: 1.8.0
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -179,6 +179,12 @@ a.patreon img{ max-width: 100%; }
 }
 .games .game.overlord div {
 	background: url("images/albedo.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game.gfl2 div {
+	background: url("images/gfl2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -599,6 +605,10 @@ a.patreon img{ max-width: 100%; }
 .wp-block-table.info table, .wp-block-table.info td, .wp-block-table.info td {
 	border: 2px solid #272A2F;
 	vertical-align: top;
+}
+.wp-block-table.info table img {
+	width: 48px;
+  max-width: 100%;
 }
 
 /* EVENTS */
@@ -1592,6 +1602,42 @@ li.comment img.avatar, .comment-notes { display: none !important; }
   opacity: 1;
   visibility: visible;
   transform: scaleY(1);
+}
+
+.character-block{
+  background-color: #14181D;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 0 !important;
+  padding-bottom: 1rem !important;
+}
+.character-block .characters.characters-embed {
+  margin: 0;
+  padding: 0 1rem;
+}
+.character-block > h2{
+  background-color: #272A2F;
+  padding: 0; margin: 0;
+  padding: .5rem;
+  border-radius: 12px 12px 0 0;
+  padding-left: 2rem;
+  position: relative;
+  font-weight: 400 !important;
+}
+.character-block > * {
+  padding: .25rem 1rem;
+  margin: 0;
+}
+.character-block > h2::before{
+  content: '';
+  width: 5px;
+  left: 15px;
+  border-radius: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  background-color: #23F1C0;
+  position: absolute;
 }
 
 /* Tablets */
