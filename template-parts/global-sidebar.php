@@ -104,20 +104,20 @@
               <span class="sidebar__link-floating">Guides</span>
           </a>
           
-          <a href="<?php echo home_url(); ?>/nikke-pve-tier-list" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/nikke-pve-tier-list" class="sidebar__link">
               <i class="ri-line-chart-line"></i>
               <span class="sidebar__link-name">Tier list</span>
               <span class="sidebar__link-floating">Tier list</span>
-          </a>
+          </a> -->
 
-          <a href="<?php echo home_url(); ?>/nikke-characters/" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/nikke-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
               <span class="sidebar__link-name">Characters</span>
               <span class="sidebar__link-floating">Characters</span>
-          </a>
+          </a> -->
         </div>
 
-        <h3 class="sidebar__title">
+        <!-- <h3 class="sidebar__title">
           <span>Tools</span>
         </h3>
 
@@ -133,7 +133,7 @@
               <span class="sidebar__link-name">Team builder</span>
               <span class="sidebar__link-floating">Team builder</span>
           </a>
-        </div>
+        </div> -->
       <!-- REVERSE 1999 MENU -->
       <?php } else if($category_id == 'reverse-1999') { ?>
         <div class="sidebar__list">
@@ -155,11 +155,11 @@
               <span class="sidebar__link-floating">Guides</span>
           </a>
           
-          <a href="<?php echo home_url(); ?>/reverse-1999-tier-list/" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-tier-list/" class="sidebar__link">
               <i class="ri-line-chart-line"></i>
               <span class="sidebar__link-name">Tier list</span>
               <span class="sidebar__link-floating">Tier list</span>
-          </a>
+          </a> -->
 
           <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
@@ -167,11 +167,11 @@
               <span class="sidebar__link-floating">Characters</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
               <i class="ri-instance-line"></i>
               <span class="sidebar__link-name">Psychubes</span>
               <span class="sidebar__link-floating">Psychubes</span>
-          </a>
+          </a> -->
 
           <!-- <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
               <i class="ri-shirt-line"></i>
