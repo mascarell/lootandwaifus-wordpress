@@ -134,69 +134,6 @@
               <span class="sidebar__link-floating">Team builder</span>
           </a>
         </div> -->
-      <!-- REVERSE 1999 MENU -->
-      <?php } else if($category_id == 'reverse-1999') { ?>
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/" class="sidebar__link">
-              <i class="ri-home-5-line"></i>
-              <span class="sidebar__link-name">Home</span>
-              <span class="sidebar__link-floating">Home</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Reverse: 1999</span>
-        </h3>
-        
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/reverse-1999/" class="sidebar__link">
-              <i class="ri-book-open-line"></i>
-              <span class="sidebar__link-name">Guides</span>
-              <span class="sidebar__link-floating">Guides</span>
-          </a>
-          
-          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-tier-list/" class="sidebar__link">
-              <i class="ri-line-chart-line"></i>
-              <span class="sidebar__link-name">Tier list</span>
-              <span class="sidebar__link-floating">Tier list</span>
-          </a> -->
-
-          <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
-              <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Characters</span>
-              <span class="sidebar__link-floating">Characters</span>
-          </a>
-
-          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
-              <i class="ri-instance-line"></i>
-              <span class="sidebar__link-name">Psychubes</span>
-              <span class="sidebar__link-floating">Psychubes</span>
-          </a> -->
-
-          <!-- <a href="<?php echo home_url(); ?>/reverse-1999-characters/" class="sidebar__link">
-              <i class="ri-shirt-line"></i>
-              <span class="sidebar__link-name">Skins</span>
-              <span class="sidebar__link-floating">Skins</span>
-          </a> -->
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Tools</span>
-        </h3>
-
-        <a href="<?php echo home_url(); ?>/reverse-1999-team-builder/" class="sidebar__link">
-            <i class="ri-lightbulb-flash-line"></i>
-            <span class="sidebar__link-name">Team builder</span>
-            <span class="sidebar__link-floating">Team builder</span>
-        </a>
-
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/reverse-1999-events/" class="sidebar__link">
-              <i class="ri-calendar-event-line"></i>
-              <span class="sidebar__link-name">Events</span>
-              <span class="sidebar__link-floating">Events</span>
-          </a>
-        </div>
       <!-- Brown Dust 2 menu -->
       <?php } else if($category_id == 'brown-dust-2') { ?>
         <div class="sidebar__list">
@@ -261,18 +198,6 @@
               <i class="ri-crosshair-2-line"></i>
               <span class="sidebar__link-name">GoV: NIKKE</span>
               <span class="sidebar__link-floating">GoV: NIKKE</span>
-          </a>
-          
-          <!-- <a class="sidebar__link">
-              <i class="ri-vip-crown-line"></i>
-              <span class="sidebar__link-name">Overlord: KoN</span>
-              <span class="sidebar__link-floating">Overlord: KoN</span>
-          </a>  -->
-
-          <a href="<?php echo home_url(); ?>/reverse-1999" class="sidebar__link">
-              <i class="ri-history-line"></i>
-              <span class="sidebar__link-name">Reverse: 1999</span>
-              <span class="sidebar__link-floating">Reverse: 1999</span>
           </a>
           
           <a href="<?php echo home_url(); ?>/brown-dust-2" class="sidebar__link">
