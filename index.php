@@ -6,8 +6,8 @@ get_header();
 
 <!-- Hero section -->
 <div class="hero animated">
-  <h1>Your one-stop shop for in depth game guides, tier lists and more</h1>
-  <p>Loot & Waifus is a community driven wiki for the games we love and care about, both RPG and gacha. Click down below on your favorite game to get started.</p>
+  <h1>Your ultimate gacha companion: explore in-depth guides, tier lists and more!</h1>
+  <p>Dive into in-depth guides, tier lists, character guides, and theorycrafting, fueled by the collective knowledge of a thriving and open source community!</p>
 </div>
 
 <!-- Games that we cover -->
