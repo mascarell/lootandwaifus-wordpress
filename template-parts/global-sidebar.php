@@ -77,11 +77,11 @@
               <span class="sidebar__link-floating">Team builder</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/nikke-events/" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/nikke-events/" class="sidebar__link">
               <i class="ri-calendar-event-line"></i>
               <span class="sidebar__link-name">Events</span>
               <span class="sidebar__link-floating">Events</span>
-          </a>
+          </a> -->
         </div>
       <!-- GIRLS FRONTLINE 2 EXILIUM MENU -->
       <?php } else if($category_id == 'girls-frontline-2-exilium') { ?>
