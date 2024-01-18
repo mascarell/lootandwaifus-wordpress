@@ -22,15 +22,14 @@ get_header();
 			<p>Brown Dust 2</p>
 		</div>
 	</a>
-	<a href="<?php echo home_url(); ?>/girls-frontline-2" class="game gfl2 covering">
+	<a class="game">
 		<div>
-			<p>Girl's Frontline 2: Exilium</p>
 		</div>
 	</a>
-	<!-- <a class="game">
+	<a class="game">
 		<div>
 		</div>
-	</a> -->
+	</a>
 </div>
 
 <div class="double">
