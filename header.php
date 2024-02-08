@@ -50,11 +50,11 @@
         <i class="ri-menu-line"></i>
       </div>
 
-      <div>
-        <!-- <a href="https://www.twitch.tv/sefhi_922" class="play twitch" target="_blank" rel="noopener noreferrer">
-          <i class="ri-twitch-fill"></i>
-          <span>Daily streams</span>
-        </a> -->
+      <div class="twitch-live">
+        <?php echo do_shortcode('[sw-twitch layout="status" autoplay="1"]'); ?>
+      </div>
+
+      <div class="social-button">
         <a href="https://discord.gg/rdCkPuPkDq" class="play discord" target="_blank" rel="noopener noreferrer">
           <i class="ri-discord-fill"></i>
           <span>Discord</span>
