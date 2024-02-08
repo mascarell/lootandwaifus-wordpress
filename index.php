@@ -6,7 +6,7 @@ get_header();
 
 <!-- Hero section -->
 <div class="hero animated">
-  <h1>Loot & Waifus: your ultimate gacha companion.</h1>
+  <h1>Loot & Waifus: your ultimate gacha companion</h1>
   <p>We are a collective of gacha players that like helping the community by building open source tools, guides and tier lists to make it easier for new players to get into the games that we love.</p>
 </div>
 
