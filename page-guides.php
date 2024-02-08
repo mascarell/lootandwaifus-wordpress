@@ -134,7 +134,7 @@ if($category_id == 'Nikke') {
 					<?php
 						$eventQuery = new WP_Query( array(
 								'meta_key'       => 'end_date',
-								'meta_value'     => date('Y-m-d', strtotime('-14 days')),
+								'meta_value'     => date('Y-m-d', strtotime('-5 days')),
 								'meta_compare'   => '>=',
 								'post_type'      => 'events',
 								'posts_per_page' => -1,
