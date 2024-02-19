@@ -161,17 +161,17 @@
         </h3>
 
         <div class="sidebar__list">          
-          <a href="https://www.patreon.com/lootandwaifus" class="sidebar__link">
-              <i class="ri-patreon-line"></i>
-              <span class="sidebar__link-name">Patreon</span>
-              <span class="sidebar__link-floating">Patreon</span>
+          <a href="https://ko-fi.com/sefhi" class="sidebar__link">
+              <i class="ri-heart-2-line"></i>
+              <span class="sidebar__link-name">Support us</span>
+              <span class="sidebar__link-floating">Support us</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/supporters/" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/supporters/" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
               <span class="sidebar__link-name">Supporters</span>
               <span class="sidebar__link-floating">Supporters</span>
-          </a>
+          </a> -->
 
           <a href="https://discord.gg/rdCkPuPkDq" class="sidebar__link">
               <i class="ri-discord-line"></i>
