@@ -39,9 +39,6 @@
 </head>
 <body <?php body_class(); ?> >
 
-<div class="static-noise"></div>
-<div id="particles-js"></div>
-
 <div class="separator"></div>
 
 <header class="header">

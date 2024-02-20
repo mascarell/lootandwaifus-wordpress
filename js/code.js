@@ -9,16 +9,17 @@
 })(jQuery);
 
 // animations
-(function ($) {
-  // Animations
-  const items = [...document.querySelectorAll('.animated')];
+// as of february 2024 i've removed animations, keeping the code here just in case
+// (function ($) {
+//   // Animations
+//   const items = [...document.querySelectorAll('.animated')];
 
-  for (let i = 0; i < items.length; i++) {
-    setTimeout(function () {
-      items[i].classList.add('active');
-    }, 50 * (i + 1));
-  }
-})(jQuery);
+//   for (let i = 0; i < items.length; i++) {
+//     setTimeout(function () {
+//       items[i].classList.add('active');
+//     }, 50 * (i + 1));
+//   }
+// })(jQuery);
 
 // sidebar functionality
 (function ($) {
