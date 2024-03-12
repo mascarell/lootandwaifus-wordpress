@@ -19,19 +19,19 @@ $category_id = $categories[0]->name;
 
           <div class="tier-list custom">
             <!-- TIER 0 UNITS -->
-            <div class="row"><p class="tier tier-0" contentEditable="true">T0</p><div class="characters filtered">
+            <div class="row"><p class="tier tier-0" contentEditable="true">S</p><div class="characters filtered">
             </div></div>
 
             <!-- TIER 1 UNITS -->
-            <div class="row"><p class="tier tier-2" contentEditable="true">T1</p><div class="characters filtered">
+            <div class="row"><p class="tier tier-1" contentEditable="true">A</p><div class="characters filtered">
             </div></div>
 
             <!-- TIER 2 UNITS -->
-            <div class="row"><p class="tier tier-4" contentEditable="true">T2</p><div class="characters filtered">
+            <div class="row"><p class="tier tier-2" contentEditable="true">B</p><div class="characters filtered">
             </div></div>
 
             <!-- TIER 3 UNITS -->
-            <div class="row"><p class="tier tier-6" contentEditable="true">T3</p><div class="characters filtered">
+            <div class="row"><p class="tier tier-3" contentEditable="true">C</p><div class="characters filtered">
             </div></div>
           </div>
 
