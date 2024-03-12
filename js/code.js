@@ -44,6 +44,45 @@
   }
 })(jQuery);
 
+// tier list builder
+(function ($) {
+  try {
+    // array with all characters
+    let characters = [...document.querySelectorAll('.filtered .character')];
+    // array with all tier containers on the tier list
+    let tierContainers = [...document.querySelectorAll('.row .characters')];
+    // variables related to drag and drop
+    let draggedElement;
+    let draggedElementRef;
+
+    // event listener for every character so we can drag them
+    characters.forEach(character => {
+      character.addEventListener('dragstart', e => {
+        draggedElement = e.target;
+        draggedElementRef = e.target;
+      });
+    });
+
+    // drop over
+    tierContainers.forEach(tier => {
+      tier.addEventListener('drop', e => {
+        tier.appendChild(draggedElement);
+        updateCharacterArray();
+      });
+      // Required to allow a drop
+      tier.addEventListener('dragover', e => {
+        e.preventDefault();
+      });
+    });
+
+    function updateCharacterArray() {
+      characters = [...document.querySelectorAll('.filtered .character')];
+    }
+  } catch (error) {
+    console.error(error)
+  }
+})(jQuery);
+
 // custom selects and filters in databases
 (function ($) {
   try {
@@ -346,7 +385,7 @@
 (function ($) {
 	try {
 		var stop = true;
-		$(".filtered .character.builder").on("drag", function (e) {
+		$(".filtered .character").on("drag", function (e) {
 
 			stop = true;
 

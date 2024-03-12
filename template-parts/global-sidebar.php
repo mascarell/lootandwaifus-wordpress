@@ -59,10 +59,10 @@
         </h3>
 
         <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/nikke-team-randomizer" class="sidebar__link">
-              <i class="ri-dice-2-line"></i>
-              <span class="sidebar__link-name">Team Randomizer</span>
-              <span class="sidebar__link-floating">Team Randomizer</span>
+          <a href="<?php echo home_url(); ?>/nikke-team-builder/" class="sidebar__link">
+              <i class="ri-lightbulb-flash-line"></i>
+              <span class="sidebar__link-name">Team builder</span>
+              <span class="sidebar__link-floating">Team builder</span>
           </a>
 
           <a href="<?php echo home_url(); ?>/guides/nikke-interactive-map/" class="sidebar__link">
@@ -70,18 +70,6 @@
               <span class="sidebar__link-name">Lost Relics</span>
               <span class="sidebar__link-floating">Lost Relics</span>
           </a>
-
-          <a href="<?php echo home_url(); ?>/nikke-team-builder/" class="sidebar__link">
-              <i class="ri-lightbulb-flash-line"></i>
-              <span class="sidebar__link-name">Team builder</span>
-              <span class="sidebar__link-floating">Team builder</span>
-          </a>
-
-          <!-- <a href="<?php echo home_url(); ?>/nikke-events/" class="sidebar__link">
-              <i class="ri-calendar-event-line"></i>
-              <span class="sidebar__link-name">Events</span>
-              <span class="sidebar__link-floating">Events</span>
-          </a> -->
         </div>
       <!-- Brown Dust 2 menu -->
       <?php } else if($category_id == 'brown-dust-2') { ?>
