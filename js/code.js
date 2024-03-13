@@ -8,19 +8,6 @@
   }
 })(jQuery);
 
-// animations
-// as of february 2024 i've removed animations, keeping the code here just in case
-// (function ($) {
-//   // Animations
-//   const items = [...document.querySelectorAll('.animated')];
-
-//   for (let i = 0; i < items.length; i++) {
-//     setTimeout(function () {
-//       items[i].classList.add('active');
-//     }, 50 * (i + 1));
-//   }
-// })(jQuery);
-
 // sidebar functionality
 (function ($) {
   try {
@@ -723,7 +710,6 @@
           }
         } catch (error) {
         }
-
       });
     }
 
@@ -747,11 +733,13 @@
         // arrays with both good and bad synergies for selected characters
         finalGoodSynergies = []
         finalBadSynergies = []
+        let currentName = ''
         
         selectedTeam.forEach(character => {
           if (character != 0) {
             // get character HTML element
             let characterParent = document.getElementById(character);
+            currentName = characterParent.dataset.characterName;
             // get both good and bad synergies
             let goodSynergies = characterParent.querySelector('.character-notes').dataset.good_characters || '';
             let badSynergies = characterParent.querySelector('.character-notes').dataset.bad_characters || '';
@@ -762,6 +750,16 @@
             goodNames.forEach(name => {
               if (!finalGoodSynergies.includes(name)) {
                 finalGoodSynergies.push(name);
+
+                characters.forEach(currentCharacter => {
+                  characterName = currentCharacter.dataset.characterName;
+                  const CCgoodSynergies = currentCharacter.querySelector('.character-notes').dataset.good_characters || '';
+                  const CCgoodNames = CCgoodSynergies.split(/[,]/).map(name => name.trim());
+                  
+                  if (CCgoodNames.includes(currentName)) {
+                    finalGoodSynergies.push(characterName);
+                  }
+                });
               }
             });
             badNames.forEach(name => {
@@ -769,6 +767,26 @@
                 finalBadSynergies.push(name);
               }
             });
+
+            // go over all characters to see if they have synergy with the one we have on our team
+            // this allows us to add new characters without having to edit old ones for newer synergies
+            // characters.forEach(function (currentCharacter) {
+            //   let characterName = currentCharacter.getAttribute("data-character-name");
+            //   let characterBg = currentCharacter.querySelector('.character-notes');
+            //   // CC stands for current character
+            //   const CCgoodSynergies = characterBg.getAttribute("data-good_characters") || '';
+            //   const CCgoodNames = CCgoodSynergies.split(/[,]/).map(name => name.trim());
+            //   // console.log(CCgoodNames)
+            //   // console.log(characterName)
+
+            //   team1.forEach(character => {
+            //     console.log(character)
+            //   });
+
+            //   if (CCgoodNames.includes(characterName)) {
+            //     finalGoodSynergies.push(characterName);
+            //   }
+            // });
           }
         });
 
