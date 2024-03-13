@@ -567,6 +567,9 @@
 					}
 				}
 
+        // check for team synergies with the current characters we have selected
+        checkTeamSynergies(team1Array);
+
         updateNotes();
 			} catch (error) { }
 
@@ -735,7 +738,60 @@
 			});
 
 			team1Id = ids;
+
+      checkTeamSynergies(ids);
 		}
+
+    function checkTeamSynergies(selectedTeam) {
+      try {
+        // arrays with both good and bad synergies for selected characters
+        finalGoodSynergies = []
+        finalBadSynergies = []
+        
+        selectedTeam.forEach(character => {
+          if (character != 0) {
+            // get character HTML element
+            let characterParent = document.getElementById(character);
+            // get both good and bad synergies
+            let goodSynergies = characterParent.querySelector('.character-notes').dataset.good_characters || '';
+            let badSynergies = characterParent.querySelector('.character-notes').dataset.bad_characters || '';
+            // Splitting the string by comma and colon
+            const goodNames = goodSynergies.split(/[,]/).map(name => name.trim());
+            const badNames = badSynergies.split(/[,]/).map(name => name.trim());
+            // Iterating over names and adding them to uniqueNames array avoiding duplicates
+            goodNames.forEach(name => {
+              if (!finalGoodSynergies.includes(name)) {
+                finalGoodSynergies.push(name);
+              }
+            });
+            badNames.forEach(name => {
+              if (!finalBadSynergies.includes(name)) {
+                finalBadSynergies.push(name);
+              }
+            });
+          }
+        });
+
+        // after we get all those characters, we need to add red backgrounds to bad characters and green to good ones
+        // Create a Set from array2
+        let set2 = new Set(finalBadSynergies);
+        // Filter array1 to remove elements that exist in set2
+        let uniqueGoodCharacters = finalGoodSynergies.filter(item => !set2.has(item));
+
+        characters.forEach(function (character) {
+          let characterName = character.getAttribute("data-character-name");
+          let characterBg = character.querySelector('.character-notes');
+
+          if (uniqueGoodCharacters.includes(characterName)) {
+            characterBg.classList.add("good");
+          } else if (finalBadSynergies.includes(characterName)) {
+            characterBg.classList.add("bad");
+          }
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    }
 	} catch (error) {
 	}
 })(jQuery);
