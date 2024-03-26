@@ -385,23 +385,28 @@ a.patreon img{ max-width: 100%; }
 .character .bg::after{
   top: 30px;
 }
-/* REVERSE 1999 ICONS */
-.character .bg.plant::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-plant.webp); }
-.character .bg.star::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-star.webp); }
-.character .bg.beast::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-beast.webp); }
-.character .bg.intellect::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-intellect.webp); }
-.character .bg.mineral::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-mineral.webp); }
-.character .bg.spirit::before{ top: 0; width: 28px; height: 45px; background-image: url(images/reverse/reverse-spirit.webp); }
 /* NIKKE ICONS */
-.character .bg.fire::before{ background-image: url(images/nikke/nikke-fire.webp); }
-.character .bg.water::before{ background-image: url(images/nikke/nikke-water.webp); }
-.character .bg.wind::before{ background-image: url(images/nikke/nikke-wind.webp); }
-.character .bg.electric::before{ background-image: url(images/nikke/nikke-electric.webp); }
-.character .bg.iron::before{ background-image: url(images/nikke/nikke-iron.webp); }
-.character .bg.burst-1::after{ background-image: url(images/nikke/nikke-1.webp); }
-.character .bg.burst-2::after{ background-image: url(images/nikke/nikke-2.webp); }
-.character .bg.burst-3::after{ background-image: url(images/nikke/nikke-3.webp); }
-.character .bg.burst-all::after{ background-image: url(images/nikke/nikke-all.webp); }
+.character.nikke .bg.fire::before{ background-image: url(images/nikke/nikke-fire.webp); }
+.character.nikke .bg.water::before{ background-image: url(images/nikke/nikke-water.webp); }
+.character.nikke .bg.wind::before{ background-image: url(images/nikke/nikke-wind.webp); }
+.character.nikke .bg.electric::before{ background-image: url(images/nikke/nikke-electric.webp); }
+.character.nikke .bg.iron::before{ background-image: url(images/nikke/nikke-iron.webp); }
+.character.nikke .bg.burst-1::after{ background-image: url(images/nikke/nikke-1.webp); }
+.character.nikke .bg.burst-2::after{ background-image: url(images/nikke/nikke-2.webp); }
+.character.nikke .bg.burst-3::after{ background-image: url(images/nikke/nikke-3.webp); }
+.character.nikke .bg.burst-all::after{ background-image: url(images/nikke/nikke-all.webp); }
+/* SOLO LEVELING ICONS */
+.character.solo-leveling-arise .bg.fire::before{ background-image: url(images/sololeveling/Element_Fire_Color.png); }
+.character.solo-leveling-arise .bg.water::before{ background-image: url(images/sololeveling/Element_Water.png); }
+.character.solo-leveling-arise .bg.wind::before{ background-image: url(images/sololeveling/Element_Wind.png); }
+.character.solo-leveling-arise .bg.dark::before{ background-image: url(images/sololeveling/Element_Darkness_Color.png); }
+.character.solo-leveling-arise .bg.light::before{ background-image: url(images/sololeveling/Element_Light_Color.png); }
+.character.solo-leveling-arise .bg.fighter::after{ background-image: url(images/sololeveling/Class_Fighter.png); }
+.character.solo-leveling-arise .bg.assassin::after{ background-image: url(images/sololeveling/Class_Assassin.png); }
+.character.solo-leveling-arise .bg.healer::after{ background-image: url(images/sololeveling/Class_Healer.png); }
+.character.solo-leveling-arise .bg.mage::after{ background-image: url(images/sololeveling/Class_Mage.png); }
+.character.solo-leveling-arise .bg.ranged::after{ background-image: url(images/sololeveling/Class_Ranger.png); }
+.character.solo-leveling-arise .bg.tank::after{ background-image: url(images/sololeveling/Class_Tank.png); }
 /* character flags */
 .news .characters .character .flags{
   position: absolute;

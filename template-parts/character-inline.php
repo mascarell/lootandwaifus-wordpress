@@ -8,9 +8,13 @@
   foreach ($tags as $tag) {
     $tag_slugs[] = $tag->slug;
   }
+
+  // get category of the game as slug so we can put the classes for elemental icons
+  $categories = get_the_category();
+  $category_slug = $categories[0]->slug;
 ?>
 
-  <div class="post character nomargin covering container" data-character-name="<?php the_title(); ?>">
+  <div class="post <?php echo $category_slug; ?> character nomargin covering container" data-character-name="<?php the_title(); ?>">
     <div class="bg <?php echo implode(' ', $tag_slugs); ?>"></div>
     <div class="lozad <?php echo implode(' ', $tag_slugs); ?>" data-background-image="<?php echo the_post_thumbnail_url(); ?>"></div>
     <a href="<?php the_permalink(); ?>" class="margin">

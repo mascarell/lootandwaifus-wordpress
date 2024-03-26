@@ -22,10 +22,14 @@
 	$situational = get_post_meta( get_the_ID(), 'situational', true );
 	$roles = get_post_meta( get_the_ID(), 'roles', true ); // can fill multiple roles on a team depending on investment
 	$loved = get_post_meta( get_the_ID(), 'loved', true ); // popular and loved characters regardless of tier placement
+
+  // get category of the game as slug so we can put the classes for elemental icons
+  $categories = get_the_category();
+  $category_slug = $categories[0]->slug;
 ?>
 
 
-<div class="post character covering container" data-character-name="<?php the_title(); ?>">
+<div class="post <?php echo $category_slug; ?> character covering container" data-character-name="<?php the_title(); ?>">
   <div class="flags">
     <?php if ( ! empty( $paired ) ) { ?> 
       <div class="flag" data-tooltip="This character tier placement is dependent on having specific units (<?php echo $paired; ?>) in the same team."><i class="ri-group-line"></i></div> 

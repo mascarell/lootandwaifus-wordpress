@@ -14,9 +14,13 @@
   // get character synergies, good and bad
   $good_characters = get_post_meta( get_the_ID(), 'good_characters', true );
   $bad_characters = get_post_meta( get_the_ID(), 'bad_characters', true );
+
+  // get category of the game as slug so we can put the classes for elemental icons
+  $categories = get_the_category();
+  $category_slug = $categories[0]->slug;
 ?>
 
-<div id="<?php echo get_the_ID(); ?>" draggable="true" class="post builder character nomargin covering container" data-character-id="<?php echo get_the_ID(); ?>" data-character-name="<?php the_title(); ?>" >
+<div id="<?php echo get_the_ID(); ?>" draggable="true" class="post builder <?php echo $category_slug; ?> character nomargin covering container" data-character-id="<?php echo get_the_ID(); ?>" data-character-name="<?php the_title(); ?>" >
   <div 
     <?php if ( ! empty( $notes ) ) { ?> data-notes="<?php echo $notes; ?>" <?php } ?> 
     <?php if ( ! empty( $good_characters ) ) { ?> data-good_characters="<?php echo $good_characters; ?>" <?php } ?> 
