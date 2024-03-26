@@ -145,7 +145,7 @@
 
           <a href="<?php echo home_url(); ?>/solo-leveling-arise-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Characters (WIP)</span>
+              <span class="sidebar__link-name">Characters</span>
               <span class="sidebar__link-floating">Characters</span>
           </a>
 
