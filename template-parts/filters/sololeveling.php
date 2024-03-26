@@ -45,8 +45,8 @@
         <label for="ranged">Ranged</label>
       </li>
       <li role="option">
-        <input type="radio" id="warrior" name="social-account" />
-        <label for="warrior">Warrior</label>
+        <input type="radio" id="fighter" name="social-account" />
+        <label for="fighter">Fighter</label>
       </li>
       <li role="option">
         <input type="radio" id="healer" name="social-account" />
