@@ -158,6 +158,36 @@ if($category_id == 'Nikke') {
 			</div>
 		</div>
 	</div>
+<?php } elseif($category_id == 'Solo Leveling: Arise') { ?>
+  <div class="events">
+    <!-- Gantt chart with current events -->
+      <div class="container animated chart-parent">
+        <div class="show-more">show all events</div>
+        <div class="chart-events">
+          <!-- Date header will be dynamically created using JavaScript -->
+          <div class="chart-dates"></div>
+        
+          <div class="chart-container">
+            <!-- Additional chart bars can be added here -->
+            <?php
+              $eventQuery = new WP_Query( array(
+                  'meta_key'       => 'end_date',
+                  'meta_value'     => date('Y-m-d', strtotime('-5 days')),
+                  'meta_compare'   => '>=',
+                  'post_type'      => 'events',
+                  'posts_per_page' => -1,
+                  'category_name'  => $category_id
+              ) );
+              if ( $eventQuery->have_posts() ) :
+                  while ( $eventQuery->have_posts() ) : $eventQuery->the_post();
+                    get_template_part('template-parts/active-events');
+                  endwhile; wp_reset_postdata();
+              endif; 
+            ?>
+          </div>
+        </div>
+      </div>
+  </div>
 <?php } else { ?>
 <?php } ?>
 
