@@ -116,6 +116,45 @@
               <span class="sidebar__link-floating">Events</span>
           </a>
         </div>
+      <!-- Solo Leveling: Arise menu -->
+      <?php } else if($category_id == 'solo-leveling-arise') { ?>
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/" class="sidebar__link">
+              <i class="ri-home-5-line"></i>
+              <span class="sidebar__link-name">Home</span>
+              <span class="sidebar__link-floating">Home</span>
+          </a>
+        </div>
+
+        <h3 class="sidebar__title">
+          <span>Solo Leveling</span>
+        </h3>
+        
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise/" class="sidebar__link">
+              <i class="ri-book-open-line"></i>
+              <span class="sidebar__link-name">Guides (WIP)</span>
+              <span class="sidebar__link-floating">Guides</span>
+          </a>
+
+          <a class="sidebar__link">
+              <i class="ri-line-chart-line"></i>
+              <span class="sidebar__link-name">Tier list (soon)</span>
+              <span class="sidebar__link-floating">Tier list</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise-characters/" class="sidebar__link">
+              <i class="ri-group-line"></i>
+              <span class="sidebar__link-name">Characters (WIP)</span>
+              <span class="sidebar__link-floating">Characters</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/guides/solo-leveling-arise-codes/" class="sidebar__link">
+              <i class="ri-vip-diamond-line"></i>
+              <span class="sidebar__link-name">Free codes</span>
+              <span class="sidebar__link-floating">Free codes</span>
+          </a>
+        </div>
       <!-- No game menu -->
       <?php } else { ?>
         <div class="sidebar__list">
@@ -137,10 +176,10 @@
               <span class="sidebar__link-floating">GoV: NIKKE</span>
           </a>
           
-          <a href="<?php echo home_url(); ?>/brown-dust-2" class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise" class="sidebar__link">
               <i class="ri-sword-line"></i>
-              <span class="sidebar__link-name">Brown Dust 2</span>
-              <span class="sidebar__link-floating">Brown Dust 2</span>
+              <span class="sidebar__link-name">Solo Leveling: Arise</span>
+              <span class="sidebar__link-floating">Solo Leveling</span>
           </a>
         </div>
 

@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.9.0
+Version: 1.9.2
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -186,6 +186,18 @@ a.patreon img{ max-width: 100%; }
 }
 .games .game.gfl2 div {
 	background: url("images/gfl2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game.sololeveling div {
+	background: url("images/solo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.games .game.afkjourney div {
+	background: url("images/afk-journey.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -428,13 +440,13 @@ a.patreon img{ max-width: 100%; }
   mask-image: linear-gradient(to top, transparent 5%, black 50%);
 }
 /* Character custom colors for rarity */
-.news .characters .character .bg.ur { background-image: linear-gradient(0deg, #f47f20ee 0%, #ffa860 74%); }
+.news .characters .character .bg.ur { background-image: linear-gradient(to top, rgba(186, 7, 7, 0.8) 0%, rgba(240, 154, 154, 0.8) 100%); }
 .news .characters .character .bg.ssr { background-image: linear-gradient(to top, rgba(255, 179, 72, 0.8) 0%, rgba(255, 244, 87, 0.8) 100%); }
 .news .characters .character .bg.sr { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
 .news .characters .character .bg.r { background-image: linear-gradient(to top, rgba(0, 144, 255, .8) 0%, rgba(154, 203, 240, 0.8) 100%); }
 .news .characters .character .bg.n { background-image: linear-gradient(to top, rgba(0, 130, 2, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
 .news .characters .character .bg.good { background-image: linear-gradient(to top, rgba(0, 130, 2, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
-.news .characters .character .bg.bad { background-image: linear-gradient(to top, rgba(130, 0, 0, 0.8) 0%, rgba(240, 154, 154, 0.8) 100%); }
+.news .characters .character .bg.bad { background-image: linear-gradient(to top, rgba(186, 7, 7, 0.8) 0%, rgba(240, 154, 154, 0.8) 100%); }
 .news .characters .character .margin {
 	align-items: end;
 	width: 100%;

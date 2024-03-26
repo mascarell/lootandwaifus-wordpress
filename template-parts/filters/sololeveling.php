@@ -12,19 +12,11 @@
       </li>
       <li role="option">
         <input type="radio" id="ur" name="social-account" />
-        <label for="ur">6✦</label>
-      </li>
-      <li role="option">
-        <input type="radio" id="ssr" name="social-account" />
-        <label for="ssr">5✦</label>
+        <label for="ur">SSR</label>
       </li>
       <li role="option">
         <input type="radio" id="sr" name="social-account" />
-        <label for="sr">4✦</label>
-      </li>
-      <li role="option">
-        <input type="radio" id="r" name="social-account" />
-        <label for="r">3✦</label>
+        <label for="sr">SR</label>
       </li>
     </ul>
   </div>
@@ -32,37 +24,33 @@
   <!-- Afflatus filter -->
   <div class="custom-select">
     <button class="select-button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
-      <span class="selected-value">All Afflatus</span>
+      <span class="selected-value">All classes</span>
       <span class="arrow"></span>
     </button>
     <ul class="select-dropdown" role="listbox">
       <li role="option">
         <input type="radio" id="" name="social-account" checked />
-        <label for="afflatus">All afflatus</label>
+        <label for="afflatus">All classes</label>
       </li>
       <li role="option">
-        <input type="radio" id="star" name="social-account" />
-        <label for="star">star</label>
+        <input type="radio" id="tank" name="social-account" />
+        <label for="tank">Tank</label>
       </li>
       <li role="option">
-        <input type="radio" id="plant" name="social-account" />
-        <label for="plant">plant</label>
+        <input type="radio" id="mage" name="social-account" />
+        <label for="mage">Mage</label>
       </li>
       <li role="option">
-        <input type="radio" id="mineral" name="social-account" />
-        <label for="mineral">mineral</label>
+        <input type="radio" id="ranged" name="social-account" />
+        <label for="ranged">Ranged</label>
       </li>
       <li role="option">
-        <input type="radio" id="beast" name="social-account" />
-        <label for="beast">beast</label>
+        <input type="radio" id="warrior" name="social-account" />
+        <label for="warrior">Warrior</label>
       </li>
       <li role="option">
-        <input type="radio" id="spirit" name="social-account" />
-        <label for="spirit">spirit</label>
-      </li>
-      <li role="option">
-        <input type="radio" id="intellect" name="social-account" />
-        <label for="intellect">intellect</label>
+        <input type="radio" id="healer" name="social-account" />
+        <label for="healer">Healer</label>
       </li>
     </ul>
   </div>
@@ -79,12 +67,24 @@
         <label for="weapons">All damage types</label>
       </li>
       <li role="option">
-        <input type="radio" id="mental" name="social-account" />
-        <label for="mental">mental</label>
+        <input type="radio" id="fire" name="social-account" />
+        <label for="fire">Fire</label>
       </li>
       <li role="option">
-        <input type="radio" id="reality" name="social-account" />
-        <label for="reality">reality</label>
+        <input type="radio" id="dark" name="social-account" />
+        <label for="dark">Dark</label>
+      </li>
+      <li role="option">
+        <input type="radio" id="water" name="social-account" />
+        <label for="water">Water</label>
+      </li>
+      <li role="option">
+        <input type="radio" id="wind" name="social-account" />
+        <label for="wind">Wind</label>
+      </li>
+      <li role="option">
+        <input type="radio" id="light" name="social-account" />
+        <label for="light">Light</label>
       </li>
     </ul>
   </div>
@@ -96,24 +96,6 @@
     </svg>
     Advanced filters
   </button>
-
-  <?php
-  // Filters only for team builder
-  // Get the current page ID
-  $page_title = get_the_title(); // Get the current page title
-
-  // Check if the current page ID is equal to X
-  if ($page_title == 'Reverse: 1999 Team Builder') { ?>
-    <button id="select-all" class="filters-button">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" viewBox="0 0 24 24"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
-      Select all
-    </button>
-
-    <button id="remove-all" class="filters-button">
-      <svg xmlns="http://www.w3.org/2000/svg"  fill="white" width="20" viewBox="0 0 24 24"><path d="M7 4V2H17V4H22V6H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V6H2V4H7ZM6 6V20H18V6H6ZM9 9H11V17H9V9ZM13 9H15V17H13V9Z"></path></svg>
-      Remove selected
-    </button>
-  <?php } ?>
 
   <button class="reset-filters">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b72a2a" width="24">

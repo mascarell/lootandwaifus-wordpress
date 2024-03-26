@@ -63,3 +63,9 @@
 <?php get_template_part('template-parts/global-sidebar'); ?>
 
 <main class="main" id="main">
+
+<!-- Friends -->
+<!-- <a href="https://www.ldplayer.net/games/reverse-1999-on-pc.html?gameId=1365&n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play big animated" target="_blank" rel="noopener noreferrer">
+  <img src="<?php echo get_theme_file_uri('images/bluestacks.png'); ?>" alt="bluestacks logo">
+  <span>Play Gacha Games on PC with Bluestacks</span>
+</a> -->

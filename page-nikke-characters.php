@@ -45,14 +45,11 @@ function showCharactersByRarity($tag_slug, $category_id) {
 
 		<div class="characters filtered">
 			<?php
-        // We have a different ordering method for reverse 1999 characters
-        if($category_id == 'Reverse: 1999') {
+        // We have a different ordering method for solo leveling characters
+        if($category_id == 'Solo Leveling: Arise') {
           // semi dirty way of doing it but better than it not working
           showCharactersByRarity('ur', $category_id);
-          showCharactersByRarity('ssr', $category_id);
           showCharactersByRarity('sr', $category_id);
-          showCharactersByRarity('r', $category_id);
-          showCharactersByRarity('n', $category_id);
         } else {
           $query = new WP_Query( array(
               'post_type'      => 'characters',

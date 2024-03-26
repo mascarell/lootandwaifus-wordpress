@@ -11,9 +11,8 @@ $category_id = $categories[0]->name;
 <?php 
 if($category_id == 'Nikke') { 
   get_template_part('template-parts/filters/nikke');
-} else if($category_id == 'Reverse: 1999') {
-  get_template_part('template-parts/filters/reverse');
-} else if($category_id == 'Noneidk') {
+} else if($category_id == 'Solo Leveling: Arise') {
+  get_template_part('template-parts/filters/sololeveling');
 } else { 
 } ?>
 
@@ -24,7 +23,7 @@ if($category_id == 'Nikke') {
   <?php
     // Replace 'your_custom_post_type' with the name of your custom post type.
     $custom_post_type = 'characters';
-    $tags_to_exclude = array('Tier 0', 'Tier 0.5', 'Tier 1', 'Tier 1.5', 'Tier 2', 'Tier 2.5', 'Tier 3', 'R', 'SR', 'SSR', 'UR', 'Abnormal', 'Pilgrim', 'Elysion', 'Tetra', 'Missilis', 'Fire', 'Wind', 'Water', 'Iron', 'Electric', 'Light', 'Dark', 'Shotgun', 'SMG', 'Machine gun', 'Assault rifle', 'Rocket Launcher', 'Sniper Rifle', 'Burst 1', 'Burst 2', 'Burst 3', 'Burst All', 'Attacker', 'Defender', 'Supporter', 'Beast', 'Spirit', 'Intellect', 'Mineral', 'Plant', 'Star', 'Reality', 'Mental', 'Physical', 'Magic','featured' );
+    $tags_to_exclude = array('Tier 0', 'Tier 0.5', 'Tier 1', 'Tier 1.5', 'Tier 2', 'Tier 2.5', 'Tier 3', 'R', 'SR', 'SSR', 'UR', 'Abnormal', 'Pilgrim', 'Elysion', 'Tetra', 'Missilis', 'Fire', 'Wind', 'Water', 'Iron', 'Electric', 'Light', 'Dark', 'Shotgun', 'SMG', 'Machine gun', 'Assault rifle', 'Rocket Launcher', 'Sniper Rifle', 'Burst 1', 'Burst 2', 'Burst 3', 'Burst All', 'Attacker', 'Defender', 'Supporter', 'Beast', 'Spirit', 'Intellect', 'Mineral', 'Plant', 'Star', 'Reality', 'Mental', 'Physical', 'Magic','featured', 'Tank', 'Healer', 'Warrior', 'Dark', 'Light', 'Mage', 'Assassin' );
 
     // Get posts in the specified category within the custom post type.
     $posts = get_posts(array(

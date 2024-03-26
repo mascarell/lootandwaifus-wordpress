@@ -17,13 +17,29 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
+	<a href="<?php echo home_url(); ?>/solo-leveling-arise" class="game sololeveling covering">
+		<div>
+			<p>Solo Leveling: Arise</p>
+		</div>
+	</a>
+	<!-- <a href="<?php echo home_url(); ?>/afk-journey" class="game afkjourney covering">
+		<div>
+			<p>AFK Journey</p>
+		</div>
+	</a>
+	<a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
+		<div>
+			<p>Overlord: King of Nazarick</p>
+		</div>
+	</a>
+	<a href="<?php echo home_url(); ?>/girls-frontline-2-exilium" class="game gfl2 covering">
+		<div>
+			<p>Girl's Frontline 2: Exilium</p>
+		</div>
+	</a> -->
 	<a href="<?php echo home_url(); ?>/brown-dust-2" class="game browndust covering">
 		<div>
 			<p>Brown Dust 2</p>
-		</div>
-	</a>
-	<a class="game">
-		<div>
 		</div>
 	</a>
 	<a class="game">

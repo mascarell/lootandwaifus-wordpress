@@ -25,12 +25,7 @@ if($category_id == 'Nikke') {
 		</div>
 	<?php
 } else if($category_id == 'Reverse: 1999') {
-	?>
-    <!-- <a href="https://www.ldplayer.net/games/reverse-1999-on-pc.html?gameId=1365&n=39386997#utm_source=aff&utm_medium=aff&utm_campaign=aff39386997" class="play big animated" target="_blank" rel="noopener noreferrer">
-      <img src="<?php echo get_theme_file_uri('images/ldplayer.webp'); ?>" alt="ldplayer logo">
-      <span>Play Reverse: 1999 on PC with LDPlayer</span>
-    </a> -->
-  
+	?>  
 		<div class="game-info animated">
 			<div class="logo">
 				<img src="<?php echo get_theme_file_uri('images/reverse-logo.png'); ?>" loading="lazy" alt="reverse 1999 logo">
@@ -65,6 +60,19 @@ if($category_id == 'Nikke') {
 			<div class="game-info-text">
 				<h1>Girls Frontline 2: Exilium wiki</h1>
 				<p>Welcome to the ultimate Girls Frontline 2: Exilium wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
+			</div>
+		</div>
+	<?php
+} else if($category_id == 'Solo Leveling: Arise') {
+	?>  
+		<div class="game-info animated">
+			<div class="logo">
+				<img src="<?php echo get_theme_file_uri('images/solo-leveling-logo.png'); ?>" loading="lazy" alt="Solo Leveling: Arise logo">
+			</div>
+
+			<div class="game-info-text">
+				<h1>Solo Leveling: Arise wiki</h1>
+				<p>Welcome to the ultimate Solo Leveling: Arise wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
 			</div>
 		</div>
 	<?php
