@@ -33,6 +33,10 @@ $category_id = $categories[0]->name;
             <!-- TIER 3 UNITS -->
             <div class="row"><p class="tier tier-3" contentEditable="true">C</p><div class="characters filtered">
             </div></div>
+
+            <!-- TIER 3 UNITS -->
+            <div class="row"><p class="tier tier-4" contentEditable="true">D</p><div class="characters filtered">
+            </div></div>
           </div>
 
           <div class="character-filters" style="display: none;">
