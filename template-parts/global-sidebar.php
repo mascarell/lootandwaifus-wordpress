@@ -133,13 +133,13 @@
         <div class="sidebar__list">
           <a href="<?php echo home_url(); ?>/solo-leveling-arise/" class="sidebar__link">
               <i class="ri-book-open-line"></i>
-              <span class="sidebar__link-name">Guides (WIP)</span>
+              <span class="sidebar__link-name">Guides</span>
               <span class="sidebar__link-floating">Guides</span>
           </a>
 
-          <a class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise-tier-list/" class="sidebar__link">
               <i class="ri-line-chart-line"></i>
-              <span class="sidebar__link-name">Tier list (soon)</span>
+              <span class="sidebar__link-name">Tier list</span>
               <span class="sidebar__link-floating">Tier list</span>
           </a>
 
