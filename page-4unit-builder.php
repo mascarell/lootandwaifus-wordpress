@@ -1,4 +1,4 @@
-<?php /* Template Name: Team builder 4 units */ ?>
+<?php /* Template Name: Team builder 3 units */ ?>
 
 <?php
 
@@ -56,12 +56,10 @@ function showCharactersByRarity($tag_slug, $category_id) {
 				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
+				<div class="post builder tam2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team3 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
@@ -77,13 +75,10 @@ function showCharactersByRarity($tag_slug, $category_id) {
 		<div class="characters filtered">
 			<?php
         // We have a different ordering method for reverse 1999 characters
-        if($category_id == 'Reverse: 1999') {
+        if($category_id == 'Solo Leveling: Arise') {
           // semi dirty way of doing it but better than it not working
           showCharactersByRarity('ur', $category_id);
-          showCharactersByRarity('ssr', $category_id);
           showCharactersByRarity('sr', $category_id);
-          showCharactersByRarity('r', $category_id);
-          showCharactersByRarity('n', $category_id);
         } else {
           $query = new WP_Query( array(
               'post_type'      => 'characters',
