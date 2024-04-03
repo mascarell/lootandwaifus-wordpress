@@ -88,20 +88,12 @@ if($category_id == 'Nikke') {
 			<?php
 				// Set the timezone to Spain, bosses reset at 9pm for me
 				date_default_timezone_set('Europe/Madrid');
-				// Array of 5 texts
-				$texts = array(
-						'Chatterbox',
-						'Modernia',
-						'Alteisen MK.VI',
-						'Grave Digger',
-						'Blacksmith'
-				);
 		
 				// Get the current time
 				$currentHour = date('H');
 		
 				// Determine which text to display based on time and day of year
-				if ($currentHour >= 21) {
+				if ($currentHour >= 22) {
 						// If it's past 9pm, show the text for the next day
 						$dayOfYear = date('z') + 2; // Add 2 to skip the current day and go to the next day
 				} else {
@@ -111,19 +103,19 @@ if($category_id == 'Nikke') {
 				$textIndex = ($dayOfYear - 1) % 5; // Use modulus operator to cycle through texts
 
 				switch ($textIndex) { // Show boss of the day
-					case 0:
+					case 1:
 						?> <h3>Today's SI: Chatterbox</h3><span class="chatterbox"></span> <?php
 						break;
-					case 1:
+					case 2:
 						?> <h3>Today's SI: Modernia</h3><span class="modernia"></span> <?php
 						break;
-					case 2:
+					case 3:
 						?> <h3>Today's SI: Alteisen MK.VI</h3><span class="train"></span> <?php
 						break;
-					case 3:
+					case 4:
 						?> <h3>Today's SI: Grave Digger</h3><span class="gravedigger"></span> <?php
 						break;
-					case 4:
+					case 0:
 						?> <h3>Today's SI: Blacksmith</h3><span class="blacksmith"></span> <?php
 						break;
 				}
