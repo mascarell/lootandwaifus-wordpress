@@ -75,10 +75,7 @@ a.play.randomizer{
 }
 a.play.twitch{
   background: #6441a5;
-  margin-top: 0;
   color: white;
-  width: 200px;
-  padding: 12px;
 }
 a.play img, a.play i{
   width: 100%;

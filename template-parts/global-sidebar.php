@@ -188,11 +188,17 @@
         </h3>
 
         <div class="sidebar__list">          
-          <a href="https://ko-fi.com/sefhi" class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/viewer-pulls" class="sidebar__link">
+              <i class="ri-coupon-3-line"></i>
+              <span class="sidebar__link-name">Viewer pulls</span>
+              <span class="sidebar__link-floating">Viewer pulls</span>
+          </a>
+
+          <!-- <a href="https://ko-fi.com/sefhi" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
               <span class="sidebar__link-name">Support us</span>
               <span class="sidebar__link-floating">Support us</span>
-          </a>
+          </a> -->
 
           <!-- <a href="<?php echo home_url(); ?>/supporters/" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
@@ -208,9 +214,9 @@
         </div>
       <?php } ?>
       <!-- Shows on all menus -->
-        <a href="https://ko-fi.com/sefhi" class="play" target="_blank" rel="noopener noreferrer">
-          <i class="ri-heart-2-line"></i>
-          <span>Support us</span>
+        <a href="https://www.twitch.tv/sefhi_922" class="play twitch" target="_blank" rel="noopener noreferrer">
+          <i class="ri-twitch-line"></i>
+          <span>Daily streams</span>
         </a>
     </div>
   </nav>
