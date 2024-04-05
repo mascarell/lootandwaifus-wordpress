@@ -64,8 +64,34 @@
 
 <main class="main" id="main">
 
-<!-- Friends -->
-<!-- <a href="" class="play big animated" target="_blank" rel="noopener noreferrer">
-  <img src="<?php echo get_theme_file_uri('images/bluestacks.png'); ?>" alt="bluestacks logo">
-  <span>Play Gacha Games on PC with Bluestacks</span>
-</a> -->
+<?php 
+	if(is_front_page()) {
+		$category_id = '';
+	} else {
+		$categories = get_the_category();
+		if ( ! empty( $categories ) ) {
+			$category_id = $categories[0]->slug;
+		} else {
+			$category_id = '';
+		}
+	}
+?>
+
+
+<!-- NIKKE GODDES OF VICTORY MENU -->
+<?php if($category_id == 'nikke') { ?>
+  <a href="https://www.youtube.com/@lootandwaifus/videos" class="play big animated" target="_blank" rel="noopener noreferrer">
+    <i class="ri-youtube-fill"></i>
+    <span>NIKKE Daily Videos</span>
+  </a>
+<!-- Brown Dust 2 menu -->
+<?php } else if($category_id == 'brown-dust-2') { ?>
+<!-- Solo Leveling: Arise menu -->
+<?php } else if($category_id == 'solo-leveling-arise') { ?>
+  <!-- <a href="" class="play big animated" target="_blank" rel="noopener noreferrer">
+    <i class="ri-youtube-fill"></i>
+    <span>Solo Leveling: Arise Daily Videos</span>
+  </a> -->
+<!-- No game -->
+<?php } else { ?>
+<?php } ?>
