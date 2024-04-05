@@ -143,16 +143,34 @@
               <span class="sidebar__link-floating">Tier list</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise-characters/" class="sidebar__link">
-              <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Characters</span>
-              <span class="sidebar__link-floating">Characters</span>
+          <a class="sidebar__link">
+              <i class="ri-sword-fill"></i>
+              <span class="sidebar__link-name">Weapon tier list (WIP)</span>
+              <span class="sidebar__link-floating">Weapon tier list</span>
           </a>
 
           <a href="<?php echo home_url(); ?>/guides/solo-leveling-arise-codes/" class="sidebar__link">
               <i class="ri-vip-diamond-line"></i>
               <span class="sidebar__link-name">Free codes</span>
               <span class="sidebar__link-floating">Free codes</span>
+          </a>
+        </div>
+
+        <h3 class="sidebar__title">
+          <span>Database</span>
+        </h3>
+
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise-characters/" class="sidebar__link">
+              <i class="ri-group-line"></i>
+              <span class="sidebar__link-name">Characters</span>
+              <span class="sidebar__link-floating">Characters</span>
+          </a>
+
+          <a class="sidebar__link">
+              <i class="ri-focus-3-line"></i>
+              <span class="sidebar__link-name">Weapons (WIP)</span>
+              <span class="sidebar__link-floating">Weapons</span>
           </a>
         </div>
       <!-- No game menu -->
