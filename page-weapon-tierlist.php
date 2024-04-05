@@ -17,12 +17,6 @@ $category_id = $categories[0]->name;
     
           <?php the_content(); ?>
 
-          <div class="character-filters">
-            <input type="search" id="search" name="search" placeholder="Filter characters" autocomplete="off">
-          </div>
-          
-          <?php get_template_part('template-parts/database-filters'); ?>
-
           <div class="tier-list">
             <!-- TIER 0 UNITS -->
             <?php
