@@ -32,7 +32,7 @@ get_header();
               <p>Last updated on: <?php echo get_the_modified_date(); ?></p>
             </div>
           </div>
-				<?php } else if ( is_singular( 'characters' ) ) { ?>
+				<?php } else if ( is_singular( 'characters' ) || is_singular( 'weapons' ) ) { ?>
 					<h1><?php the_title(); ?></h1>
 				<?php } else { ?>
 					<p class="date"><?php echo the_date(); ?></p>
