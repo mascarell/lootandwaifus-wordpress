@@ -167,9 +167,9 @@
               <span class="sidebar__link-floating">Characters</span>
           </a>
 
-          <a class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise-weapons/" class="sidebar__link">
               <i class="ri-focus-3-line"></i>
-              <span class="sidebar__link-name">Weapons (WIP)</span>
+              <span class="sidebar__link-name">Weapons</span>
               <span class="sidebar__link-floating">Weapons</span>
           </a>
         </div>
