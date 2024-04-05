@@ -259,6 +259,63 @@ function characters() {
 }
 add_action( 'init', 'characters', 0 );
 
+// Register Custom Post Type -> Weapons
+function weapons() {
+	$labels = array(
+		'name'                  => _x( 'weapons', 'Post Type General Name', 'weapons' ),
+		'singular_name'         => _x( 'weapons', 'Post Type Singular Name', 'weapons' ),
+		'menu_name'             => __( 'weapons', 'weapons' ),
+		'name_admin_bar'        => __( 'weapons', 'weapons' ),
+		'archives'              => __( 'Item Archives', 'weapons' ),
+		'attributes'            => __( 'Item Attributes', 'weapons' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'weapons' ),
+		'all_items'             => __( 'All Items', 'weapons' ),
+		'add_new_item'          => __( 'Add New Item', 'weapons' ),
+		'add_new'               => __( 'Add New', 'weapons' ),
+		'new_item'              => __( 'New Item', 'weapons' ),
+		'edit_item'             => __( 'Edit Item', 'weapons' ),
+		'update_item'           => __( 'Update Item', 'weapons' ),
+		'view_item'             => __( 'View Item', 'weapons' ),
+		'view_items'            => __( 'View Items', 'weapons' ),
+		'search_items'          => __( 'Search Item', 'weapons' ),
+		'not_found'             => __( 'Not found', 'weapons' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'weapons' ),
+		'featured_image'        => __( 'Featured Image', 'weapons' ),
+		'set_featured_image'    => __( 'Set featured image', 'weapons' ),
+		'remove_featured_image' => __( 'Remove featured image', 'weapons' ),
+		'use_featured_image'    => __( 'Use as featured image', 'weapons' ),
+		'insert_into_item'      => __( 'Insert into item', 'weapons' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'weapons' ),
+		'items_list'            => __( 'Items list', 'weapons' ),
+		'items_list_navigation' => __( 'Items list navigation', 'weapons' ),
+		'filter_items_list'     => __( 'Filter items list', 'weapons' ),
+	);
+	$args = array(
+		'label'                 => __( 'weapons', 'weapons' ),
+		'description'           => __( 'weapons for different games', 'weapons' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'author','comments' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'show_in_rest'          => true, // To use Gutenberg editor.
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-buddicons-buddypress-logo',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'weapons', $args );
+
+}
+add_action( 'init', 'weapons', 0 );
+
 // remove email and url fields from comments
 function remove_comment_fields($fields) {
 	unset($fields['email']);
