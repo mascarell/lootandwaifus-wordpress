@@ -37,7 +37,7 @@ function showCharactersByRarity($tag_slug, $category_id) {
 
 <div class="double characters-wrapper animated">
   <div class="news">
-		<div class="characters filtered">
+		<div class="characters weapons filtered">
 			<?php
         // We have a different ordering method for solo leveling characters
         if($category_id == 'Solo Leveling: Arise') {
