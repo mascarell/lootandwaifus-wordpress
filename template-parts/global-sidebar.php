@@ -143,9 +143,9 @@
               <span class="sidebar__link-floating">Tier list</span>
           </a>
 
-          <a class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/solo-leveling-arise-weapon-tier-list/" class="sidebar__link">
               <i class="ri-sword-fill"></i>
-              <span class="sidebar__link-name">Weapon tier list (WIP)</span>
+              <span class="sidebar__link-name">Weapon tier list</span>
               <span class="sidebar__link-floating">Weapon tier list</span>
           </a>
 
