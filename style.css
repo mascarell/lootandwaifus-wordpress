@@ -166,18 +166,6 @@ a.patreon img{ max-width: 100%; }
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.games .game.reverse div {
-	background: url("images/reverse.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.games .game.browndust div {
-	background: url("images/browndust.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 .games .game.overlord div {
 	background: url("images/albedo.webp");
 	background-position: center;
@@ -196,8 +184,8 @@ a.patreon img{ max-width: 100%; }
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.games .game.afkjourney div {
-	background: url("images/afk-journey.webp");
+.games .game.haze div {
+	background: url("images/haze.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
