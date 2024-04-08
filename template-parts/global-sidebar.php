@@ -212,6 +212,12 @@
               <span class="sidebar__link-floating">Viewer pulls</span>
           </a>
 
+          <a href="https://tally.so/r/m6e5aO" class="sidebar__link">
+              <i class="ri-verified-badge-line"></i>
+              <span class="sidebar__link-name">Account review</span>
+              <span class="sidebar__link-floating">Account review</span>
+          </a>
+
           <!-- <a href="https://ko-fi.com/sefhi" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
               <span class="sidebar__link-name">Support us</span>
