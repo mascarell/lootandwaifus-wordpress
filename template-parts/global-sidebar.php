@@ -202,7 +202,7 @@
         </div>
 
         <h3 class="sidebar__title">
-          <span>Support us</span>
+          <span>Community</span>
         </h3>
 
         <div class="sidebar__list">          
@@ -218,11 +218,11 @@
               <span class="sidebar__link-floating">Account review</span>
           </a>
 
-          <!-- <a href="https://ko-fi.com/sefhi" class="sidebar__link">
+          <a href="https://ko-fi.com/sefhi" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
               <span class="sidebar__link-name">Support us</span>
               <span class="sidebar__link-floating">Support us</span>
-          </a> -->
+          </a>
 
           <!-- <a href="<?php echo home_url(); ?>/supporters/" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
