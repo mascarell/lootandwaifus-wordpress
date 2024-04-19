@@ -22,7 +22,7 @@ get_header();
 			<p>Solo Leveling: Arise</p>
 		</div>
 	</a>
-	<a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
+	<!-- <a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
 		<div>
 			<p>Overlord: King of Nazarick</p>
 		</div>
@@ -45,6 +45,10 @@ get_header();
 	<a href="<?php echo home_url(); ?>/wuthering-waves" class="game wuwa covering">
 		<div>
 			<p>Wuthering Waves</p>
+		</div>
+	</a> -->
+	<a class="game">
+		<div>
 		</div>
 	</a>
 	<a class="game">
