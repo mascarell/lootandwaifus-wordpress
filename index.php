@@ -22,7 +22,7 @@ get_header();
 			<p>Solo Leveling: Arise</p>
 		</div>
 	</a>
-	<!-- <a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
+	<a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
 		<div>
 			<p>Overlord: King of Nazarick</p>
 		</div>
@@ -32,17 +32,19 @@ get_header();
 			<p>Girl's Frontline 2: Exilium</p>
 		</div>
 	</a>
+	<a href="<?php echo home_url(); ?>/arknights-endfield" class="game endfield covering">
+		<div>
+			<p>Arknights: Endfield</p>
+		</div>
+	</a>
 	<a href="<?php echo home_url(); ?>/haze-reverb" class="game haze covering">
 		<div>
 			<p>Haze Reverb</p>
 		</div>
 	</a>
-	<a class="game">
+	<a href="<?php echo home_url(); ?>/wuthering-waves" class="game wuwa covering">
 		<div>
-		</div>
-	</a> -->
-	<a class="game">
-		<div>
+			<p>Wuthering Waves</p>
 		</div>
 	</a>
 	<a class="game">
