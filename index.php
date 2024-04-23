@@ -42,9 +42,9 @@ get_header();
 			<p>Haze Reverb</p>
 		</div>
 	</a> -->
-	<a class="game wuwa covering">
+	<a href="<?php echo home_url(); ?>/wuthering-waves" class="game wuwa covering">
 		<div>
-			<p>Wuthering Waves (WIP)</p>
+			<p>Wuthering Waves</p>
 		</div>
 	</a>
 	<a class="game">

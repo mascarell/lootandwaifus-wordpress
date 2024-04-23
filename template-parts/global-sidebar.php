@@ -227,7 +227,7 @@
               <span class="sidebar__link-floating">GoV: NIKKE</span>
           </a>
           
-          <a class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/wuthering-waves/" class="sidebar__link">
               <i class="ri-music-2-line"></i>
               <span class="sidebar__link-name">Wuthering Waves</span>
               <span class="sidebar__link-floating">WuWa</span>
