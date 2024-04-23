@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.9.34
+Version: 1.9.4
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -407,6 +407,13 @@ a.patreon img{ max-width: 100%; }
 .character.solo-leveling-arise .bg.mage::after{ background-image: url(images/sololeveling/Class_Mage.png); }
 .character.solo-leveling-arise .bg.ranged::after{ background-image: url(images/sololeveling/Class_Ranger.png); }
 .character.solo-leveling-arise .bg.tank::after{ background-image: url(images/sololeveling/Class_Tank.png); }
+/* WUTHERING WAVES ICONS */
+.character.wuthering-waves .bg.aero::before{ background-image: url(images/wuwa/aero.webp); }
+.character.wuthering-waves .bg.electro::before{ background-image: url(images/wuwa/electro.webp); }
+.character.wuthering-waves .bg.fusion::before{ background-image: url(images/wuwa/fusion.webp); }
+.character.wuthering-waves .bg.glacio::before{ background-image: url(images/wuwa/glacio.webp); }
+.character.wuthering-waves .bg.havoc::before{ background-image: url(images/wuwa/havoc.webp); }
+.character.wuthering-waves .bg.spectro::before{ background-image: url(images/wuwa/spectro.webp); }
 /* character flags */
 .news .characters .character .flags{
   position: absolute;
