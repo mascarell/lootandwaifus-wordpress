@@ -200,7 +200,7 @@
               <span class="sidebar__link-floating">Tier list</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/wuthering-wavese-characters/" class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/wuthering-waves-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
               <span class="sidebar__link-name">Characters</span>
               <span class="sidebar__link-floating">Characters</span>

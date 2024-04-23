@@ -13,6 +13,8 @@ if($category_id == 'Nikke') {
   get_template_part('template-parts/filters/nikke');
 } else if($category_id == 'Solo Leveling: Arise') {
   get_template_part('template-parts/filters/sololeveling');
+} else if($category_id == 'Wuthering Waves') {
+  get_template_part('template-parts/filters/wuwa');
 } else { 
 } ?>
 
