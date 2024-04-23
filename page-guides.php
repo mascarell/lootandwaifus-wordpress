@@ -24,19 +24,6 @@ if($category_id == 'Nikke') {
 			</div>
 		</div>
 	<?php
-} else if($category_id == 'Reverse: 1999') {
-	?>  
-		<div class="game-info animated">
-			<div class="logo">
-				<img src="<?php echo get_theme_file_uri('images/reverse-logo.png'); ?>" loading="lazy" alt="reverse 1999 logo">
-			</div>
-
-			<div class="game-info-text">
-				<h1>Reverse: 1999 wiki</h1>
-				<p>Welcome to the ultimate Reverse: 1999 wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
-			</div>
-		</div>
-	<?php
 } else if($category_id == 'Brown Dust 2') {
 	?>  
 		<div class="game-info animated">
@@ -73,6 +60,19 @@ if($category_id == 'Nikke') {
 			<div class="game-info-text">
 				<h1>Solo Leveling: Arise wiki</h1>
 				<p>Welcome to the ultimate Solo Leveling: Arise wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
+			</div>
+		</div>
+	<?php
+} else if($category_id == 'Wuthering Waves') {
+	?>  
+		<div class="game-info animated">
+			<div class="logo">
+				<img src="<?php echo get_theme_file_uri('images/wuwa-logo.png'); ?>" loading="lazy" alt="Wuthering Waves logo">
+			</div>
+
+			<div class="game-info-text">
+				<h1>Wuthering Waves wiki</h1>
+				<p>Welcome to the ultimate Wuthering Waves wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
 			</div>
 		</div>
 	<?php
@@ -151,6 +151,36 @@ if($category_id == 'Nikke') {
 		</div>
 	</div>
 <?php } elseif($category_id == 'Solo Leveling: Arise') { ?>
+  <div class="events">
+    <!-- Gantt chart with current events -->
+      <div class="container animated chart-parent">
+        <div class="show-more">show all events</div>
+        <div class="chart-events">
+          <!-- Date header will be dynamically created using JavaScript -->
+          <div class="chart-dates"></div>
+        
+          <div class="chart-container">
+            <!-- Additional chart bars can be added here -->
+            <?php
+              $eventQuery = new WP_Query( array(
+                  'meta_key'       => 'end_date',
+                  'meta_value'     => date('Y-m-d', strtotime('-5 days')),
+                  'meta_compare'   => '>=',
+                  'post_type'      => 'events',
+                  'posts_per_page' => -1,
+                  'category_name'  => $category_id
+              ) );
+              if ( $eventQuery->have_posts() ) :
+                  while ( $eventQuery->have_posts() ) : $eventQuery->the_post();
+                    get_template_part('template-parts/active-events');
+                  endwhile; wp_reset_postdata();
+              endif; 
+            ?>
+          </div>
+        </div>
+      </div>
+  </div>
+<?php } elseif($category_id == 'Wuthering Waves') { ?>
   <div class="events">
     <!-- Gantt chart with current events -->
       <div class="container animated chart-parent">
