@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.9.4
+Version: 1.9.5
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -385,6 +385,8 @@ a.patreon img{ max-width: 100%; }
 .character .bg::after{
   top: 30px;
 }
+/* uagb character grids on the guides, update broke it so we force it */
+.wp-block-uagb-container.characters { display: grid !important; }
 /* NIKKE ICONS */
 .character.nikke .bg.fire::before{ background-image: url(images/nikke/nikke-fire.webp); }
 .character.nikke .bg.water::before{ background-image: url(images/nikke/nikke-water.webp); }
