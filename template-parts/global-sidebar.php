@@ -22,6 +22,12 @@
               <span class="sidebar__link-name">Home</span>
               <span class="sidebar__link-floating">Home</span>
           </a>
+          
+          <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
+              <i class="ri-file-list-3-line"></i>
+              <span class="sidebar__link-name">Blog</span>
+              <span class="sidebar__link-floating">Blog</span>
+          </a>
         </div>
 
         <h3 class="sidebar__title">
@@ -124,6 +130,12 @@
               <span class="sidebar__link-name">Home</span>
               <span class="sidebar__link-floating">Home</span>
           </a>
+
+          <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
+              <i class="ri-file-list-3-line"></i>
+              <span class="sidebar__link-name">Blog</span>
+              <span class="sidebar__link-floating">Blog</span>
+          </a>
         </div>
 
         <h3 class="sidebar__title">
@@ -213,6 +225,12 @@
               <i class="ri-home-5-line"></i>
               <span class="sidebar__link-name">Home</span>
               <span class="sidebar__link-floating">Home</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
+              <i class="ri-file-list-3-line"></i>
+              <span class="sidebar__link-name">Blog</span>
+              <span class="sidebar__link-floating">Blog</span>
           </a>
         </div>
 

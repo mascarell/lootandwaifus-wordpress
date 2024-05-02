@@ -4,57 +4,30 @@ get_header();
 
 ?>
 
-<!-- Hero section -->
-<div class="hero animated">
-  <h1>Loot & Waifus: your ultimate gacha companion</h1>
-  <p>We are a collective of gacha players that like helping the community by building open source tools, guides and tier lists to make it easier for new players to get into the games that we love.</p>
-</div>
+<div class="double">
+	<div class="news">
+		<div class="posts animated">
+			<?php
+					$args = array(
+							'posts_per_page' => 8,
+							'post_type'      => 'post',
+							'paged'          => get_query_var( 'paged' ),
+					);
+					$wp_query = new WP_Query( $args );
+	
+					if( have_posts() ):
+							while ( $wp_query->have_posts() ) : $wp_query->the_post();
+	
+							get_template_part('template-parts/content-news');
+							
+							endwhile;            
+					endif;
+							
+			wp_reset_query(); ?>
+		</div>
 
-<!-- Games that we cover -->
-<div class="games container animated">
-	<a href="<?php echo home_url(); ?>/nikke" class="game nikke covering">
-		<div>
-			<p>Goddess of Victory: Nikke</p>
-		</div>
-	</a>
-	<a href="<?php echo home_url(); ?>/solo-leveling-arise" class="game sololeveling covering">
-		<div>
-			<p>Solo Leveling: Arise</p>
-		</div>
-	</a>
-	<!-- <a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
-		<div>
-			<p>Overlord: King of Nazarick</p>
-		</div>
-	</a>
-	<a href="<?php echo home_url(); ?>/girls-frontline-2-exilium" class="game gfl2 covering">
-		<div>
-			<p>Girl's Frontline 2: Exilium</p>
-		</div>
-	</a>
-	<a href="<?php echo home_url(); ?>/arknights-endfield" class="game endfield covering">
-		<div>
-			<p>Arknights: Endfield</p>
-		</div>
-	</a>
-	<a href="<?php echo home_url(); ?>/haze-reverb" class="game haze covering">
-		<div>
-			<p>Haze Reverb</p>
-		</div>
-	</a> -->
-	<!-- <a href="<?php echo home_url(); ?>/wuthering-waves" class="game wuwa covering">
-		<div>
-			<p>Wuthering Waves</p>
-		</div>
-	</a> -->
-	<a class="game">
-		<div>
-		</div>
-	</a>
-	<a class="game">
-		<div>
-		</div>
-	</a>
+		<?php get_template_part('template-parts/pagination'); ?>
+	</div>
 </div>
 
 <?php
