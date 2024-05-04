@@ -24,6 +24,27 @@ $category_id = $categories[0]->name;
           <?php get_template_part('template-parts/database-filters'); ?>
 
           <div class="tier-list">
+            <!-- BROKEN UNITS -->
+            <?php
+              $args = array(
+                'post_type' => 'characters', 
+                'posts_per_page' => -1, // Set the number of posts to display, -1 for all
+                'category_name'  => $category_id,
+                'tag' => 'tier-0',
+                'orderby'   => 'title', // Order by post title
+                'order'     => 'ASC',   // Order in ascending order (A-Z)
+              );
+              $query = new WP_Query($args);
+              if ( $query->have_posts() ) : ?>
+                <div class="row"><p class="tier broken">Balanced</p><div class="characters filtered">
+
+                <?php while ( $query->have_posts() ) : $query->the_post();
+                get_template_part('template-parts/character');
+                endwhile; wp_reset_postdata(); ?>
+                </div></div>
+              <?php endif;
+            ?>
+
             <!-- TIER 0 UNITS -->
             <?php
               $args = array(
