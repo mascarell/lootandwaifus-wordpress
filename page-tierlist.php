@@ -30,7 +30,7 @@ $category_id = $categories[0]->name;
                 'post_type' => 'characters', 
                 'posts_per_page' => -1, // Set the number of posts to display, -1 for all
                 'category_name'  => $category_id,
-                'tag' => 'tier-0',
+                'tag' => 'broken',
                 'orderby'   => 'title', // Order by post title
                 'order'     => 'ASC',   // Order in ascending order (A-Z)
               );
