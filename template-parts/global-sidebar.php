@@ -23,11 +23,11 @@
               <span class="sidebar__link-floating">Home</span>
           </a>
           
-          <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
               <i class="ri-file-list-3-line"></i>
               <span class="sidebar__link-name">Blog</span>
               <span class="sidebar__link-floating">Blog</span>
-          </a>
+          </a> -->
         </div>
 
         <h3 class="sidebar__title">
@@ -131,11 +131,11 @@
               <span class="sidebar__link-floating">Home</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
               <i class="ri-file-list-3-line"></i>
               <span class="sidebar__link-name">Blog</span>
               <span class="sidebar__link-floating">Blog</span>
-          </a>
+          </a> -->
         </div>
 
         <h3 class="sidebar__title">
@@ -227,11 +227,11 @@
               <span class="sidebar__link-floating">Home</span>
           </a>
 
-          <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
+          <!-- <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
               <i class="ri-file-list-3-line"></i>
               <span class="sidebar__link-name">Blog</span>
               <span class="sidebar__link-floating">Blog</span>
-          </a>
+          </a> -->
         </div>
 
         <h3 class="sidebar__title">
