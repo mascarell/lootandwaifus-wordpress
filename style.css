@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.9.7
+Version: 1.9.8
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -1354,6 +1354,50 @@ li.comment img.avatar, .comment-notes { display: none !important; }
 .container.news-article .margin .thumbnail .img{
 	height: 200px;
 	border-radius: 0;
+}
+
+/* cp calculator */
+.cp-calculator{
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.cp-calculator .calculator-block{
+  margin-right: 2rem;
+}
+.cp-calculator input, .cp-calculator textarea{
+	border-radius: 12px;
+	padding: .5rem 1.25rem;
+	resize: none;
+	background-color: transparent;
+	border: 2px solid #272A2F;
+	font-size: 1.1rem;
+  display: block;
+	color: white;
+	transition: .15s linear;
+	margin-top: .5rem;
+}
+.cp-calculator input:focus, .cp-calculator textarea:focus{ 
+	background-color: #272A2F;
+	outline: none; 
+}
+.cp-calculator label{
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  display: block;
+  color: #fff176;
+  margin-bottom: 0;
+}
+.cp-calculator .cp_defict, .cp-calculator .stat_penalty{
+  margin-top: 2rem;
+  flex: 0 0 100%;
+  font-size: 2rem;
+}
+.cp-calculator .stat_penalty{
+  margin-top: 0;
+}
+.cp-calculator .cp_defict span, .cp-calculator .stat_penalty span{
+  color: #23F1C0;
 }
 
 .tier-list .row{
