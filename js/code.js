@@ -38,11 +38,18 @@
 
       cpDeficitDisplay.textContent = formattedCpDeficit;
       statPenaltyDisplay.textContent = formattedStatPenalty;
+      statPenaltyDisplay.className = '';
 
-      const bgColor = cpDeficit >= 35 ? 'bg-danger' :
-        cpDeficit >= 30 ? 'bg-warning' :
-          cpDeficit >= 25 ? 'bg-warning text-dark' : 'bg-success';
-      statPenaltyDisplay.classList.remove(...statPenaltyDisplay.classList);
+      let bgColor;
+
+      if ((cpDeficit * 100).toFixed(2) >= 35) {
+        bgColor = 'bg-danger';
+      } else if ((cpDeficit * 100).toFixed(2) >= 30) {
+        bgColor = 'bg-warning';
+      } else {
+        bgColor = 'bg-success';
+      }
+
       statPenaltyDisplay.classList.add(bgColor);
     }
 

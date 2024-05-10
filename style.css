@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 1.9.8
+Version: 1.9.9
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -1393,12 +1393,10 @@ li.comment img.avatar, .comment-notes { display: none !important; }
   flex: 0 0 100%;
   font-size: 2rem;
 }
-.cp-calculator .stat_penalty{
-  margin-top: 0;
-}
-.cp-calculator .cp_defict span, .cp-calculator .stat_penalty span{
-  color: #23F1C0;
-}
+.cp-calculator .stat_penalty{ margin-top: 0; }
+.cp-calculator span.bg-success{ color: #23F1C0; }
+.cp-calculator span.bg-warning{ color: #fff176; }
+.cp-calculator span.bg-danger{ color: #ef5350; }
 
 .tier-list .row{
   width: 100%;
