@@ -43,9 +43,9 @@ function showCharactersByRarity($tag_slug, $category_id) {
       </div>
 		</div>
 
-		<div class="teams four">
+		<div class="teams three">
 			<span class="advice">Team builder works best on PC, mobile can be funky until I do an update</span>
-			<h3>Your squads</h3>
+			<h3>Your teams</h3>
 			<div class="team-switch">
 				<span class="team1 active">1</span>
 				<span class="team2">2</span>
@@ -56,7 +56,6 @@ function showCharactersByRarity($tag_slug, $category_id) {
 				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team1 character nomargin covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
-				<div class="post builder tam2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
 				<div class="post builder team2 character nomargin notSelected covering container"><div class="margin"><div class="content"><h2>Drag character</h2></div></div></div>
