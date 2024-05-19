@@ -461,10 +461,10 @@
 	}
 })(jQuery);
 
-// Team randomizer
+// NIKKE Team randomizer
 (function ($) {
   try {
-    const characters = [...document.querySelectorAll('.filtered .character .bg')];
+    const characters = [...document.querySelectorAll('.filtered.nikke .character .bg')];
     const randomCharacters = [...document.querySelectorAll('.post.builder')];
     const team1 = [...document.querySelectorAll('.team1')];
     const team2 = [...document.querySelectorAll('.team2')];
@@ -477,7 +477,7 @@
     }
 
     // Add event listener for "Generate Teams" button
-    document.getElementById('generate-teams').addEventListener('click', function () {
+    document.getElementById('generate-teams-nikke').addEventListener('click', function () {
       // Call a function to generate teams based on selected units
       generateTeam(team1);
       generateTeam(team2);
@@ -537,6 +537,90 @@
         }, 50 * (i + 1));
       }
     }
+  } catch (error) {
+    console.log(error)
+  }
+})(jQuery);
+
+// Team randomizer 3 units
+(function ($) {
+  try {
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const characters = [...document.querySelectorAll('.filtered.wuthering-waves .character .bg')];
+      let randomCharacters = [...document.querySelectorAll('.post.builder')];
+      let team1 = [...document.querySelectorAll('.team1')];
+      let team2 = [...document.querySelectorAll('.team2')];
+      let team3 = [...document.querySelectorAll('.team3')];
+
+      // Initialize animations for randomCharacters
+      updateAnimations();
+
+      // Add event listener for "Generate Teams" button
+      document.getElementById('generate-teams-wuwa').addEventListener('click', function () {
+        if (characters.length < 9) {
+          console.error('Not enough characters to form three teams of three.');
+          return;
+        }
+        // Clone the characters array to avoid modifying the original during team generation
+        let clonedCharacters = [...characters];
+
+        // Call a function to generate teams based on selected units
+        generateTeam(team1, clonedCharacters);
+        generateTeam(team2, clonedCharacters);
+        generateTeam(team3, clonedCharacters);
+      });
+
+      // Function to select a random element from an array
+      function getRandomElement(array) {
+        if (array.length === 0) {
+          return undefined;
+        }
+        const randomIndex = Math.floor(Math.random() * array.length);
+        return array.splice(randomIndex, 1)[0];
+      }
+
+      // Function to generate teams
+      function generateTeam(team, availableCharacters) {
+        // Create array to hold the random team members
+        let randomTeam = [];
+        for (let i = 0; i < 3; i++) {
+          const character = getRandomElement(availableCharacters);
+          if (character) {
+            randomTeam.push(character);
+          } else {
+            console.error('Not enough characters to form a team.');
+            return;
+          }
+        }
+
+        // Add units to the website
+        for (let i = 0; i < randomTeam.length; i++) {
+          const character = randomTeam[i];
+          if (character && character.parentElement) {
+            team[i].innerHTML = character.parentElement.innerHTML;
+            team[i].style.opacity = 0;
+            team[i].classList.remove('active');
+          } else {
+            console.error('Character or parent element is undefined.');
+          }
+        }
+
+        // Update images
+        const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+        observer.observe();
+
+        // Update animations
+        updateAnimations();
+      }
+
+      function updateAnimations() {
+        for (let i = 0; i < randomCharacters.length; i++) {
+          setTimeout(function () {
+            randomCharacters[i].classList.add('active');
+          }, 50 * (i + 1));
+        }
+      }
+    });
   } catch (error) {
     console.log(error)
   }

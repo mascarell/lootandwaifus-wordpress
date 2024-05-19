@@ -1,4 +1,4 @@
-<?php /* Template Name: Nikke Random Team Generator */ ?>
+<?php /* Template Name: 3-unit Random Team Generator */ ?>
 
 <?php
 
@@ -11,9 +11,9 @@ $category_id = $categories[0]->name;
 
 <div class="double characters-wrapper builder animated">
 	<div class="news">
-    <div class="teams">
-			<h3>NIKKE Team Randomizer</h3>
-      <a id="generate-teams-nikke" class="play randomizer" target="_blank" rel="noopener noreferrer">
+    <div class="teams three">
+			<h3>Wuthering Waves Team Randomizer</h3>
+      <a id="generate-teams-wuwa" class="play randomizer" target="_blank" rel="noopener noreferrer">
         <span>Randomize teams</span>
       </a>
 
@@ -23,22 +23,16 @@ $category_id = $categories[0]->name;
 				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
-				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
-				<div class="post builder team1 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team2 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team2 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team2 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
-				<div class="post builder team2 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
-				<div class="post builder team2 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
-				<div class="post builder team3 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
-				<div class="post builder team3 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team3 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team3 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 				<div class="post builder team3 character nomargin zoomIn container"><div class="margin"><div class="content"><h2>--</h2></div></div></div>
 			</div>
 		</div>
 
-		<div class="characters filtered nikke" style="display:none;">
+		<div class="characters filtered wuthering-waves" style="display:none;">
 			<?php
 				$query = new WP_Query( array(
 						'post_type'      => 'characters',

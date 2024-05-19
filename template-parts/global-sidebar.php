@@ -218,6 +218,24 @@
               <span class="sidebar__link-floating">Characters</span>
           </a>
         </div>
+
+        <h3 class="sidebar__title">
+          <span>Tools</span>
+        </h3>
+
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/wuthering-waves-team-builder/" class="sidebar__link">
+              <i class="ri-lightbulb-flash-line"></i>
+              <span class="sidebar__link-name">Team builder</span>
+              <span class="sidebar__link-floating">Team builder</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/wuthering-waves-team-randomizer/" class="sidebar__link">
+              <i class="ri-team-line"></i>
+              <span class="sidebar__link-name">Team randomizer</span>
+              <span class="sidebar__link-floating">Randomizer</span>
+          </a>
+        </div>
       <!-- No game menu -->
       <?php } else { ?>
         <div class="sidebar__list">
