@@ -214,8 +214,8 @@
 
           <a href="<?php echo home_url(); ?>/wuthering-waves-characters/" class="sidebar__link">
               <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Characters</span>
-              <span class="sidebar__link-floating">Characters</span>
+              <span class="sidebar__link-name">Resonators</span>
+              <span class="sidebar__link-floating">Resonators</span>
           </a>
         </div>
 
@@ -253,30 +253,6 @@
         </div>
 
         <h3 class="sidebar__title">
-          <span>Gachas</span>
-        </h3>
-        
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/nikke" class="sidebar__link">
-              <i class="ri-crosshair-2-line"></i>
-              <span class="sidebar__link-name">GoV: NIKKE</span>
-              <span class="sidebar__link-floating">GoV: NIKKE</span>
-          </a>
-          
-          <!-- <a href="<?php echo home_url(); ?>/wuthering-waves/" class="sidebar__link">
-              <i class="ri-music-2-line"></i>
-              <span class="sidebar__link-name">Wuthering Waves</span>
-              <span class="sidebar__link-floating">WuWa</span>
-          </a> -->
-          
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise" class="sidebar__link">
-              <i class="ri-sword-line"></i>
-              <span class="sidebar__link-name">Solo Leveling: Arise</span>
-              <span class="sidebar__link-floating">Solo Leveling</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
           <span>Community</span>
         </h3>
 
@@ -287,11 +263,11 @@
               <span class="sidebar__link-floating">Viewer pulls</span>
           </a>
 
-          <a href="https://tally.so/r/m6e5aO" class="sidebar__link">
+          <!-- <a href="https://tally.so/r/m6e5aO" class="sidebar__link">
               <i class="ri-verified-badge-line"></i>
               <span class="sidebar__link-name">Account review</span>
               <span class="sidebar__link-floating">Account review</span>
-          </a>
+          </a> -->
 
           <a href="https://ko-fi.com/sefhi" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
