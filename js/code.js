@@ -697,7 +697,7 @@
 				}
 
         // check for team synergies with the current characters we have selected
-        checkTeamSynergies(team1Array);
+        // checkTeamSynergies(team1Array);
 
         updateNotes();
 			} catch (error) { }
@@ -867,7 +867,7 @@
 
 			team1Id = ids;
 
-      checkTeamSynergies(ids);
+      // checkTeamSynergies(ids);
 		}
 
     function checkTeamSynergies(selectedTeam) {
