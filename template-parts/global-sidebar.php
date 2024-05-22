@@ -217,6 +217,12 @@
               <span class="sidebar__link-name">Resonators</span>
               <span class="sidebar__link-floating">Resonators</span>
           </a>
+
+          <a href="<?php echo home_url(); ?>/guides/wuthering-waves-codes/" class="sidebar__link">
+              <i class="ri-vip-diamond-line"></i>
+              <span class="sidebar__link-name">Free codes</span>
+              <span class="sidebar__link-floating">Free codes</span>
+          </a>
         </div>
 
         <h3 class="sidebar__title">
