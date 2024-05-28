@@ -8,8 +8,8 @@ get_header();
 
 <!-- Hero section -->
 <div class="hero animated">
-  <h1>Loot & Waifus: your ultimate gacha companion</h1>
-  <p>We are a collective of gacha players that like helping the community by building open source tools, guides and tier lists to make it easier for new players to get into the games that we love.</p>
+  <h1>Loot & Waifus: El Shafto's gacha resources</h1>
+  <p>Hello bozos, I'm Sefhi, a content creator that likes to write guides with other likeminded people to help gambling addi... gacha players plan their resources.</p>
 </div>
 
 <!-- Games that we cover -->
