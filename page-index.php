@@ -43,12 +43,12 @@ get_header();
 		<div>
 			<p>Haze Reverb</p>
 		</div>
-	</a> -->
-	<a href="<?php echo home_url(); ?>/wuthering-waves" class="game wuwa covering">
-		<div>
-			<p>Wuthering Waves</p>
-		</div>
 	</a>
+	<a href="<?php echo home_url(); ?>/trickcal-revive" class="game trickcal covering">
+		<div>
+			<p>Trickcal RE:VIVE</p>
+		</div>
+	</a> -->
 	<a class="game">
 		<div>
 		</div>

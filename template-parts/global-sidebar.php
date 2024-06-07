@@ -185,63 +185,6 @@
               <span class="sidebar__link-floating">Weapons</span>
           </a>
         </div>
-      <!-- Wuthering Waves menu -->
-      <?php } else if($category_id == 'wuthering-waves') { ?>
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/" class="sidebar__link">
-              <i class="ri-home-5-line"></i>
-              <span class="sidebar__link-name">Home</span>
-              <span class="sidebar__link-floating">Home</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>WuWa</span>
-        </h3>
-        
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/wuthering-waves/" class="sidebar__link">
-              <i class="ri-book-open-line"></i>
-              <span class="sidebar__link-name">Guides</span>
-              <span class="sidebar__link-floating">Guides</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/wuthering-waves-tier-list/" class="sidebar__link">
-              <i class="ri-line-chart-line"></i>
-              <span class="sidebar__link-name">Tier list</span>
-              <span class="sidebar__link-floating">Tier list</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/wuthering-waves-characters/" class="sidebar__link">
-              <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Resonators</span>
-              <span class="sidebar__link-floating">Resonators</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/guides/wuthering-waves-codes/" class="sidebar__link">
-              <i class="ri-vip-diamond-line"></i>
-              <span class="sidebar__link-name">Free codes</span>
-              <span class="sidebar__link-floating">Free codes</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Tools</span>
-        </h3>
-
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/wuthering-waves-team-builder/" class="sidebar__link">
-              <i class="ri-lightbulb-flash-line"></i>
-              <span class="sidebar__link-name">Team builder</span>
-              <span class="sidebar__link-floating">Team builder</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/wuthering-waves-team-randomizer/" class="sidebar__link">
-              <i class="ri-team-line"></i>
-              <span class="sidebar__link-name">Team randomizer</span>
-              <span class="sidebar__link-floating">Randomizer</span>
-          </a>
-        </div>
       <!-- No game menu -->
       <?php } else { ?>
         <div class="sidebar__list">

@@ -92,11 +92,6 @@
     <i class="ri-youtube-fill"></i>
     <span>Daily Gacha Videos</span>
   </a>
-<?php } else if($category_id == 'wuthering-waves') { ?>
-  <a href="https://www.youtube.com/@lootandwaifus/videos" class="play big animated" target="_blank" rel="noopener noreferrer">
-    <i class="ri-youtube-fill"></i>
-    <span>Daily Gacha Videos</span>
-  </a>
 <!-- No game -->
 <?php } else { ?>
 <?php } ?>
