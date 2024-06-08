@@ -50,6 +50,19 @@ if($category_id == 'Nikke') {
 			</div>
 		</div>
 	<?php
+} else if($category_id == 'Trickcal RE:VIVE') {
+	?>  
+		<div class="game-info animated">
+			<div class="logo">
+				<img src="<?php echo get_theme_file_uri('images/trickcal-logo.webp'); ?>" loading="lazy" alt="Trickcal RE:VIVE logo">
+			</div>
+
+			<div class="game-info-text">
+				<h1>Trickcal RE:VIVE wiki</h1>
+				<p>Welcome to the ultimate Trickcal RE:VIVE wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
+			</div>
+		</div>
+	<?php
 } else if($category_id == 'Solo Leveling: Arise') {
 	?>  
 		<div class="game-info animated">
@@ -164,7 +177,7 @@ if($category_id == 'Nikke') {
         </div>
       </div>
   </div>
-<?php } elseif($category_id == 'Wuthering Waves') { ?>
+<?php } elseif($category_id == 'Trickcal RE:VIVE') { ?>
   <div class="events">
     <!-- Gantt chart with current events -->
       <div class="container animated chart-parent">
