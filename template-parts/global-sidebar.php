@@ -185,6 +185,45 @@
               <span class="sidebar__link-floating">Weapons</span>
           </a>
         </div>
+      <!-- Trickcal RE:VIVE menu -->
+      <?php } else if($category_id == 'trickcal-revive') { ?>
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/" class="sidebar__link">
+              <i class="ri-home-5-line"></i>
+              <span class="sidebar__link-name">Home</span>
+              <span class="sidebar__link-floating">Home</span>
+          </a>
+        </div>
+
+        <h3 class="sidebar__title">
+          <span>Trickcal</span>
+        </h3>
+        
+        <div class="sidebar__list">
+          <a href="<?php echo home_url(); ?>/trickcal-revive/" class="sidebar__link">
+              <i class="ri-book-open-line"></i>
+              <span class="sidebar__link-name">Guides</span>
+              <span class="sidebar__link-floating">Guides</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/trickcal-revive-tier-list/" class="sidebar__link">
+              <i class="ri-line-chart-line"></i>
+              <span class="sidebar__link-name">Tier list</span>
+              <span class="sidebar__link-floating">Tier list</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/trickcal-revive-characters/" class="sidebar__link">
+              <i class="ri-group-line"></i>
+              <span class="sidebar__link-name">Characters</span>
+              <span class="sidebar__link-floating">Characters</span>
+          </a>
+
+          <a href="<?php echo home_url(); ?>/guides/trickcal-revive-codes/" class="sidebar__link">
+              <i class="ri-vip-diamond-line"></i>
+              <span class="sidebar__link-name">Free codes</span>
+              <span class="sidebar__link-floating">Free codes</span>
+          </a>
+        </div>
       <!-- No game menu -->
       <?php } else { ?>
         <div class="sidebar__list">

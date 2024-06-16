@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 2.0.1
+Version: 2.0.2
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -402,18 +402,15 @@ a.patreon img{ max-width: 100%; }
 .character.nikke .bg.burst-2::after{ background-image: url(images/nikke/nikke-2.webp); }
 .character.nikke .bg.burst-3::after{ background-image: url(images/nikke/nikke-3.webp); }
 .character.nikke .bg.burst-all::after{ background-image: url(images/nikke/nikke-all.webp); }
-/* SOLO LEVELING ICONS */
-.character.solo-leveling-arise .bg.fire::before{ background-image: url(images/sololeveling/Element_Fire_Color.png); }
-.character.solo-leveling-arise .bg.water::before{ background-image: url(images/sololeveling/Element_Water.png); }
-.character.solo-leveling-arise .bg.wind::before{ background-image: url(images/sololeveling/Element_Wind.png); }
-.character.solo-leveling-arise .bg.dark::before{ background-image: url(images/sololeveling/Element_Darkness_Color.png); }
-.character.solo-leveling-arise .bg.light::before{ background-image: url(images/sololeveling/Element_Light_Color.png); }
-.character.solo-leveling-arise .bg.fighter::after{ background-image: url(images/sololeveling/Class_Fighter.png); }
-.character.solo-leveling-arise .bg.assassin::after{ background-image: url(images/sololeveling/Class_Assassin.png); }
-.character.solo-leveling-arise .bg.healer::after{ background-image: url(images/sololeveling/Class_Healer.png); }
-.character.solo-leveling-arise .bg.mage::after{ background-image: url(images/sololeveling/Class_Mage.png); }
-.character.solo-leveling-arise .bg.ranged::after{ background-image: url(images/sololeveling/Class_Ranger.png); }
-.character.solo-leveling-arise .bg.tank::after{ background-image: url(images/sololeveling/Class_Tank.png); }
+/* TRICKCAL ICONS */
+.character.trickcal-revive .bg.fire::before{ background-image: url(images/trickcal/trickcal-fire.png); }
+.character.trickcal-revive .bg.water::before{ background-image: url(images/trickcal/trickcal-water.png); }
+.character.trickcal-revive .bg.plant::before{ background-image: url(images/trickcal/trickcal-plant.png); }
+.character.trickcal-revive .bg.light::before{ background-image: url(images/trickcal/trickcal-light.png); }
+.character.trickcal-revive .bg.dark::before{ background-image: url(images/trickcal/trickcal-dark.png); }
+.character.trickcal-revive .bg.back-row::after{ background-image: url(images/trickcal/trickcal-back.png); }
+.character.trickcal-revive .bg.middle-row::after{ background-image: url(images/trickcal/trickcal-middle.png); }
+.character.trickcal-revive .bg.back-row::after{ background-image: url(images/trickcal/trickcal-back.png); }
 /* character flags */
 .news .characters .character .flags{
   position: absolute;

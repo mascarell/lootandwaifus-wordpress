@@ -19,12 +19,12 @@ get_header();
 			<p>Goddess of Victory: Nikke</p>
 		</div>
 	</a>
-	<a href="<?php echo home_url(); ?>/solo-leveling-arise" class="game sololeveling covering">
+  <!-- <a href="<?php echo home_url(); ?>/trickcal-revive" class="game trickcal covering">
 		<div>
-			<p>Solo Leveling: Arise</p>
+			<p>Trickcal RE:VIVE</p>
 		</div>
 	</a>
-	<!-- <a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
+	<a href="<?php echo home_url(); ?>/overlord-king-of-nazarick" class="game overlord covering">
 		<div>
 			<p>Overlord: King of Nazarick</p>
 		</div>
@@ -43,12 +43,15 @@ get_header();
 		<div>
 			<p>Haze Reverb</p>
 		</div>
-	</a>
-	<a href="<?php echo home_url(); ?>/trickcal-revive" class="game trickcal covering">
-		<div>
-			<p>Trickcal RE:VIVE</p>
-		</div>
 	</a> -->
+	<a class="game">
+		<div>
+		</div>
+	</a>
+	<a class="game">
+		<div>
+		</div>
+	</a>
 	<a class="game">
 		<div>
 		</div>
