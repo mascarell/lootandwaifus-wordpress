@@ -62,19 +62,6 @@ if($category_id == 'Nikke') {
 				<p>Welcome to the ultimate Trickcal RE:VIVE wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
 			</div>
 		</div>
-	<?php
-} else if($category_id == 'Solo Leveling: Arise') {
-	?>  
-		<div class="game-info animated">
-			<div class="logo">
-				<img src="<?php echo get_theme_file_uri('images/solo-leveling-logo.png'); ?>" loading="lazy" alt="Solo Leveling: Arise logo">
-			</div>
-
-			<div class="game-info-text">
-				<h1>Solo Leveling: Arise wiki</h1>
-				<p>Welcome to the ultimate Solo Leveling: Arise wiki with everything you need: tier list, character guides, boss guides and tips and tricks for the game. We also cover the latest news and make custom tools to help you out in your gacha journey.</p>
-			</div>
-		</div>
 <?php } else {} 
 ?>
 

@@ -122,69 +122,6 @@
               <span class="sidebar__link-floating">Events</span>
           </a>
         </div>
-      <!-- Solo Leveling: Arise menu -->
-      <?php } else if($category_id == 'solo-leveling-arise') { ?>
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/" class="sidebar__link">
-              <i class="ri-home-5-line"></i>
-              <span class="sidebar__link-name">Home</span>
-              <span class="sidebar__link-floating">Home</span>
-          </a>
-
-          <!-- <a href="<?php echo home_url(); ?>/blog" class="sidebar__link">
-              <i class="ri-file-list-3-line"></i>
-              <span class="sidebar__link-name">Blog</span>
-              <span class="sidebar__link-floating">Blog</span>
-          </a> -->
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Solo Leveling</span>
-        </h3>
-        
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise/" class="sidebar__link">
-              <i class="ri-book-open-line"></i>
-              <span class="sidebar__link-name">Guides</span>
-              <span class="sidebar__link-floating">Guides</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise-tier-list/" class="sidebar__link">
-              <i class="ri-line-chart-line"></i>
-              <span class="sidebar__link-name">Tier list</span>
-              <span class="sidebar__link-floating">Tier list</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise-weapon-tier-list/" class="sidebar__link">
-              <i class="ri-sword-fill"></i>
-              <span class="sidebar__link-name">Weapon tier list</span>
-              <span class="sidebar__link-floating">Weapon tier list</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/guides/solo-leveling-arise-codes/" class="sidebar__link">
-              <i class="ri-vip-diamond-line"></i>
-              <span class="sidebar__link-name">Free codes</span>
-              <span class="sidebar__link-floating">Free codes</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Database</span>
-        </h3>
-
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise-characters/" class="sidebar__link">
-              <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Characters</span>
-              <span class="sidebar__link-floating">Characters</span>
-          </a>
-
-          <a href="<?php echo home_url(); ?>/solo-leveling-arise-weapons/" class="sidebar__link">
-              <i class="ri-focus-3-line"></i>
-              <span class="sidebar__link-name">Weapons</span>
-              <span class="sidebar__link-floating">Weapons</span>
-          </a>
-        </div>
       <!-- Trickcal RE:VIVE menu -->
       <?php } else if($category_id == 'trickcal-revive') { ?>
         <div class="sidebar__list">

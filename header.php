@@ -86,12 +86,6 @@
   </a>
 <!-- Brown Dust 2 menu -->
 <?php } else if($category_id == 'brown-dust-2') { ?>
-<!-- Solo Leveling: Arise menu -->
-<?php } else if($category_id == 'solo-leveling-arise') { ?>
-  <a href="https://www.youtube.com/@lootandwaifus/videos" class="play big animated" target="_blank" rel="noopener noreferrer">
-    <i class="ri-youtube-fill"></i>
-    <span>Daily Gacha Videos</span>
-  </a>
 <!-- No game -->
 <?php } else { ?>
 <?php } ?>
