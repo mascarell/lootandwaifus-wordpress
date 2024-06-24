@@ -63,7 +63,7 @@
       <div class="flag" data-tooltip="Regardless of tier placement, this character is loved by everyone in the community and they deserve their own flag."><i class="ri-heart-line"></i></div> 
     <?php } ?>
     <?php if ( ! empty( $global ) ) { ?>
-      <div class="flag" data-tooltip="This character is not released in the global version yet."><i class="ri-translate-2"></i></div> 
+      <div class="flag" data-tooltip="This character is not released in the global version of the game yet."><i class="ri-translate-2"></i></div> 
     <?php } ?>
   </div>
 	<div class="bg <?php echo $post_slug; ?> <?php echo implode(' ', $tag_slugs); ?>"></div>
