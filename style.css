@@ -3,7 +3,7 @@ Theme Name: Loot & Waifus
 Theme URI: https://github.com/mascarell
 Author: Mascarell
 Description: Wordpress theme for lootandwaifus
-Version: 2.0.3
+Version: 2.0.91
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Unbounded:wght@500&display=swap');
@@ -384,6 +384,8 @@ a.patreon img{ max-width: 100%; }
 .character .bg::after{
   top: 30px;
 }
+/* different size for trickcal icons on characters */
+.character.trickcal-revive .bg::before, .character.trickcal-revive .bg::after{ width: 23px; height: 23px; }
 /* uagb character grids on the guides, update broke it so we force it */
 .wp-block-uagb-container.characters { display: grid !important; }
 /* NIKKE ICONS */
@@ -397,14 +399,14 @@ a.patreon img{ max-width: 100%; }
 .character.nikke .bg.burst-3::after{ background-image: url(images/nikke/nikke-3.webp); }
 .character.nikke .bg.burst-all::after{ background-image: url(images/nikke/nikke-all.webp); }
 /* TRICKCAL ICONS */
-.character.trickcal-revive .bg.fire::before{ background-image: url(images/trickcal/trickcal-fire.png); }
+/* .character.trickcal-revive .bg.fire::before{ background-image: url(images/trickcal/trickcal-fire.png); }
 .character.trickcal-revive .bg.water::before{ background-image: url(images/trickcal/trickcal-water.png); }
 .character.trickcal-revive .bg.plant::before{ background-image: url(images/trickcal/trickcal-plant.png); }
 .character.trickcal-revive .bg.light::before{ background-image: url(images/trickcal/trickcal-light.png); }
-.character.trickcal-revive .bg.dark::before{ background-image: url(images/trickcal/trickcal-dark.png); }
-.character.trickcal-revive .bg.back-row::after{ background-image: url(images/trickcal/trickcal-back.png); }
-.character.trickcal-revive .bg.middle-row::after{ background-image: url(images/trickcal/trickcal-middle.png); }
-.character.trickcal-revive .bg.back-row::after{ background-image: url(images/trickcal/trickcal-back.png); }
+.character.trickcal-revive .bg.dark::before{ background-image: url(images/trickcal/trickcal-dark.png); } */
+.character.trickcal-revive .bg.back-row::before{ background-image: url(images/trickcal/trickcal-back.png); }
+.character.trickcal-revive .bg.middle-row::before{ background-image: url(images/trickcal/trickcal-middle.png); }
+.character.trickcal-revive .bg.front-row::before{ background-image: url(images/trickcal/trickcal-front.png); }
 /* character flags */
 .news .characters .character .flags{
   position: absolute;
@@ -454,6 +456,13 @@ a.patreon img{ max-width: 100%; }
 .news .characters .character .bg.n { background-image: linear-gradient(to top, rgba(0, 130, 2, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
 .news .characters .character .bg.good { background-image: linear-gradient(to top, rgba(0, 130, 2, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
 .news .characters .character .bg.bad { background-image: linear-gradient(to top, rgba(186, 7, 7, 0.8) 0%, rgba(240, 154, 154, 0.8) 100%); }
+/* backgrounds based on rarity for trickcal */
+.news .characters .character.trickcal-revive .bg.light { background-image: linear-gradient(to top, rgba(255, 179, 72, 0.8) 0%, rgba(255, 244, 87, 0.8) 100%); }
+.news .characters .character.trickcal-revive .bg.dark { background-image: linear-gradient(to top, rgba(112, 40, 228, .8) 0%, rgba(229, 178, 202, .8) 100%); }
+.news .characters .character.trickcal-revive .bg.plant { background-image: linear-gradient(to top, rgba(0, 130, 2, 0.8) 0%, rgba(154, 240, 170, 0.8) 100%); }
+.news .characters .character.trickcal-revive .bg.fire { background-image: linear-gradient(to top, rgba(186, 7, 7, 0.8) 0%, rgba(240, 154, 154, 0.8) 100%); }
+.news .characters .character.trickcal-revive .bg.water { background-image: linear-gradient(to top, rgba(0, 144, 255, .8) 0%, rgba(154, 203, 240, 0.8) 100%); }
+/* --------------------- */
 .news .characters .character .margin {
 	align-items: end;
 	width: 100%;
@@ -991,6 +1000,7 @@ hr{
   width: 100%;
   max-width: 100%;
   overflow-x: scroll;
+  padding-bottom: 1rem;
 }
 .uagb-tabs__panel::-webkit-scrollbar { height: 8px; }
 .uagb-tabs__panel::-webkit-scrollbar-track { background-color: transparent; }

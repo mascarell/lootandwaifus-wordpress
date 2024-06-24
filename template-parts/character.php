@@ -23,6 +23,7 @@
 	$roles = get_post_meta( get_the_ID(), 'roles', true ); // can fill multiple roles on a team depending on investment
 	$loved = get_post_meta( get_the_ID(), 'loved', true ); // popular and loved characters regardless of tier placement
 	$weapon = get_post_meta( get_the_ID(), 'weapon', true ); // popular and loved characters regardless of tier placement
+	$global = get_post_meta( get_the_ID(), 'global', true ); // is the character NOT released in global?
 
   // get category of the game as slug so we can put the classes for elemental icons
   $categories = get_the_category();
@@ -60,6 +61,9 @@
     <?php } ?>
     <?php if ( ! empty( $loved ) ) { ?> 
       <div class="flag" data-tooltip="Regardless of tier placement, this character is loved by everyone in the community and they deserve their own flag."><i class="ri-heart-line"></i></div> 
+    <?php } ?>
+    <?php if ( ! empty( $global ) ) { ?>
+      <div class="flag" data-tooltip="This character is not released in the global version yet."><i class="ri-translate-2"></i></div> 
     <?php } ?>
   </div>
 	<div class="bg <?php echo $post_slug; ?> <?php echo implode(' ', $tag_slugs); ?>"></div>

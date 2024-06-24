@@ -77,51 +77,6 @@
               <span class="sidebar__link-floating">Lost Relics</span>
           </a>
         </div>
-      <!-- Brown Dust 2 menu -->
-      <?php } else if($category_id == 'brown-dust-2') { ?>
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/" class="sidebar__link">
-              <i class="ri-home-5-line"></i>
-              <span class="sidebar__link-name">Home</span>
-              <span class="sidebar__link-floating">Home</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Brown Dust 2</span>
-        </h3>
-        
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/brown-dust-2/" class="sidebar__link">
-              <i class="ri-book-open-line"></i>
-              <span class="sidebar__link-name">Guides</span>
-              <span class="sidebar__link-floating">Guides</span>
-          </a>
-
-          <!-- <a href="<?php echo home_url(); ?>/nikke-characters/" class="sidebar__link">
-              <i class="ri-group-line"></i>
-              <span class="sidebar__link-name">Characters</span>
-              <span class="sidebar__link-floating">Characters</span>
-          </a> -->
-
-          <a href="<?php echo home_url(); ?>/guides/brown-dust-2-codes/" class="sidebar__link">
-              <i class="ri-vip-diamond-line"></i>
-              <span class="sidebar__link-name">Free codes</span>
-              <span class="sidebar__link-floating">Free codes</span>
-          </a>
-        </div>
-
-        <h3 class="sidebar__title">
-          <span>Tools</span>
-        </h3>
-
-        <div class="sidebar__list">
-          <a href="<?php echo home_url(); ?>/brown-dust-2-events/" class="sidebar__link">
-              <i class="ri-calendar-event-line"></i>
-              <span class="sidebar__link-name">Events</span>
-              <span class="sidebar__link-floating">Events</span>
-          </a>
-        </div>
       <!-- Trickcal RE:VIVE menu -->
       <?php } else if($category_id == 'trickcal-revive') { ?>
         <div class="sidebar__list">

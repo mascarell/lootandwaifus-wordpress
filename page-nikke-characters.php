@@ -46,10 +46,13 @@ function showCharactersByRarity($tag_slug, $category_id) {
 		<div class="characters filtered">
 			<?php
         // We have a different ordering method for solo leveling characters
-        if($category_id == 'Solo Leveling: Arise') {
+        if($category_id == 'Trickcal RE:VIVE') {
           // semi dirty way of doing it but better than it not working
-          showCharactersByRarity('ur', $category_id);
-          showCharactersByRarity('sr', $category_id);
+          showCharactersByRarity('water', $category_id);
+          showCharactersByRarity('fire', $category_id);
+          showCharactersByRarity('plant', $category_id);
+          showCharactersByRarity('dark', $category_id);
+          showCharactersByRarity('light', $category_id);
         } else {
           $query = new WP_Query( array(
               'post_type'      => 'characters',
