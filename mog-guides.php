@@ -49,7 +49,9 @@ $category_id = $categories[0]->name;
 					'posts_per_page' => -1,
 					'no_found_rows'  => true,
 					'tag'            => 'mog',
-					'category_name'  => $category_id
+					'category_name'  => $category_id,
+          'order_by'       => 'date',
+          'order'          => 'DESC',
 			) );
 			if ( $query->have_posts() ) :
 					?> <h2 class="guides-title">MOG 2.0 Guides ➜</h2><div class="guides"> <?php
