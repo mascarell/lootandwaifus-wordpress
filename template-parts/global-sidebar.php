@@ -41,7 +41,7 @@
               <span class="sidebar__link-floating">Guides</span>
           </a>
           
-          <a href="<?php echo home_url(); ?>/nikke-pve-tier-list" class="sidebar__link">
+          <a href="<?php echo home_url(); ?>/nikke-goddess-of-victory-tier-list" class="sidebar__link">
               <i class="ri-line-chart-line"></i>
               <span class="sidebar__link-name">Tier list</span>
               <span class="sidebar__link-floating">Tier list</span>
