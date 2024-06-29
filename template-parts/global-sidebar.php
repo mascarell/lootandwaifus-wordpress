@@ -151,8 +151,8 @@
 
           <a href="https://ko-fi.com/sefhi" class="sidebar__link">
               <i class="ri-heart-2-line"></i>
-              <span class="sidebar__link-name">Support us</span>
-              <span class="sidebar__link-floating">Support us</span>
+              <span class="sidebar__link-name">Support me</span>
+              <span class="sidebar__link-floating">Support me</span>
           </a>
 
           <!-- <a href="<?php echo home_url(); ?>/supporters/" class="sidebar__link">
